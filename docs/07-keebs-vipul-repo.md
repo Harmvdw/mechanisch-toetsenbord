@@ -31,11 +31,11 @@ keebs/
 
 ## Wat erin staat (voor zover gelezen)
 
-- **PCB:** Gerber-bestanden, als map en als zip, plus een afbeelding van de print. Dit zijn de bestanden die de blog bij LionCircuits liet maken. De README in die map toonde geen tekst en is niet gelezen.
-- **STL's:** `case.stl` en `lily58plate.stl`. De blog noemt voor de plaat en behuizing ontwerpen van derden. De README in die map toonde geen tekst. De STL's zelf zijn niet geopend, dus er zijn geen maten.
+- **PCB:** Gerber-bestanden (projectnaam `Lily58_Pro`), als map en als zip, plus een afbeelding van de print. Dit zijn de bestanden die de blog bij LionCircuits liet maken.
+- **STL's:** `case.stl` en `lily58plate.stl`. De blog noemt voor de plaat en behuizing ontwerpen van derden. De README in die map is vrijwel leeg. De maten van de STL's staan in [09-maten-uit-stl-en-gerber.md](09-maten-uit-stl-en-gerber.md).
 - **Firmware:** een kant-en-klare `.hex` (de bestandsnaam noemt `rev1`) en drie keymaps. De firmware-README bevat alleen twee links: https://kriscables.com/flash-controller-qmk/ en https://docs.qmk.fm/newbs_getting_started
 - **Eigen keymap (`vipul-sharma20/config.h`):** `TAPPING_TERM 100`, `QUICK_TAP_TERM 0`, RGB-lichteffecten aan met `RGBLIGHT_LED_COUNT 27` en `RGBLIGHT_LIMIT_VAL 120`. De onderlaag-LED-regel staat uitgecommentarieerd. Dit zijn persoonlijke voorkeuren, geen hardware-eisen.
 
 ## Niet gelezen
 
-`rules.mk` en `keymap.c` van de eigen keymap, de keymaps `default` en `lily58l`, de README's in `PCB` en `stls`, de inhoud van `gerber/`, de licentie van de repo.
+`rules.mk` en `keymap.c` van de eigen keymap, de keymaps `default` en `lily58l`, de licentie van de repo. De README in `PCB` bevat alleen de afbeelding `pcb.png`, de README in `stls` is vrijwel leeg. De Gerber-bestanden zijn gelezen voor toetsposities en printrand (zie 09), niet voor de rest.

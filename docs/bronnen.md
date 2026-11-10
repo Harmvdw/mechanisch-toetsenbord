@@ -13,7 +13,7 @@ Opgehaald op 10 november 2026. Bron 2 t/m 5 komen uit samenvattingen van de opge
 
 ## Wat er mist
 
-- Bron 1: README's in `lily58/PCB` en `lily58/stls`, `rules.mk` en `keymap.c`, inhoud van de STL- en Gerber-bestanden, licentie van de repo.
+- Bron 1: `rules.mk` en `keymap.c`, de andere keymaps, licentie van de repo. De STL- en Gerber-bestanden zijn wel gemeten (zie 09).
 - Bron 6: tabblad Files, opmerkingen, bedradingsvideo.
 - Bestanden in de submappen van bron 5 (`Pro/PCB`, `case`, `pcb`, `Pro_V2`, `Lite_Rev3`).
 - De QMK-bestanden naast de readme (`info.json`, `config.h`, `rules.mk`, keymaps).
