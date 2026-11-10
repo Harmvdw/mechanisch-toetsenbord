@@ -19,6 +19,8 @@ Deze repo bevat de verzamelde referentie-informatie. Het Fusion-ontwerp komt lat
 | [docs/08-printables-handwired-lily58.md](docs/08-printables-handwired-lily58.md) | Handbedraad Lily58 op Printables: onderdelen, matrix, pinnen, licentie |
 | [docs/09-maten-uit-stl-en-gerber.md](docs/09-maten-uit-stl-en-gerber.md) | Gemeten maten: toetsraster, stagger, PCB-rand, plaat en case |
 | [docs/10-fusion-opzet.md](docs/10-fusion-opzet.md) | Wat er in het Fusion-document staat: schetsen, parameters, koppelingen |
+| [docs/11-pcb-route-en-bestelling.md](docs/11-pcb-route-en-bestelling.md) | PCB-route, wat de Pro-print wel en niet heeft, plan voor de bestelling |
+| [data/lily58-pro-printrand.csv](data/lily58-pro-printrand.csv) | Printrand van de Pro-print (120 punten, mm, zelfde oorsprong als de toetsposities) |
 | [data/lily58-pro-switchposities.csv](data/lily58-pro-switchposities.csv) | 29 toetsposities per helft in mm, voor een Fusion-schets |
 | [tools/](tools) | Scripts waarmee de maten zijn gemeten (STL en drill-bestanden) |
 | [docs/bronnen.md](docs/bronnen.md) | Alle links, met per link wat is gelezen en wat niet |

@@ -19,6 +19,8 @@ Document: "Opzet 1-0-0", map Toetsenbord, project Admin Project. Eenheden: mm, p
 - Alle lijnen zijn volledig bepaald. De schets geeft 29 profielen van elk 196 mm² (gecontroleerd).
 - De schets bevat ook een geprojecteerde X-as als referentielijn. Die tekent een paarse lijn door de oorsprong en is geen onderdeel van de uitsparingen.
 
+**PCB omtrek (Lily58 Pro).** De printrand uit `Edge_Cuts` van de keebs-Gerbers, 120 rechte lijnstukken in één gesloten profiel van 13.077,2 mm². Zelfde oorsprong als de master-schets. Alle 29 toetsen liggen erbinnen; de kleinste afstand toetsmidden tot rand is 9,12 mm.
+
 ## Gecontroleerd
 
 - Alle 29 profielen: oppervlakte 196,0 mm², middelpunt op de masterpunten (afwijking 0,0 mm).
