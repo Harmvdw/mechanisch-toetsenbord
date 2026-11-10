@@ -17,7 +17,7 @@ Dit bestand koppelt de bronnen aan [eisen-en-wensen.md](eisen-en-wensen.md). All
 - Plaatuitsparing, tolerantie en plaatdikte: niet opgehaald. Eis E8 uit het project (14,0 × 14,0 mm) is de MX-standaard.
 - Toetspositie-coördinaten en schuine duimcluster-hoeken: niet opgehaald. Ze staan in de QMK-map (`info.json`) en in de PCB-bestanden van kata0510 (`Pro/PCB`).
 - Afmetingen van de PCB en gaatposities voor schroeven: niet opgehaald.
-- Pin-toewijzing en matrix: niet opgehaald.
+- Pin-toewijzing en matrix voor de Pro Micro (AVR): niet opgehaald. Voor een RP2040-variant staat de pin-toewijzing in [08-printables-handwired-lily58.md](08-printables-handwired-lily58.md).
 - Maten uit de 3D-ontwerpen die de blog noemt: niet opgehaald.
 
 ## 3. Eigen aandachtspunten (niet uit de bronnen)
@@ -31,4 +31,5 @@ Dit bestand koppelt de bronnen aan [eisen-en-wensen.md](eisen-en-wensen.md). All
 
 1. `keyboards/lily58/` uit QMK openen en `info.json` ophalen.
 2. De mappen `Pro/PCB`, `case` en `pcb` van kata0510 bekijken (Gerber- en maatinformatie).
-3. De keebs-repo van vipul-sharma20 en het Printables-model lezen (zie [bronnen.md](bronnen.md)).
+3. De STL's in `lily58/stls` (keebs) en de bestanden op de Printables-pagina openen om maten af te lezen (zie [07](07-keebs-vipul-repo.md) en [08](08-printables-handwired-lily58.md)).
+4. Licentie checken: het Printables-model is GPL v3 met naamsvermelding. De licentie van keebs en van de kata0510-bestanden is niet gelezen.

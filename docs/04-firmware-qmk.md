@@ -36,7 +36,8 @@ Zonder eigen keymap kan QMK Toolbox (GUI) ook. Voor een eigen keymap is een voll
 
 - De QMK-readme noemt geen bootloader en geen revisies.
 - De Pro-gids zegt niet welke firmware op welke helft hoort, alleen dat elke helft apart wordt geflasht.
-- De blog van vipul zegt dat firmware en keymaps in zijn repo staan onder `lily58/firmware`. Die repo is niet opgehaald (zie [bronnen.md](bronnen.md)). Concrete QMK-instellingen en keymap-details staan niet in de blogtekst.
+- De blog van vipul zegt dat firmware en keymaps in zijn repo staan onder `lily58/firmware`. Wat daar staat, staat in [07-keebs-vipul-repo.md](07-keebs-vipul-repo.md). Concrete QMK-instellingen staan niet in de blogtekst.
+- Voor een RP2040 Pro Micro: zie [08-printables-handwired-lily58.md](08-printables-handwired-lily58.md) (pinnen, processor en bootloader aanpassen, extra's uitzetten).
 - Windows kan het toetsenbord als JIS herkennen: dan komen bij "@" en "[" verkeerde tekens. Oplossing: in de OS-instellingen het toetsenbord op US zetten.
 
 ## Niet in de bronnen

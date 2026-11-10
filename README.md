@@ -15,10 +15,11 @@ Deze repo bevat de verzamelde referentie-informatie. Het Fusion-ontwerp komt lat
 | [docs/04-firmware-qmk.md](docs/04-firmware-qmk.md) | QMK-gegevens, make-commando's, flashen |
 | [docs/05-lessen-en-problemen.md](docs/05-lessen-en-problemen.md) | Fouten, oplossingen en tips uit de bronnen |
 | [docs/06-naar-metaal.md](docs/06-naar-metaal.md) | Wat uit de bronnen telt voor het metalen ontwerp, en wat nog ontbreekt |
-| [docs/bronnen.md](docs/bronnen.md) | Alle links, met per link of de inhoud is opgehaald |
+| [docs/07-keebs-vipul-repo.md](docs/07-keebs-vipul-repo.md) | Structuur en inhoud van de keebs-repo (PCB, STL's, firmware) |
+| [docs/08-printables-handwired-lily58.md](docs/08-printables-handwired-lily58.md) | Handbedraad Lily58 op Printables: onderdelen, matrix, pinnen, licentie |
+| [docs/bronnen.md](docs/bronnen.md) | Alle links, met per link wat is gelezen en wat niet |
 
 ## Status (10 november 2026)
 
-- Vier van de zes bronnen zijn verwerkt.
-- Niet opgehaald: de keebs-repo van vipul-sharma20 en het Printables-model "Handwired Lily58". Zie [docs/bronnen.md](docs/bronnen.md).
+- Alle zes bronnen zijn verwerkt. Bij twee ervan (keebs-repo en Printables) is niet alles gelezen. Zie [docs/bronnen.md](docs/bronnen.md).
 - De samenvattingen zijn gemaakt uit opgehaalde pagina's, niet uit de originele bestanden. Controleer maten en pin-toewijzingen altijd in de bron voordat je ze in Fusion gebruikt.
