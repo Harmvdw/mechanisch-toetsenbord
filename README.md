@@ -18,6 +18,7 @@ Deze repo bevat de verzamelde referentie-informatie. Het Fusion-ontwerp komt lat
 | [docs/07-keebs-vipul-repo.md](docs/07-keebs-vipul-repo.md) | Structuur en inhoud van de keebs-repo (PCB, STL's, firmware) |
 | [docs/08-printables-handwired-lily58.md](docs/08-printables-handwired-lily58.md) | Handbedraad Lily58 op Printables: onderdelen, matrix, pinnen, licentie |
 | [docs/09-maten-uit-stl-en-gerber.md](docs/09-maten-uit-stl-en-gerber.md) | Gemeten maten: toetsraster, stagger, PCB-rand, plaat en case |
+| [docs/10-fusion-opzet.md](docs/10-fusion-opzet.md) | Wat er in het Fusion-document staat: schetsen, parameters, koppelingen |
 | [data/lily58-pro-switchposities.csv](data/lily58-pro-switchposities.csv) | 29 toetsposities per helft in mm, voor een Fusion-schets |
 | [tools/](tools) | Scripts waarmee de maten zijn gemeten (STL en drill-bestanden) |
 | [docs/bronnen.md](docs/bronnen.md) | Alle links, met per link wat is gelezen en wat niet |

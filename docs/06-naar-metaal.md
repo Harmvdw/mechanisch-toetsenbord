@@ -15,7 +15,7 @@ Dit bestand koppelt de bronnen aan [eisen-en-wensen.md](eisen-en-wensen.md). All
 ## 2. Wat de bronnen niet geven
 
 - Plaatuitsparing, tolerantie en plaatdikte: niet opgehaald. Eis E8 uit het project (14,0 × 14,0 mm) is de MX-standaard.
-- Toetspositie-coördinaten: gemeten uit de Gerber-bestanden van keebs, zie [09-maten-uit-stl-en-gerber.md](09-maten-uit-stl-en-gerber.md) en `data/lily58-pro-switchposities.csv`. De hoeken van de duimtoetsen zijn niet bepaald. Ze staan ook in de QMK-map (`info.json`) en in de PCB-bestanden van kata0510 (`Pro/PCB`).
+- Toetspositie-coördinaten: gemeten uit de Gerber-bestanden van keebs, zie [09-maten-uit-stl-en-gerber.md](09-maten-uit-stl-en-gerber.md) en `data/lily58-pro-switchposities.csv`. Hoeken: één toets is 30° gedraaid, de rest staat recht (zie 09). Ze staan ook in de QMK-map (`info.json`) en in de PCB-bestanden van kata0510 (`Pro/PCB`).
 - Afmetingen van de PCB: gemeten (ca. 142,5 × 106,3 mm). Gaatposities voor schroeven: niet uitgezocht.
 - Pin-toewijzing en matrix voor de Pro Micro (AVR): niet opgehaald. Voor een RP2040-variant staat de pin-toewijzing in [08-printables-handwired-lily58.md](08-printables-handwired-lily58.md).
 - Maten uit de 3D-ontwerpen die de blog noemt: niet opgehaald.

@@ -25,7 +25,7 @@ Dit zijn gemeten waarden uit bestanden, niet uit een tekening met maatvoering. C
 
 De duimtoetsen zitten onder kolom 1 t/m 3 en steken links uit. Daaruit volgt dat kolom 1 de binnenste kolom is. Dat is een afleiding uit de geometrie, geen vermelding in de bestanden.
 
-De draaiing (hoek) van de duimtoetsen is niet bepaald. Daarvoor moet je de footprint-hoeken uit het PCB-ontwerp of de plaat-STL lezen.
+De draaiing is bepaald uit de posities van de 1,7 mm- en 1,9 mm-gaten rond elke toets (de pennen van de switch). Beide gatgroepen geven dezelfde hoek. 28 van de 29 toetsen staan recht (0°). Alleen de toets op (105,0; −127,0) is gedraaid: de pennen staan onder 120°, dus de vierkante uitsparing staat 30° tegen de klok in gedraaid (zie `tools/angles.py`).
 
 ### Boringen
 
@@ -62,6 +62,7 @@ De STL-bestanden zijn binair. Het formaat vermeldt geen eenheid. Ik ga uit van m
 
 ## 3. Wat dit betekent voor je eisen
 
+- E3 (duimcluster schuin geplaatst): in dit ontwerp is maar één van de 5 duimtoetsen gedraaid (30°). Of je dat zo wilt, of meer toetsen schuin, is een ontwerpkeuze.
 - E4 (19,05 mm toetsafstand) klopt met het raster van het Lily58 Pro-ontwerp.
 - E2 en E3 (6 kolommen × 4 rijen + 5 duimtoetsen): bevestigd, 24 + 5 per helft.
 - De stagger-waarden in de tabel kun je als startpunt gebruiken voor de master-schets (E18). Het totaal is dan 29 punten per helft, met de CSV als invoer.
@@ -69,7 +70,6 @@ De STL-bestanden zijn binair. Het formaat vermeldt geen eenheid. Ik ga uit van m
 
 ## 4. Nog niet gemeten
 
-- Hoek van de duimtoetsen en positie van het schuine duimcluster t.o.v. het raster.
 - Exacte positie van de schroefgaten (uit `NPTH`-gaten van 3,0 mm of uit de plaat).
 - Binnenmaten van de case: wanddikte, bodemdikte, bevestigingsdomen.
 - Afmetingen van de controller-uitsparing.
