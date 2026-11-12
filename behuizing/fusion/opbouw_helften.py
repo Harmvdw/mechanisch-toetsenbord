@@ -5,7 +5,7 @@ Uitgangspunt: het document bevat de schetsen 'Master toetsposities', 'Plaat uits
 wordt verwijderd en opnieuw opgebouwd.
 
 Gebruik: in Fusion via Hulpprogramma's > Scripts en add-ins, of in stappen via de Fusion-koppeling
-(stap0 t/m stap4). Maten in mm; de API rekent in cm, vandaar de /10.
+(stap0 t/m stap5). Maten in mm; de API rekent in cm, vandaar de /10.
 
 Assenstelsel: oorsprong = midden bovenste toets kolom 3, x naar de pinkkant, y omhoog,
 z = 0 is de onderkant van de bak.
@@ -414,9 +414,10 @@ def stap4():
     pl = root.constructionPlanes.add(pi); pl.name = 'Spiegelvlak helften'
     mi = root.features.mirrorFeatures.createInput(coll([body(root, n) for n in ('Bak', 'Plaat', 'Kap')]), pl)
     mf = root.features.mirrorFeatures.add(mi); mf.name = 'Linkerhelft (spiegeling)'
-    for b in list(mf.bodies):
-        v = b.volume * 1000
-        b.name = 'Bak links' if v > 50000 else ('Plaat links' if v > 10000 else 'Kap links')
+    for b in root.bRepBodies:                        # mf.bodies bevat ook de originelen
+        if b.name not in ('Bak', 'Plaat', 'Kap', 'Print'):
+            v = b.volume * 1000
+            b.name = 'Bak links' if v > 50000 else ('Plaat links' if v > 10000 else 'Kap links')
     tl.moveToEnd()
     alu = app.materialLibraries.itemByName('Fusion Material Library').materials.itemByName('Aluminum 6061')
     for b in list(root.bRepBodies):
@@ -427,5 +428,48 @@ def stap4():
     report(d, root)
 
 
+# ---------------------------------------------------------------- stap 5: verbeteringen v0.3
+def tl_index(d, test):
+    tl = d.timeline
+    return [i for i in range(tl.count) if test(tl.item(i).name)]
+
+def stap5():
+    """Ingevoegd op de juiste plek in de tijdlijn (dus voor de afrondingen en de spiegeling)."""
+    app, d, root = ctx()
+    sk = root.sketches
+    tl = d.timeline
+    po = sk.itemByName('Print onderdelen')
+    # 1. M2 in de kap: verzinking 90 graden (ø4,0) in plaats van een verzonken cilinderkop (ø4,4)
+    i = tl_index(d, lambda n: n == 'M2 verzonken kap')[0]
+    tl.item(i).entity.deleteMe()
+    tl.markerPosition = i
+    kap = body(root, 'Kap')
+    edges = [e for e in kap.edges if e.geometry.curveType == adsk.core.Curve3DTypes.Circle3DCurveType
+             and abs(e.geometry.radius * 10 - 1.2) < 1e-3 and abs(e.geometry.center.z * 10 - 24.1) < 1e-3]
+    ci = root.features.chamferFeatures.createInput2()
+    ci.chamferEdgeSets.addEqualDistanceChamferEdgeSet(coll(edges), VI('0.8 mm'), False)
+    root.features.chamferFeatures.add(ci).name = 'M2 verzinking kap'
+    tl.moveToEnd()
+    # 2. resetgat wordt een sleuf tot de bovenkant van de wand (de plaat sluit hem af)
+    i = tl_index(d, lambda n: n.startswith('Resetgat'))[-1]
+    tl.markerPosition = i + 1
+    bak = body(root, 'Bak')
+    s = sk.add(root.xYConstructionPlane); s.name = 'Resetsleuf'
+    rp = proj_pt(s, po, RESET)
+    a, b, c, e = rect(s, -90, -23.24, -74.6, -19.74)
+    odim(s, a, rp, '1.75 mm', -95, -22); odim(s, c, a, '3.5 mm', -98, -21); odim(s, b, rp, '1 mm', -72, -17)
+    s.sketchDimensions.addDistanceDimension(s.originPoint, e.startSketchPoint, HO.HorizontalDimensionOrientation, P(-80, -10))
+    extrude(root, s.profiles.item(0), FO.CutFeatureOperation, 'z_pcb_boven + 1.5 mm', 'z_wand - z_pcb_boven - 1.5 mm', 'Resetsleuf (uitsnede)', [bak])
+    tl.moveToEnd()
+    # 3. tussenwand USB-TRRS weg in bak en kap: een gezamenlijke opening
+    i = tl_index(d, lambda n: n == 'Uitsparing TRRS')[0]
+    tl.markerPosition = i + 1
+    ps = sk.itemByName('Plaat sleuf USB-TRRS')
+    extrude(root, ps.profiles.item(0), FO.CutFeatureOperation, 'z_pcb_boven + 0.5 mm', '11.5 mm', 'Tussenwand USB-TRRS weg', [body(root, 'Bak'), body(root, 'Kap')])
+    tl.moveToEnd()
+    for s2 in root.sketches: s2.isVisible = False
+    report(d, root)
+
+
 def run(_context: str):
-    stap0(); stap1(); stap2(); stap3(); stap4()
+    stap0(); stap1(); stap2(); stap3(); stap4(); stap5()

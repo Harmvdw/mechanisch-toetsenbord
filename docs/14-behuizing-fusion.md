@@ -1,10 +1,10 @@
-# Behuizing in Fusion — parametrisch (v0.2)
+# Behuizing in Fusion — parametrisch (v0.3)
 
 Status: 12 november 2026. De behuizing uit [13-behuizing.md](13-behuizing.md) staat nu parametrisch in het Fusion-document **"Opzet 1-0-0"** (map Toetsenbord): rechterhelft gemodelleerd, linkerhelft als spiegeling. Het numpad staat nog niet in Fusion.
 
-**Let op: het document is in Fusion gewijzigd maar nog niet opgeslagen.**
+Het document is opgeslagen in Fusion (12 nov, na v0.3).
 
-Opbouwscript: [`behuizing/fusion/opbouw_helften.py`](../behuizing/fusion/opbouw_helften.py). Het verwijdert alles na de schets "PCB omtrek" en bouwt de tijdlijn opnieuw op (stap 0 t/m 4).
+Opbouwscript: [`behuizing/fusion/opbouw_helften.py`](../behuizing/fusion/opbouw_helften.py). Het verwijdert alles na de schets "PCB omtrek" en bouwt de tijdlijn opnieuw op (stap 0 t/m 5).
 
 ![Beide helften](../behuizing/afbeeldingen/fusion_beide_helften.png)
 
@@ -12,12 +12,12 @@ Opbouwscript: [`behuizing/fusion/opbouw_helften.py`](../behuizing/fusion/opbouw_
 
 | Component | Massa (alu 6061) |
 |---|---|
-| Bak rechts / Bak links | 265,6 g |
+| Bak rechts / Bak links | 265,4 g |
 | Plaat rechts / Plaat links | 41,5 g |
-| Kap rechts / Kap links | 20,4 g |
+| Kap rechts / Kap links | 19,3 g |
 | Print rechts (referentie, 1,6 mm) | — |
 
-Per helft 327,5 g aluminium (CadQuery v0.1: 328 g). Tijdlijn: 54 stappen, alles gezond. Alle nieuwe schetsen zijn volledig bepaald.
+Per helft 326,2 g aluminium (CadQuery v0.1: 328 g). Tijdlijn: 57 stappen, alles gezond. Alle nieuwe schetsen zijn volledig bepaald.
 
 ## Gebruikersparameters
 
@@ -46,7 +46,7 @@ Afgeleid: `z_pcb_onder`, `z_pcb_boven`, `z_plaat_boven`, `z_wand`, `wand_pink` (
 3. **Bovenrand van de kap afgerond** (0,8 mm); dat lukte in CadQuery niet.
 4. Buitenhoeken: de offset maakt aan de twee scherpe printhoeken rechtsboven een verstek in plaats van een boog. De twee holle hoeken van de buitencontour zijn afgerond met `r_binnen`, de twee hoeken van het connectorvlak met `r_buiten`.
 
-## Controle
+## Controle (v0.2)
 
 - Volume per deel tegenover CadQuery v0.1: bak 98.371 / 98.356 mm³, plaat 15.361 / 15.359 mm³ (v0.1 zonder het losse stukje), kap 7.554 / 7.579 mm³ (verschil door de afronding).
 - Botsingscontrole bak, plaat, kap, print: 0 botsingen. Print ligt op de steunbussen; print tot plaat 3,5 mm.
@@ -54,16 +54,22 @@ Afgeleid: `z_pcb_onder`, `z_pcb_boven`, `z_plaat_boven`, `z_wand`, `wand_pink` (
 - `wand` 6 mm: alleen "Afronding bovenrand kap" faalt (de verzonken M3-kop van 6 mm past niet meer in de wand).
 - `conn_diepte` boven 10,06 mm: het connectorvlak valt dan buiten de buitencontour; dan moet `wand` omhoog.
 
-## Opgemerkt, niet aangepast
+## v0.3: drie punten opgelost (12 nov, keuze Harm)
 
-1. **Resetgat:** boven het gat (ø3,5 op z 10,6) blijft 0,25 mm materiaal tot de bovenkant van de wand. Voor frezen te dun; gat lager, kleiner of als sleuf tot de rand.
-2. **Wand tussen USB en TRRS:** in bak en kap blijft een pilaartje van 3,1 mm breed staan. Eén gezamenlijke uitsparing is eenvoudiger te frezen.
-3. **M2 in de kap:** de verzonken kop (ø4,4) zit 0,3 mm van de rand van de kap.
-4. De M3-posities zijn gekoppeld aan de hartlijn van de wand, maar de verdeling langs de wand is vast (uit `behuizing.py`).
+1. **Resetgat is een sleuf** van 3,5 mm breed, van het gat tot de bovenkant van de wand; de plaat sluit hem af. Het dunne randje van 0,25 mm is weg.
+2. **USB en TRRS: één opening** in bak en kap (23,1 mm breed); het pilaartje van 3,1 mm is weg. Onder de TRRS loopt de opening 1,5 mm dieper door, zoals eerst.
+3. **M2 in de kap: verzinking 90°** (ø4,0 aan het oppervlak, voor verzonken schroeven) in plaats van een verzonken cilinderkop ø4,4. Afstand tot de rand van de kap aan het oppervlak 0,5 mm, daaronder snel meer.
+
+Na de wijziging: tijdlijn gezond, bak 98.291 mm³, kap 7.142 mm³, plaat ongewijzigd.
+
+## Blijft staan
+
+- De M3-posities zijn gekoppeld aan de hartlijn van de wand, maar de verdeling langs de wand is vast (uit `behuizing.py`).
+- `wand` 6 mm: de verzonken M3-kop van 6 mm past dan niet meer in de wand van de kap.
 
 ## Nog te doen
 
-- Document opslaan in Fusion; STEP/STL exporteren naar `behuizing/export/`.
+- STEP/STL uit Fusion exporteren naar `behuizing/export/`.
 - Numpad in Fusion (bak en plaat).
 - Stuklijst met schroeven, afstandsbussen en voetjes (E19).
 - Na levering van de connector: `conn_diepte` aanpassen.
