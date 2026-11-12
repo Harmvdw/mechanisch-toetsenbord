@@ -2,13 +2,13 @@
 
 Doel: een split keyboard met aluminium behuizing en plaat, zelf ontworpen in Fusion 360 en zelf gefreesd. Inspiratiebron is de Lily58 (58 toetsen, kolom-stagger).
 
-Deze repo bevat de verzamelde referentie-informatie. Het Fusion-ontwerp komt later in deze repo.
+Deze repo bevat alle werk: referentie-informatie, de PCB-scripts, het behuizingsmodel en de documentatie. Alles wordt hier opgeslagen, zodat het vanaf elke computer bereikbaar is.
 
 ## Inhoud
 
 | Bestand | Wat staat erin |
 |---|---|
-| [docs/eisen-en-wensen.md](docs/eisen-en-wensen.md) | Eisen en wensen van dit project (versie 3) |
+| [docs/eisen-en-wensen.md](docs/eisen-en-wensen.md) | Eisen en wensen van dit project (versie 6) |
 | [docs/01-lily58-overzicht.md](docs/01-lily58-overzicht.md) | Layout, varianten, verschillen tussen bronnen |
 | [docs/02-onderdelenlijst.md](docs/02-onderdelenlijst.md) | Onderdelenlijsten uit de Lily58 Pro-gids en de blogbouw |
 | [docs/03-bouwstappen.md](docs/03-bouwstappen.md) | Bouwvolgorde Lily58 Pro, plus de bouwvolgorde van de blog |
@@ -20,12 +20,17 @@ Deze repo bevat de verzamelde referentie-informatie. Het Fusion-ontwerp komt lat
 | [docs/09-maten-uit-stl-en-gerber.md](docs/09-maten-uit-stl-en-gerber.md) | Gemeten maten: toetsraster, stagger, PCB-rand, plaat en case |
 | [docs/10-fusion-opzet.md](docs/10-fusion-opzet.md) | Wat er in het Fusion-document staat: schetsen, parameters, koppelingen |
 | [docs/11-pcb-route-en-bestelling.md](docs/11-pcb-route-en-bestelling.md) | PCB-route, wat de Pro-print wel en niet heeft, plan voor de bestelling |
+| [docs/12-numpad-en-pcb-route2.md](docs/12-numpad-en-pcb-route2.md) | Numpad (MCP23017, I2C), aangepaste Lily58-print, DRC en Gerbers |
+| [docs/13-behuizing.md](docs/13-behuizing.md) | Behuizing prototype v0.1: opbouw, maten, aannames |
+| [behuizing/](behuizing) | Parametrisch model (CadQuery), STEP/STL-exports, controle-afbeeldingen |
+| [pcb/scripts/](pcb/scripts) | Scripts die de numpad-print maken en de Lily58-print aanpassen en routeren |
 | [data/lily58-pro-printrand.csv](data/lily58-pro-printrand.csv) | Printrand van de Pro-print (120 punten, mm, zelfde oorsprong als de toetsposities) |
 | [data/lily58-pro-switchposities.csv](data/lily58-pro-switchposities.csv) | 29 toetsposities per helft in mm, voor een Fusion-schets |
 | [tools/](tools) | Scripts waarmee de maten zijn gemeten (STL en drill-bestanden) |
 | [docs/bronnen.md](docs/bronnen.md) | Alle links, met per link wat is gelezen en wat niet |
 
-## Status (10 november 2026)
+## Status (12 november 2026)
 
-- Alle zes bronnen zijn verwerkt. Bij twee ervan (keebs-repo en Printables) is niet alles gelezen. Zie [docs/bronnen.md](docs/bronnen.md).
-- De samenvattingen zijn gemaakt uit opgehaalde pagina's, niet uit de originele bestanden. Controleer maten en pin-toewijzingen altijd in de bron voordat je ze in Fusion gebruikt.
+- PCB's (Lily58 route 2 en numpad) gerouteerd, DRC schoon, Gerbers gemaakt. De KiCad-bestanden en Gerber-zips staan nog alleen op de werkcomputer en moeten naar `pcb/`.
+- Behuizing prototype v0.1 voor de rechterhelft en het numpad: zie [docs/13-behuizing.md](docs/13-behuizing.md). Klaar om te 3D-printen; daarna omzetten naar Fusion.
+- Connector (magnetisch) besteld/te bestellen; levering januari. Daarna `conn_diepte` opmeten.

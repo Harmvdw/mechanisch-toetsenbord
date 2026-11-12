@@ -1,14 +1,25 @@
 # Eisen en wensen – metalen split keyboard (inspiratie: Lily58)
 
-Status: versie 3 (10 nov 2026). E = eis, W = wens.
+Status: versie 6 (12 nov 2026). E = eis, W = wens. Uitwerking: numpad en print in [12-numpad-en-pcb-route2.md](12-numpad-en-pcb-route2.md), behuizing in [13-behuizing.md](13-behuizing.md).
 
 ## Besluiten
 - 58 toetsen (Lily58-layout), plus een los numpad in dezelfde stijl
-- Bedraad én draadloos (Bluetooth), dus ruimte voor accu en schakelaar
+- Numpad: 4 kolommen × 5 rijen = 20 toetsen, alles 1u, hotswap, 19,05 mm toetsafstand
+- Numpad heeft geen eigen controller. Het heeft een I2C I/O-expander (MCP23017) en wordt met 4 draden (VCC, GND, SDA, SCL) aan de OLED/I2C-bus van een helft gekoppeld; aan links én rechts aan te sluiten. Er is steeds één numpad tegelijk in gebruik.
+- Connector: magnetische pogo-connector 4P, 2,54 mm, haaks (AliExpress, "4P With Ear Curved"); contactvlak-helft op elke toetsenbordhelft, pennen-helft aan beide zijkanten van het numpad. Numpad dokt rechtstreeks tegen de zijkant, zonder kabel.
+- Firmware: QMK met custom matrix (bestaande voorbeelden: ergodone, ferris, macropod). Pinnen op de Pro Micro blijven ongewijzigd.
+- Geen RGB (niet bestukken); OLED blijft; TRRS tussen de helften blijft
+- Bedraad (QMK). Op de print komt een onbestukte batterij-aansluiting met schakelaar als optie voor later draadloos (nRF52840 + ZMK); draadloos is dus niet in deze versie
+- PCB-route 2 (eigen aanpassing van de Lily58 Pro): numpad-aansluiting J_NP, batterij-pads, via's vergroot; DRC op elk gewijzigd bestand vóór bestelling
+- Lily58-print aan de pinkkant 6 mm breder (ruimte voor J_NP); numpad-print 10 mm breder per zijkant
+- Logo's op de print: voorlopig ongewijzigd laten
+- Bestukken: kale printen bestellen, zelf solderen
+- Behuizing (12 nov): vlak (geen typhoek), OLED achter een venster in een gesloten kap, stevig (wand 7 mm, bodem 4 mm); eerst rechterhelft en numpad
 - Materiaal: aluminium (behuizing en plaat)
 - Productie: zelf frezen; eerst prototype 3D-printen
 - Gebruik: ontworpen voor thuis; reisbaar is een wens
 - Budget: €120, exclusief onderdelen die al aanwezig zijn
+- Alle werk staat in deze repo, zodat het vanaf elke computer bereikbaar is
 
 ## 1. Layout en ergonomie
 - E1 Gesplitst: twee losse helften
@@ -16,7 +27,7 @@ Status: versie 3 (10 nov 2026). E = eis, W = wens.
 - E3 Duimcluster met 5 toetsen per helft, schuin geplaatst
 - E4 Toetsafstand 19,05 mm (MX-standaard)
 - E5 Linker en rechter helft gespiegeld
-- E5b Los numpad: zelfde materiaal, uitstraling en bevestiging als de helften
+- E5b Los numpad (4 × 5, 1u): zelfde materiaal, uitstraling en bevestiging als de helften
 - W1 Aantal toetsen aanpasbaar (bijv. 5e rij met cijfers)
 - W2 Variabele polssteun (los onderdeel)
 - W3 Tenting-voetjes (instelbare hoek)
@@ -44,10 +55,12 @@ Status: versie 3 (10 nov 2026). E = eis, W = wens.
 - E14 USB-C naar de computer
 - E15 Verbinding tussen de helften (TRRS of USB-C-kabel)
 - E16 Eén PCB per helft, past in de behuizing
-- E16b Bluetooth naast bedraad: accu, laadcircuit en aan/uit-schakelaar passen in de behuizing
+- E16b Onbestukte batterij-aansluiting met schakelaar op de print, als optie voor later draadloos (niet bestukt in deze versie)
+- E16c Numpad-aansluiting J_NP (4 pads: VCC, GND, SDA, SCL) aan de buitenrand van de helft-print; numpad-print met 20 toetsen, diodes, MCP23017 en twee magnetische connectoren
+- E16d Numpad werkt aan beide helften en mag tijdens gebruik los- en vastgekoppeld worden (firmware detecteert dit)
 - W12 OLED-schermpje per helft (zoals Lily58)
 - W13 Draaiknop (rotary encoder)
-- W14 Per-toets RGB of onderverlichting
+- W14 (vervallen) RGB: niet gewenst
 - W16 Reset-knop bereikbaar zonder demontage
 
 ## 5. Ontwerp in Fusion
@@ -81,3 +94,8 @@ Status: versie 3 (10 nov 2026). E = eis, W = wens.
 
 ## Open punten
 1. Welke onderdelen heb je al? (switches, controllers, PCB's, accu's) Bepaalt of €120 past.
+2. Connector opmeten na levering (januari): parameter `conn_diepte` in de behuizing.
+3. Eén print voor beide helften of twee verschillende?
+4. ERC niet gedaan: het schema is KiCad 5-formaat (.sch) en nog niet omgezet.
+5. Hoogte Pro Micro en OLED opmeten bij het prototype (kaphoogte, USB-sleuf).
+6. KiCad-bestanden en Gerbers van de werkcomputer naar `pcb/` kopiëren.
