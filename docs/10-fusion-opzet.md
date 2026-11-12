@@ -19,15 +19,18 @@ Document: "Opzet 1-0-0", map Toetsenbord, project Admin Project. Eenheden: mm, p
 - Alle lijnen zijn volledig bepaald. De schets geeft 29 profielen van elk 196 mm² (gecontroleerd).
 - De schets bevat ook een geprojecteerde X-as als referentielijn. Die tekent een paarse lijn door de oorsprong en is geen onderdeel van de uitsparingen.
 
-**PCB omtrek (Lily58 Pro).** De printrand uit `Edge_Cuts` van de keebs-Gerbers, 120 rechte lijnstukken in één gesloten profiel van 13.077,2 mm². Zelfde oorsprong als de master-schets. Alle 29 toetsen liggen erbinnen; de kleinste afstand toetsmidden tot rand is 9,12 mm.
+**PCB omtrek (Lily58 Pro).** De printrand uit `Edge_Cuts` van de keebs-Gerbers. Sinds 12 november: 6 mm breder aan de pinkkant (route 2) en opgebouwd uit 24 lijnen en 5 bogen in plaats van 120 lijnstukjes; één gesloten profiel van 13.552,5 mm², alle krommen vastgezet. Zelfde oorsprong als de master-schets. Alle 29 toetsen liggen erbinnen; de kleinste afstand toetsmidden tot rand is 9,12 mm.
 
 ## Gecontroleerd
 
 - Alle 29 profielen: oppervlakte 196,0 mm², middelpunt op de masterpunten (afwijking 0,0 mm).
 - Gedraaide toets: vier lijnen op 30° (mod 90°), lengte 14,0 mm, tegen de klok in.
 
+## Vervolg
+
+Behuizing (bak, plaat, kap, beide helften) en alle extra parameters: zie [14-behuizing-fusion.md](14-behuizing-fusion.md).
+
 ## Nog niet gedaan
 
-- Tweede helft (spiegelen).
-- Plaat extruderen, behuizing, schroefgaten, controller- en USB-uitsparing.
-- Aluminium plaatdikte (W6: 1,2 of 1,5 mm).
+- Numpad in Fusion.
+- Keuze plaatdikte (W6: 1,2 of 1,5 mm; parameter `plaat_dikte`).

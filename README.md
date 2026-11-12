@@ -22,6 +22,7 @@ Deze repo bevat alle werk: referentie-informatie, de PCB-scripts, het behuizings
 | [docs/11-pcb-route-en-bestelling.md](docs/11-pcb-route-en-bestelling.md) | PCB-route, wat de Pro-print wel en niet heeft, plan voor de bestelling |
 | [docs/12-numpad-en-pcb-route2.md](docs/12-numpad-en-pcb-route2.md) | Numpad (MCP23017, I2C), aangepaste Lily58-print, DRC en Gerbers |
 | [docs/13-behuizing.md](docs/13-behuizing.md) | Behuizing prototype v0.1: opbouw, maten, aannames |
+| [docs/14-behuizing-fusion.md](docs/14-behuizing-fusion.md) | Behuizing parametrisch in Fusion (beide helften): parameters, controle, open punten |
 | [behuizing/](behuizing) | Parametrisch model (CadQuery), STEP/STL-exports, controle-afbeeldingen |
 | [pcb/scripts/](pcb/scripts) | Scripts die de numpad-print maken en de Lily58-print aanpassen en routeren |
 | [data/lily58-pro-printrand.csv](data/lily58-pro-printrand.csv) | Printrand van de Pro-print (120 punten, mm, zelfde oorsprong als de toetsposities) |
@@ -32,5 +33,6 @@ Deze repo bevat alle werk: referentie-informatie, de PCB-scripts, het behuizings
 ## Status (12 november 2026)
 
 - PCB's (Lily58 route 2 en numpad) gerouteerd, DRC schoon, Gerbers gemaakt. De KiCad-bestanden en Gerber-zips staan nog alleen op de werkcomputer en moeten naar `pcb/`.
-- Behuizing prototype v0.1 voor de rechterhelft en het numpad: zie [docs/13-behuizing.md](docs/13-behuizing.md). Klaar om te 3D-printen; daarna omzetten naar Fusion.
+- Behuizing prototype v0.1 voor de rechterhelft en het numpad: zie [docs/13-behuizing.md](docs/13-behuizing.md). Klaar om te 3D-printen.
+- Behuizing van beide helften staat parametrisch in Fusion: zie [docs/14-behuizing-fusion.md](docs/14-behuizing-fusion.md). Numpad in Fusion volgt.
 - Connector (magnetisch) besteld/te bestellen; levering januari. Daarna `conn_diepte` opmeten.

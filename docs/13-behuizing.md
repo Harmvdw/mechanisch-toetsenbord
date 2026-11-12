@@ -51,7 +51,8 @@ Het contactvlak van de magnetische connector moet gelijk liggen met de buitenwan
 3. De plaat ligt bovenop de wand; de naad is aan de zijkant zichtbaar. Alternatief later: plaat verzonken in een sponning.
 4. De bovenkant van de kap is niet afgerond (afronding mislukte in CadQuery); in Fusion afronden.
 5. Linkerhelft (spiegelen), klapvoetjes/tenting (W3), polssteun (W2) nog niet.
-6. Fusion: dit model omzetten naar het parametrische Fusion-document (E17/E18), gekoppeld aan de master-schets.
+6. Fusion: gedaan op 12 nov voor beide helften, zie [14-behuizing-fusion.md](14-behuizing-fusion.md). Numpad nog niet.
+7. Plaat: tussen de USB- en TRRS-uitsparing blijft in dit model een los stukje plaat staan (37 mm³). In Fusion opgelost met één sleuf; `behuizing.py` is niet aangepast.
 
 ## Controle uitgevoerd
 - Doorsneden op printhoogte en plaathoogte naast de printrand, componentposities (uit KiCad) en de footprint van Pro Micro en OLED gelegd: geen botsingen, kap valt 0,5 mm voor de keycap van kolom 1 en 1 mm voor de bovenste duimtoets.
