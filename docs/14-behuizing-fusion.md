@@ -1,10 +1,10 @@
-# Behuizing in Fusion — parametrisch (v0.3)
+# Behuizing in Fusion — parametrisch (v0.4)
 
 Status: 12 november 2026. De behuizing uit [13-behuizing.md](13-behuizing.md) staat nu parametrisch in het Fusion-document **"Opzet 1-0-0"** (map Toetsenbord): rechterhelft gemodelleerd, linkerhelft als spiegeling. Het numpad staat nog niet in Fusion.
 
-Het document is opgeslagen in Fusion (12 nov, na v0.3).
+Het document is opgeslagen in Fusion (12 nov, 22:20, na v0.4).
 
-Opbouwscript: [`behuizing/fusion/opbouw_helften.py`](../behuizing/fusion/opbouw_helften.py). Het verwijdert alles na de schets "PCB omtrek" en bouwt de tijdlijn opnieuw op (stap 0 t/m 5).
+Opbouwscript: [`behuizing/fusion/opbouw_helften.py`](../behuizing/fusion/opbouw_helften.py). Het verwijdert alles na de schets "PCB omtrek" en bouwt de tijdlijn opnieuw op (stap 0 t/m 6).
 
 ![Beide helften](../behuizing/afbeeldingen/fusion_beide_helften.png)
 
@@ -17,7 +17,7 @@ Opbouwscript: [`behuizing/fusion/opbouw_helften.py`](../behuizing/fusion/opbouw_
 | Kap rechts / Kap links | 19,3 g |
 | Print rechts (referentie, 1,6 mm) | — |
 
-Per helft 326,2 g aluminium (CadQuery v0.1: 328 g). Tijdlijn: 57 stappen, alles gezond. Alle nieuwe schetsen zijn volledig bepaald.
+Per helft 326,2 g aluminium (CadQuery v0.1: 328 g). Tijdlijn: 65 stappen, alles gezond. Alle nieuwe schetsen zijn volledig bepaald.
 
 ## Gebruikersparameters
 
@@ -62,12 +62,22 @@ Afgeleid: `z_pcb_onder`, `z_pcb_boven`, `z_plaat_boven`, `z_wand`, `wand_pink` (
 
 Na de wijziging: tijdlijn gezond, bak 98.291 mm³, kap 7.142 mm³, plaat ongewijzigd.
 
+## v0.4: draaiknop (12 nov, besluit Harm: op beide helften, indrukbaar)
+
+De knop komt op de plek van de binnenste toets, direct onder de Pro Micro (masterpunt −57,2; −51,29), zoals bij de Lily58L. Per helft 28 toetsen en één knop. In Fusion staat hij als referentie-onderdeel ("Draaiknop rechts/links (referentie)"): huis 12 × 12 × 6,5 mm, as ø6 tot 20 mm boven de print, knop ø15 × 13 mm, 2 mm boven de plaat. **Deze maten zijn aannames voor een EC11; aanpassen zodra het onderdeel gekozen is** (parameters `enc_*` en `knop_*`).
+
+Controle: 0 botsingen; knop tot kap 2,5 mm; huis tot plaatuitsparing 1,0 mm rondom; bovenkant knop 5 mm boven de kap. De plaat hoeft niet te veranderen (uitsparing 14 × 14 mm). Knop maximaal ø19 mm.
+
+**De print is hiervoor nog niet aangepast.** Nodig: EC11-footprint op die toetspositie, draaisignalen naar twee vrije pennen van de Pro Micro (F4 en F5 zijn vrij), drukfunctie op de matrixplek van die toets. Nog na te kijken in de KiCad-bestanden van de Lily58L: exacte footprint en pennen, en of de hotswap-voet op die plek kan blijven.
+
 ## Blijft staan
 
 - De M3-posities zijn gekoppeld aan de hartlijn van de wand, maar de verdeling langs de wand is vast (uit `behuizing.py`).
 - `wand` 6 mm: de verzonken M3-kop van 6 mm past dan niet meer in de wand van de kap.
 
 ## Nog te doen
+
+- **Print aanpassen voor de draaiknop** (vóór de bestelling): Lily58L-bestanden bekijken, footprint plaatsen, routeren, DRC, nieuwe Gerbers. De KiCad-map `Lily58-master` staat alleen op de computer thuis (DESKTOP-1VBEH2A) en nog niet in deze repo.
 
 - STEP/STL uit Fusion exporteren naar `behuizing/export/`.
 - Numpad in Fusion (bak en plaat).

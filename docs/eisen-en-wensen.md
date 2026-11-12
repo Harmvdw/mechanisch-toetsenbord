@@ -1,9 +1,10 @@
 # Eisen en wensen – metalen split keyboard (inspiratie: Lily58)
 
-Status: versie 6 (12 nov 2026). E = eis, W = wens. Uitwerking: numpad en print in [12-numpad-en-pcb-route2.md](12-numpad-en-pcb-route2.md), behuizing in [13-behuizing.md](13-behuizing.md).
+Status: versie 7 (12 nov 2026). E = eis, W = wens. Uitwerking: numpad en print in [12-numpad-en-pcb-route2.md](12-numpad-en-pcb-route2.md), behuizing in [13-behuizing.md](13-behuizing.md) en [14-behuizing-fusion.md](14-behuizing-fusion.md).
 
 ## Besluiten
-- 58 toetsen (Lily58-layout), plus een los numpad in dezelfde stijl
+- Lily58-layout, plus een los numpad in dezelfde stijl
+- Draaiknop met drukfunctie op beide helften (besluit 12 nov), op de plek van de binnenste toets onder de Pro Micro, zoals de Lily58L. Per helft dus 28 toetsen en één knop. Print moet hiervoor nog worden aangepast, vóór de bestelling.
 - Numpad: 4 kolommen × 5 rijen = 20 toetsen, alles 1u, hotswap, 19,05 mm toetsafstand
 - Numpad heeft geen eigen controller. Het heeft een I2C I/O-expander (MCP23017) en wordt met 4 draden (VCC, GND, SDA, SCL) aan de OLED/I2C-bus van een helft gekoppeld; aan links én rechts aan te sluiten. Er is steeds één numpad tegelijk in gebruik.
 - Connector: magnetische pogo-connector 4P, 2,54 mm, haaks (AliExpress, "4P With Ear Curved"); contactvlak-helft op elke toetsenbordhelft, pennen-helft aan beide zijkanten van het numpad. Numpad dokt rechtstreeks tegen de zijkant, zonder kabel.
@@ -59,7 +60,7 @@ Status: versie 6 (12 nov 2026). E = eis, W = wens. Uitwerking: numpad en print i
 - E16c Numpad-aansluiting J_NP (4 pads: VCC, GND, SDA, SCL) aan de buitenrand van de helft-print; numpad-print met 20 toetsen, diodes, MCP23017 en twee magnetische connectoren
 - E16d Numpad werkt aan beide helften en mag tijdens gebruik los- en vastgekoppeld worden (firmware detecteert dit)
 - W12 OLED-schermpje per helft (zoals Lily58)
-- W13 Draaiknop (rotary encoder)
+- W13 Draaiknop (rotary encoder): besloten, op beide helften, indrukbaar (zie Besluiten)
 - W14 (vervallen) RGB: niet gewenst
 - W16 Reset-knop bereikbaar zonder demontage
 

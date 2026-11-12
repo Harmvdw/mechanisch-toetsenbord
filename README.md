@@ -34,5 +34,5 @@ Deze repo bevat alle werk: referentie-informatie, de PCB-scripts, het behuizings
 
 - PCB's (Lily58 route 2 en numpad) gerouteerd, DRC schoon, Gerbers gemaakt. De KiCad-bestanden en Gerber-zips staan nog alleen op de werkcomputer en moeten naar `pcb/`.
 - Behuizing prototype v0.1 voor de rechterhelft en het numpad: zie [docs/13-behuizing.md](docs/13-behuizing.md). Klaar om te 3D-printen.
-- Behuizing van beide helften staat parametrisch in Fusion: zie [docs/14-behuizing-fusion.md](docs/14-behuizing-fusion.md). Numpad in Fusion volgt.
+- Behuizing van beide helften staat parametrisch in Fusion: zie [docs/14-behuizing-fusion.md](docs/14-behuizing-fusion.md). Numpad in Fusion volgt. Draaiknop op beide helften staat als referentie in het model; de print moet daarvoor nog worden aangepast.
 - Connector (magnetisch) besteld/te bestellen; levering januari. Daarna `conn_diepte` opmeten.

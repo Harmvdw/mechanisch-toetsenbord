@@ -5,7 +5,7 @@ Uitgangspunt: het document bevat de schetsen 'Master toetsposities', 'Plaat uits
 wordt verwijderd en opnieuw opgebouwd.
 
 Gebruik: in Fusion via Hulpprogramma's > Scripts en add-ins, of in stappen via de Fusion-koppeling
-(stap0 t/m stap5). Maten in mm; de API rekent in cm, vandaar de /10.
+(stap0 t/m stap6). Maten in mm; de API rekent in cm, vandaar de /10.
 
 Assenstelsel: oorsprong = midden bovenste toets kolom 3, x naar de pinkkant, y omhoog,
 z = 0 is de onderkant van de bak.
@@ -471,5 +471,47 @@ def stap5():
     report(d, root)
 
 
+# ---------------------------------------------------------------- stap 6: draaiknop als referentie (beide helften)
+ENC = [('enc_huis', '12 mm', 'Draaiknop EC11: zijde huis (aanname)'),
+       ('enc_huis_h', '6.5 mm', 'Draaiknop: hoogte huis boven de print (aanname)'),
+       ('enc_as_d', '6 mm', 'Draaiknop: diameter as'),
+       ('enc_as_h', '20 mm', 'Draaiknop: bovenkant as boven de print (aanname)'),
+       ('knop_d', '15 mm', 'Knop: diameter (max. 19 mm naast kap en keycaps)'),
+       ('knop_h', '13 mm', 'Knop: hoogte (aanname)'),
+       ('knop_vrij', '2 mm', 'Knop: onderkant boven de plaat')]
+
+def stap6():
+    """EC11 met knop op de plek van de binnenste toets (K_DUIM), zoals de Lily58L."""
+    app, d, root = ctx()
+    sk = root.sketches
+    up = d.userParameters
+    for n, e, c in ENC:
+        if up.itemByName(n) is None: up.add(n, VI(e), 'mm', c)
+    master = sk.itemByName('Master toetsposities')
+    x, y = K_DUIM
+    s = sk.add(root.xYConstructionPlane); s.name = 'Draaiknop huis'
+    kp = proj_pt(s, master, K_DUIM)
+    a, b, c, e = rect(s, x - 6, y - 6, x + 6, y + 6)
+    odim(s, e, kp, 'enc_huis / 2', x - 10, y); odim(s, b, e, 'enc_huis', x, y + 10); odim(s, a, kp, 'enc_huis / 2', x, y - 10); odim(s, c, a, 'enc_huis', x + 10, y)
+    knop = extrude(root, s.profiles.item(0), FO.NewBodyFeatureOperation, 'z_pcb_boven', 'enc_huis_h', 'Draaiknop huis (referentie)').bodies.item(0); knop.name = 'Draaiknop'
+    s = sk.add(root.xYConstructionPlane); s.name = 'Draaiknop as en knop'
+    kp = proj_pt(s, master, K_DUIM)
+    c1 = s.sketchCurves.sketchCircles.addByCenterRadius(kp, 0.3); c2 = s.sketchCurves.sketchCircles.addByCenterRadius(kp, 0.75)
+    s.sketchDimensions.addDiameterDimension(c1, P(x + 4, y + 4)).parameter.expression = 'enc_as_d'
+    s.sketchDimensions.addDiameterDimension(c2, P(x + 9, y + 9)).parameter.expression = 'knop_d'
+    profs = [s.profiles.item(i) for i in range(s.profiles.count)]
+    extrude(root, coll([p for p in profs if p.profileLoops.count == 1]), FO.JoinFeatureOperation, 'z_pcb_boven', 'enc_as_h', 'Draaiknop as (referentie)', [knop])
+    extrude(root, coll(profs), FO.JoinFeatureOperation, 'z_plaat_boven + knop_vrij', 'knop_h', 'Knop (referentie)', [knop])
+    pl = [p for p in root.constructionPlanes if p.name == 'Spiegelvlak helften'][0]
+    mf = root.features.mirrorFeatures.add(root.features.mirrorFeatures.createInput(coll([knop]), pl)); mf.name = 'Draaiknop links (spiegeling)'
+    for b in root.bRepBodies:
+        if b.name != 'Draaiknop': b.name = 'Draaiknop links'
+    for b in list(root.bRepBodies):
+        nm = b.name
+        b.createComponent().parentComponent.name = (nm + ' rechts (referentie)') if nm == 'Draaiknop' else (nm + ' (referentie)')
+    for s2 in root.sketches: s2.isVisible = False
+    report(d, root)
+
+
 def run(_context: str):
-    stap0(); stap1(); stap2(); stap3(); stap4(); stap5()
+    stap0(); stap1(); stap2(); stap3(); stap4(); stap5(); stap6()
