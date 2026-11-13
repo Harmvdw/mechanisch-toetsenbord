@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Genereert numpad/numpad.kicad_pcb (KiCad 10) op basis van footprints uit Lily58_Pro.kicad_pcb.
+v0.4 (13 nov 2026): draaiknop EC11 met drukknop in een verlengde bovenstrook (ENC mm), aangesloten op
+vrije pennen van de MCP23017: A -> GPA4 (pen 25), B -> GPA5 (pen 26), drukknop -> GPA7 (pen 28), C en S2 -> GND.
 Gebruik: python3 gen_numpad.py <pad naar Lily58_Pro.kicad_pcb> <uitvoerbestand>
 """
 import re, sys, uuid
@@ -148,10 +150,12 @@ X0, Y0 = 60.0, 60.0            # hart toets kolom 0, rij 0
 NC, NR = 4, 5
 SIDE = 10.0                    # extra zijrand voor connector, feeders en gaten
 STRIP = 14.0                   # strook boven rij 0 voor MCP23017
+ENC = 19.0                     # extra strook daarboven voor de draaiknop (0 = zonder draaiknop)
 BOT = 4.5                      # extra onderrand voor de I2C/VCC-lus
 L = X0 - P / 2 - SIDE
 R = X0 + (NC - 1) * P + P / 2 + SIDE
-T = Y0 - P / 2 - STRIP
+T = Y0 - P / 2 - STRIP         # bovenkant van de MCP23017-strook (referentie voor alle bestaande onderdelen)
+TE = T - ENC                   # bovenrand van de print
 B = Y0 + (NR - 1) * P + P / 2 + BOT
 TW = 0.25                      # spoorbreedte
 
@@ -188,6 +192,8 @@ u1 = {'5': 'np_row0', '4': 'np_row1', '3': 'np_row2', '2': 'np_row3', '1': 'np_r
       '21': 'np_col0', '22': 'np_col1', '23': 'np_col2', '24': 'np_col3',
       '9': 'VCC', '10': 'GND', '15': 'GND', '16': 'GND', '17': 'GND',
       '12': 'SCL', '13': 'SDA', '18': 'nRESET'}
+if ENC > 0:   # draaiknop: GPA4 = A, GPA5 = B, GPA7 = drukknop (GPA6 blijft vrij)
+    u1.update({'25': 'np_encA', '26': 'np_encB', '28': 'np_encS'})
 UX, UY = X0 + 1.5 * P, T + STRIP / 2 - 0.5
 out.append(soic28w('U1', UX, UY, u1))
 CX, CY = UX + 13.5, UY + 3.0           # C1: pad1 VCC (links), pad2 GND
@@ -203,10 +209,27 @@ out.append(conn4('J1', JX1, JY, jn))
 out.append(conn4('J2', JX2, JY, jn))
 
 # montagegaten M3
-holes = [(JX1, T + 5.5), (JX2, T + 5.5), (JX1, B - 6.0), (JX2, B - 6.0),
+holes = [(JX1, TE + 5.5), (JX2, TE + 5.5), (JX1, B - 6.0), (JX2, B - 6.0),
          (X0 + 0.2625 * P, T + 10.425), (X0 + 2.78 * P, T + 10.425)]
 for i, (hx, hy) in enumerate(holes, 1):
     out.append(hole_m3('H%d' % i, hx, hy))
+
+# draaiknop EC11 (Alps EC11E-maten, zelfde als ENC1 op de Lily58), 90 graden gedraaid: A-C-B naar U1 toe
+EX, EY = UX, T - 9.0                    # midden draaiknop (88.575; 27.475): A-C-B 2 mm boven de pennen van U1
+def ec11(ref, x, y, nets):
+    s = fp_header('Numpad:RotaryEncoder_EC11E_Switch', ref, 'EC11 met drukknop', x, y, 'through_hole', ref_dy=-9.5)
+    s += fp_rect(-6, -6, 6, 6, 'F.SilkS', 0.15)
+    s += fp_rect(-7.0, -9.0, 7.0, 8.5, 'F.CrtYd', 0.05)
+    s += ('\t\t(fp_circle\n\t\t\t(center 0 0)\n\t\t\t(end 3 0)\n\t\t\t(stroke\n\t\t\t\t(width 0.1)\n\t\t\t\t(type solid)\n\t\t\t)\n\t\t\t(fill no)\n'
+          '\t\t\t(layer "F.Fab")\n\t\t\t(uuid "%s")\n\t\t)\n' % new_uuid())
+    for num, px, py in (('A', -2.5, 7), ('C', 0, 7), ('B', 2.5, 7), ('S1', -2.5, -7.5), ('S2', 2.5, -7.5)):
+        s += pad_tht(num, px, py, 2.0, 1.0, nets.get(num), 'rect' if num == 'A' else 'circle')
+    for px in (-5.6, 5.6):     # bevestigingslipjes: sleuf zonder koper
+        s += ('\t\t(pad "" np_thru_hole oval\n\t\t\t(at %g 0)\n\t\t\t(size 1.5 2.6)\n\t\t\t(drill oval 1.5 2.6)\n'
+              '\t\t\t(layers "*.Cu" "*.Mask")\n\t\t\t(uuid "%s")\n\t\t)\n' % (px, new_uuid()))
+    return s + '\t)\n'
+if ENC > 0:
+    out.append(ec11('ENC1', EX, EY, {'A': 'np_encA', 'B': 'np_encB', 'C': 'GND', 'S1': 'np_encS', 'S2': 'GND'}))
 
 # ---------- routering ----------
 def ux(pin):  # x van U1-pen
@@ -272,20 +295,32 @@ rt.append(path([(RX + 0.95, RY), (RX + 0.95, Y_VCC_T)], 'F.Cu', 'VCC'))         
 rt.append(path([(CX - 0.95, CY), (CX - 0.95, Y_VCC_T)], 'F.Cu', 'VCC'))          # C1.1 -> VCC-lijn
 rt.append(path([(ux(18), UYT_PAD), (ux(18), RY - 0.9), (RX - 0.95, RY - 0.9), (RX - 0.95, RY)], 'F.Cu', 'nRESET'))
 rt.append(path([(ux(15), UYT_PAD), (ux(17), UYT_PAD)], 'F.Cu', 'GND'))   # A0-A2 aan elkaar
+if ENC > 0:
+    # A -> pen 25 (GPA4): F.Cu recht omhoog en naar de pad
+    rt.append(path([(ux(25), UYT_PAD), (ux(25), EY + 7), (EX - 2.5, EY + 7)], 'F.Cu', 'np_encA'))
+    # B -> pen 26 (GPA5): F.Cu-stompje naar via, B.Cu onder de pennenrij door naar B
+    YV = UYT_PAD - 1.675                                     # via 0,375 mm boven de pads
+    rt.append(path([(ux(26), UYT_PAD), (ux(26), YV)], 'F.Cu', 'np_encB'))
+    rt.append(via(ux(26), YV, 'np_encB'))
+    rt.append(path([(ux(26), YV), (EX + 2.5, YV), (EX + 2.5, EY + 7)], 'B.Cu', 'np_encB'))
+    # drukknop S1 -> pen 28 (GPA7): F.Cu-stompje naar via, B.Cu links langs de draaiknop omhoog
+    rt.append(path([(ux(28), UYT_PAD), (ux(28), YV)], 'F.Cu', 'np_encS'))
+    rt.append(via(ux(28), YV, 'np_encS'))
+    rt.append(path([(ux(28), YV), (ux(28), EY - 7.5), (EX - 2.5, EY - 7.5)], 'B.Cu', 'np_encS'))
 out.extend(rt)
 
 # omtrek
-out.append(gr_line(L, T, R, T) + gr_line(R, T, R, B) + gr_line(R, B, L, B) + gr_line(L, B, L, T))
-out.append(gr_text('NUMPAD v0.3', X0 + 3.2 * P, T + 3.0, 'F.SilkS', 1.2))
+out.append(gr_line(L, TE, R, TE) + gr_line(R, TE, R, B) + gr_line(R, B, L, B) + gr_line(L, B, L, TE))
+out.append(gr_text('NUMPAD v0.4', X0 + 3.2 * P, T + 3.0, 'F.SilkS', 1.2))
 out.append(gr_text('J1 boven / J2 onder', X0 + 3.2 * P, T + 5.0, 'F.Fab', 1.0))
 
 # GND-vlakken
-pts = [(L, T), (R, T), (R, B), (L, B)]
+pts = [(L, TE), (R, TE), (R, B), (L, B)]
 out.append(zone('GND', 'F.Cu', pts))
 out.append(zone('GND', 'B.Cu', pts))
 out.append(')\n')
 
 text = ''.join(out)
 open(OUT, 'wb').write(text.replace('\n', '\r\n').encode('utf-8'))
-print('geschreven:', OUT, 'omtrek %.2f x %.2f mm (L=%g T=%g R=%g B=%g)' % (R - L, B - T, L, T, R, B))
+print('geschreven:', OUT, 'omtrek %.2f x %.2f mm (L=%g T=%g R=%g B=%g)' % (R - L, B - TE, L, TE, R, B))
 print('footprints:', len(re.findall(r'\n\t\(footprint ', text)), ' pads met net:', len(re.findall(r'\(net "', text)))

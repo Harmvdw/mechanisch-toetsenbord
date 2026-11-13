@@ -28,7 +28,7 @@ Hoogtes (z = 0 onderkant bak): bodem 0–4, print 7,5–9,1 (3,5 mm vrij eronder
 | | Buitenmaat | Gewicht |
 |---|---|---|
 | Helft rechts (bak + plaat + kap) | 163,5 × 122,3 × 14,1 mm (kap tot 24,1) | 328 g |
-| Numpad (bak + plaat) | 104,7 × 129,8 × 14,1 mm | 235 g |
+| Numpad (bak + plaat), v0.4 met draaiknop | 104,7 × 148,8 × 14,1 mm | 266 g |
 
 Beide onder de 600 g van W11. Schroeven, switches en print niet meegerekend.
 

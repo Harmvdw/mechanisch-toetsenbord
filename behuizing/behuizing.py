@@ -211,11 +211,13 @@ def helft():
 def numpad():
     S = 19.05
     def kc(xk, yk): return xk - 60.0, 60.0 - yk
-    L, T, R, B = 40.475, 36.475, 136.675, 150.225
+    L, T, R, B = 40.475, 17.475, 136.675, 150.225      # v0.4: bovenstrook 19 mm langer voor de draaiknop
     pcb = [kc(L, T), kc(R, T), kc(R, B), kc(L, B)]
     keys = [(c * S, -r * S, 0.0) for r in range(5) for c in range(4)]
+    enc = kc(88.575, 27.475)                         # draaiknop EC11 (ENC1); plaatuitsparing 14 x 14 zoals een toets
+    keys.append((enc[0], enc[1], 0.0))
     j1 = kc(45.2, 98.1); j2 = kc(131.95, 98.1)
-    h = [kc(*p) for p in [(45.2, 41.975), (131.95, 41.975), (45.2, 144.225), (131.95, 144.225), (65.0, 46.9), (112.96, 46.9)]]
+    h = [kc(*p) for p in [(45.2, 22.975), (131.95, 22.975), (45.2, 144.225), (131.95, 144.225), (65.0, 46.9), (112.96, 46.9)]]
     xl, xr = j1[0] - P['conn_diepte'], j2[0] + P['conn_diepte']
     pymax, pymin = kc(0, T)[1], kc(0, B)[1]
     yb, yo = pymax + P['spleet'] + P['wand'], pymin - P['spleet'] - P['wand']
@@ -240,7 +242,7 @@ def numpad():
     plaat = cutouts(plaat, keys, Z_WAND)
     for x, y in m3:
         plaat = plaat.cut(cyl(x, y, P['m3_vrij'], Z_WAND - 1, Z_WAND + 5))
-    info = dict(m3=m3, wand_zij=kc(L, 0)[0] - P['spleet'] - xl, maat=(xr - xl, yb - yo))
+    info = dict(m3=m3, wand_zij=kc(L, 0)[0] - P['spleet'] - xl, maat=(xr - xl, yb - yo), enc=enc)
     return bak, plaat, keys, info
 
 if __name__ == '__main__':

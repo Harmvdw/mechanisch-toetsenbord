@@ -1,6 +1,6 @@
 # Numpad en aangepaste Lily58-print (route 2)
 
-Status: 13 november 2026 (draaiknop toegevoegd, §4b). Beide printen zijn gerouteerd, door de DRC en als Gerbers geëxporteerd (op de werkcomputer, zie onderaan). Dit document is de repo-versie van het projectdocument `numpad-ontwerp.md` (versie 5).
+Status: 13 november 2026 (draaiknop op de helften §4b, draaiknop op het numpad §4c). Beide printen zijn gerouteerd, door de DRC en als Gerbers geëxporteerd (op de werkcomputer, zie onderaan). Dit document is de repo-versie van het projectdocument `numpad-ontwerp.md` (versie 5).
 
 ## 1. Principe
 - Het numpad heeft 20 toetsen (4 × 5, alles 1u, 19,05 mm, MX-hotswap) en een I/O-expander **MCP23017** op de print. Het heeft geen eigen controller.
@@ -45,28 +45,45 @@ Besluit Harm: draaiknop op beide helften, **combinatie** met een toets (die plek
 - Gemaakt met `pcb/scripts/encoder_lily58.py` (bouwt SW25 om, plaatst ENC1, ruimt oude sporen en via's op, routeert col5, D25-net, F4 en F5 opnieuw en controleert dat elk net één geheel is).
 - **Solderen:** op elke helft óf een MX-switch óf een encoder in SW25, nooit beide.
 
+## 4c. Draaiknop (EC11) op het numpad — 13 nov 2026, numpad v0.4
+Besluit Harm: draaiknop in de bovenstrook; alle 20 toetsen blijven.
+- **Bovenstrook 19 mm langer.** Print nu 96,2 × 132,75 mm (was 113,75). Toetsen, diodes, MCP23017, R1, C1, J1/J2, H3–H6 en alle bestaande sporen liggen op exact dezelfde plek; alleen de bovenrand, het GND-vlak en H1/H2 (nu op y = 22,975) zijn mee omhoog gegaan.
+- **ENC1** (EC11 met drukknop, maten Alps EC11E, dezelfde pads als ENC1 op de Lily58) midden boven de MCP23017 op (88,575; 27,475), 90° gedraaid: A-C-B aan de onderkant, drukknop-pennen aan de bovenkant.
+- **Aansluiting op vrije pennen van de MCP23017:**
+  - A → GPA4 (pen 25), B → GPA5 (pen 26), drukknop S1 → GPA7 (pen 28); C en S2 → GND. GPA6 blijft vrij.
+  - De drukknop zit **niet** in de matrix: een eigen ingang met interne pull-up (GPPU) in de MCP23017.
+  - Sporen: A op F.Cu recht omhoog; B en de drukknop via een via 0,375 mm boven de pennenrij en dan op B.Cu.
+- **Firmware:** QMK leest de draaiknop niet zelf uit via de expander. Nodig: eigen code die bij elke matrixscan GPIOA leest (zit al in dezelfde I2C-leesactie als de kolommen) en de stand van A/B omzet in stappen. Bij heel snel draaien kunnen stappen wegvallen; dat hangt af van de scansnelheid.
+- **Controle zonder KiCad** (`pcb/scripts/afstand_controle.py`, eigen script): kleinste afstand nieuw koper tot ander koper 0,5 mm (de steek van de EC11-pennen zelf); tot de pennen van de MCP23017 0,62 mm (de steek van het IC); tot de rand > 1,4 mm. Alle drie netten zijn één geheel, zonder losse uiteinden.
+- **Nog te doen in KiCad:** bord openen, vlakken opnieuw vullen (B), DRC, Gerbers exporteren. De oude Gerbers heten nu `numpad_gerbers_v0.3_ZONDER_draaiknop.zip`; die niet bestellen.
+- Behuizing (CadQuery, `behuizing.py`): mee verlengd, met een plaatuitsparing 14 × 14 voor de knop; buitenmaat 104,7 × 148,8 mm, 266 g aluminium.
+
+![Bovenstrook numpad v0.4](../pcb/numpad/numpad_v04_bovenstrook.png)
+
 ## 5. DRC (KiCad 10, 12 nov 2026)
 - **Lily58:** 0 niet-verbonden pads, 0 kortsluitingen, 0 kruisende sporen; geen nieuwe meldingen t.o.v. het originele ontwerp. De 17 afstandsmeldingen komen uit het origineel (13× 0,15–0,16 mm rond de Pro Micro, maakbaar bij PCBWay ≥ 0,127 mm).
 - **Lily58 met encoder (13 nov):** 0 niet-verbonden pads, geen nieuwe koper-, gat- of afstandsfouten. Twee nieuwe meldingen "starved thermal": de GND-pen C van de encoder en GND van J_BAT sluiten op de bovenlaag met één spaak op het GND-vlak aan in plaats van twee (elektrisch in orde).
-- **Numpad:** 0 niet-verbonden pads, 0 fouten in koper, gaten of afstanden. Alleen cosmetische meldingen.
+- **Numpad v0.3 (zonder draaiknop):** 0 niet-verbonden pads, 0 fouten in koper, gaten of afstanden. Alleen cosmetische meldingen. **v0.4 (met draaiknop): DRC nog niet gedraaid.**
 
 ## 6. Gerbers
 Per zip: F_Cu, B_Cu, F/B_Mask, F/B_Silkscreen, Edge_Cuts, PTH.drl, NPTH.drl (Protel-extensies, mm).
 - Lily58: omtrek tot x = 231,46 mm. **Versie met encoder: 13 nov** (`pcb/lily58-pro/Lily58_Pro_gerbers.zip`). Gecontroleerd: 2 sleuven 2,6 × 1,5 (lipjes), 4 × ø1,5 (switch), 14 × ø1,0 (o.a. 5 encoderpennen); 2 pootjesgaten en 8 hotswap-gaten minder dan de versie van 12 nov.
-- Numpad: 96,2 × 113,75 mm, 6 × M3.
+- Numpad v0.3: 96,2 × 113,75 mm, 6 × M3 (`numpad_gerbers_v0.3_ZONDER_draaiknop.zip`, niet meer bestellen). **v0.4 (96,2 × 132,75 mm): Gerbers nog te maken.**
 
 ## 7. Scripts in deze repo (`pcb/scripts/`)
 | Script | Doet |
 |---|---|
-| `gen_numpad.py` | Maakt `numpad.kicad_pcb` compleet (footprints, sporen, GND-vlakken). Gebruik: `python3 gen_numpad.py <Lily58_Pro.kicad_pcb> <uitvoer>` (de Lily58-print levert de switch- en diode-footprints). |
+| `gen_numpad.py` | Maakt `numpad.kicad_pcb` compleet (footprints, sporen, GND-vlakken); sinds v0.4 met draaiknop (parameter `ENC`, 0 = zonder). Gebruik: `python3 gen_numpad.py <Lily58_Pro.kicad_pcb> <uitvoer>` (de Lily58-print levert de switch- en diode-footprints). |
 | `mod_lily58.py` | Plaatst J_NP, J_BAT, SW_BAT; verwijdert 0,1 mm-gaatjes en stompjes. |
 | `route_lily58.py` | Verbreedt de rand, zoekt een plek voor J_NP en routeert VCC/SDA/SCL/BAT+/RAW. |
+| `afstand_controle.py` | Snelle afstandscontrole van gekozen netten zonder KiCad (geen vervanging van de DRC). |
 | `encoder_lily58.py` | Draaiknop: SW25 als gesoldeerde MX-plek, ENC1 erbij, opnieuw routeren (gebruikt de router uit `route_lily58.py`). |
 
 ## 8. Bestanden
 KiCad-bestanden, DRC-rapporten en Gerber-zips staan sinds 13 nov in [`pcb/`](../pcb) (zie `pcb/README.md`).
 
 ## Volgende stappen
+0. Numpad v0.4 in KiCad: vlakken vullen, DRC, Gerbers.
 1. Bestellen bij PCBWay: beide zips; 2 lagen, 1,6 mm, HASL loodvrij; 5 stuks per print.
-2. EC11-encoders bestellen (2 stuks, met drukknop, as 20 mm) en knoppen ø ≤ 19 mm.
+2. EC11-encoders bestellen (3 stuks: 2 helften + numpad; met drukknop, as 20 mm) en knoppen ø ≤ 19 mm.
 2. Firmware: QMK-keyboard met custom matrix voor de MCP23017.

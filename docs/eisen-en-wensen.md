@@ -1,11 +1,12 @@
 # Eisen en wensen – metalen split keyboard (inspiratie: Lily58)
 
-Status: versie 8 (13 nov 2026). E = eis, W = wens. Uitwerking: numpad en print in [12-numpad-en-pcb-route2.md](12-numpad-en-pcb-route2.md), behuizing in [13-behuizing.md](13-behuizing.md) en [14-behuizing-fusion.md](14-behuizing-fusion.md).
+Status: versie 9 (13 nov 2026). E = eis, W = wens. Uitwerking: numpad en print in [12-numpad-en-pcb-route2.md](12-numpad-en-pcb-route2.md), behuizing in [13-behuizing.md](13-behuizing.md) en [14-behuizing-fusion.md](14-behuizing-fusion.md).
 
 ## Besluiten
 - Lily58-layout, plus een los numpad in dezelfde stijl
 - Draaiknop met drukfunctie op beide helften (besluit 12 nov), op de plek van de binnenste toets onder de Pro Micro, zoals de Lily58L. Per helft dus 28 toetsen en één knop. Combinatie: op die plek óf een gesoldeerde MX-switch óf de encoder (hotswap past daar niet samen met de encoder). Print aangepast op 13 nov.
 - Numpad: 4 kolommen × 5 rijen = 20 toetsen, alles 1u, hotswap, 19,05 mm toetsafstand
+- Numpad heeft ook een draaiknop met drukfunctie (besluit 13 nov), in een 19 mm langere bovenstrook; alle 20 toetsen blijven. Op vrije pennen van de MCP23017; drukknop los van de matrix.
 - Numpad heeft geen eigen controller. Het heeft een I2C I/O-expander (MCP23017) en wordt met 4 draden (VCC, GND, SDA, SCL) aan de OLED/I2C-bus van een helft gekoppeld; aan links én rechts aan te sluiten. Er is steeds één numpad tegelijk in gebruik.
 - Connector: magnetische pogo-connector 4P, 2,54 mm, haaks (AliExpress, "4P With Ear Curved"); contactvlak-helft op elke toetsenbordhelft, pennen-helft aan beide zijkanten van het numpad. Numpad dokt rechtstreeks tegen de zijkant, zonder kabel.
 - Firmware: QMK met custom matrix (bestaande voorbeelden: ergodone, ferris, macropod). Pinnen op de Pro Micro blijven ongewijzigd.
