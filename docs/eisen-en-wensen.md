@@ -1,6 +1,6 @@
 # Eisen en wensen – metalen split keyboard (inspiratie: Lily58)
 
-Status: versie 7 (12 nov 2026). E = eis, W = wens. Uitwerking: numpad en print in [12-numpad-en-pcb-route2.md](12-numpad-en-pcb-route2.md), behuizing in [13-behuizing.md](13-behuizing.md) en [14-behuizing-fusion.md](14-behuizing-fusion.md).
+Status: versie 8 (13 nov 2026). E = eis, W = wens. Uitwerking: numpad en print in [12-numpad-en-pcb-route2.md](12-numpad-en-pcb-route2.md), behuizing in [13-behuizing.md](13-behuizing.md) en [14-behuizing-fusion.md](14-behuizing-fusion.md).
 
 ## Besluiten
 - Lily58-layout, plus een los numpad in dezelfde stijl
@@ -36,7 +36,7 @@ Status: versie 7 (12 nov 2026). E = eis, W = wens. Uitwerking: numpad en print i
 
 ## 2. Mechanica en schakelaars
 - E6 Cherry MX-compatibele switches
-- E7 Hotswap, zodat switches te wisselen zijn zonder solderen
+- E7 Hotswap, zodat switches te wisselen zijn zonder solderen (uitzondering: de toets/encoderplek SW25 is gesolderd)
 - E8 Plaatuitsparing 14,0 × 14,0 mm, tolerantie ±0,05 mm
 - E9 Geen stabilizers nodig (geen 2u-toetsen)
 - W5 3-pin en 5-pin switches ondersteund
