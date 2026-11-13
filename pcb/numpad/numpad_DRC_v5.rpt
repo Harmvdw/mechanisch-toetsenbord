@@ -1,0 +1,843 @@
+** Drc report for numpad.kicad_pcb **
+** Created on 2026-11-12T12:36:38 **
+** Report includes: Errors, Warnings **
+
+** Found 219 DRC violations **
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(75.2400 mm, 133.6600 mm): NPTH pad of SW18
+    @(72.1500 mm, 133.6600 mm): Pad 1 [np_col1] of SW18 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(94.2900 mm, 95.5600 mm): NPTH pad of SW11
+    @(91.2000 mm, 95.5600 mm): Pad 1 [np_col2] of SW11 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(56.1900 mm, 57.4600 mm): NPTH pad of SW1
+    @(53.1000 mm, 57.4600 mm): Pad 1 [np_col0] of SW1 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(113.3400 mm, 76.5100 mm): NPTH pad of SW8
+    @(110.2500 mm, 76.5100 mm): Pad 1 [np_col3] of SW8 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(113.3400 mm, 57.4600 mm): NPTH pad of SW4
+    @(110.2500 mm, 57.4600 mm): Pad 1 [np_col3] of SW4 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(94.2900 mm, 114.6100 mm): NPTH pad of SW15
+    @(91.2000 mm, 114.6100 mm): Pad 1 [np_col2] of SW15 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(94.2900 mm, 133.6600 mm): NPTH pad of SW19
+    @(91.2000 mm, 133.6600 mm): Pad 1 [np_col2] of SW19 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(113.3400 mm, 95.5600 mm): NPTH pad of SW12
+    @(110.2500 mm, 95.5600 mm): Pad 1 [np_col3] of SW12 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(75.2400 mm, 57.4600 mm): NPTH pad of SW2
+    @(72.1500 mm, 57.4600 mm): Pad 1 [np_col1] of SW2 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(56.1900 mm, 95.5600 mm): NPTH pad of SW9
+    @(53.1000 mm, 95.5600 mm): Pad 1 [np_col0] of SW9 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(56.1900 mm, 76.5100 mm): NPTH pad of SW5
+    @(53.1000 mm, 76.5100 mm): Pad 1 [np_col0] of SW5 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(113.3400 mm, 114.6100 mm): NPTH pad of SW16
+    @(110.2500 mm, 114.6100 mm): Pad 1 [np_col3] of SW16 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(113.3400 mm, 133.6600 mm): NPTH pad of SW20
+    @(110.2500 mm, 133.6600 mm): Pad 1 [np_col3] of SW20 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(56.1900 mm, 114.6100 mm): NPTH pad of SW13
+    @(53.1000 mm, 114.6100 mm): Pad 1 [np_col0] of SW13 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(56.1900 mm, 133.6600 mm): NPTH pad of SW17
+    @(53.1000 mm, 133.6600 mm): Pad 1 [np_col0] of SW17 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(94.2900 mm, 57.4600 mm): NPTH pad of SW3
+    @(91.2000 mm, 57.4600 mm): Pad 1 [np_col2] of SW3 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(75.2400 mm, 76.5100 mm): NPTH pad of SW6
+    @(72.1500 mm, 76.5100 mm): Pad 1 [np_col1] of SW6 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(75.2400 mm, 95.5600 mm): NPTH pad of SW10
+    @(72.1500 mm, 95.5600 mm): Pad 1 [np_col1] of SW10 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(75.2400 mm, 114.6100 mm): NPTH pad of SW14
+    @(72.1500 mm, 114.6100 mm): Pad 1 [np_col1] of SW14 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(94.2900 mm, 76.5100 mm): NPTH pad of SW7
+    @(91.2000 mm, 76.5100 mm): Pad 1 [np_col2] of SW7 on B.Cu
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(60.0000 mm, 60.0000 mm): Footprint SW1
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(65.0000 mm, 68.5000 mm): Footprint D1
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(79.0500 mm, 60.0000 mm): Footprint SW2
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(84.0500 mm, 68.5000 mm): Footprint D2
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(98.1000 mm, 60.0000 mm): Footprint SW3
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(103.1000 mm, 68.5000 mm): Footprint D3
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(117.1500 mm, 60.0000 mm): Footprint SW4
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(122.1500 mm, 68.5000 mm): Footprint D4
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(60.0000 mm, 79.0500 mm): Footprint SW5
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(65.0000 mm, 87.5500 mm): Footprint D5
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(79.0500 mm, 79.0500 mm): Footprint SW6
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(84.0500 mm, 87.5500 mm): Footprint D6
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(98.1000 mm, 79.0500 mm): Footprint SW7
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(103.1000 mm, 87.5500 mm): Footprint D7
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(117.1500 mm, 79.0500 mm): Footprint SW8
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(122.1500 mm, 87.5500 mm): Footprint D8
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(60.0000 mm, 98.1000 mm): Footprint SW9
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(65.0000 mm, 106.6000 mm): Footprint D9
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(79.0500 mm, 98.1000 mm): Footprint SW10
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(84.0500 mm, 106.6000 mm): Footprint D10
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(98.1000 mm, 98.1000 mm): Footprint SW11
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(103.1000 mm, 106.6000 mm): Footprint D11
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(117.1500 mm, 98.1000 mm): Footprint SW12
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(122.1500 mm, 106.6000 mm): Footprint D12
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(60.0000 mm, 117.1500 mm): Footprint SW13
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(65.0000 mm, 125.6500 mm): Footprint D13
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(79.0500 mm, 117.1500 mm): Footprint SW14
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(84.0500 mm, 125.6500 mm): Footprint D14
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(98.1000 mm, 117.1500 mm): Footprint SW15
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(103.1000 mm, 125.6500 mm): Footprint D15
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(117.1500 mm, 117.1500 mm): Footprint SW16
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(122.1500 mm, 125.6500 mm): Footprint D16
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(60.0000 mm, 136.2000 mm): Footprint SW17
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(65.0000 mm, 144.7000 mm): Footprint D17
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(79.0500 mm, 136.2000 mm): Footprint SW18
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(84.0500 mm, 144.7000 mm): Footprint D18
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(98.1000 mm, 136.2000 mm): Footprint SW19
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(103.1000 mm, 144.7000 mm): Footprint D19
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(117.1500 mm, 136.2000 mm): Footprint SW20
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
+    Local override; warning
+    @(122.1500 mm, 144.7000 mm): Footprint D20
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(88.5750 mm, 42.9750 mm): Footprint U1
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(102.0750 mm, 45.9750 mm): Footprint C1
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(100.4750 mm, 41.5000 mm): Footprint R1
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(45.2000 mm, 98.1000 mm): Footprint J1
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(131.9500 mm, 98.1000 mm): Footprint J2
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(45.2000 mm, 41.9750 mm): Footprint H1
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(131.9500 mm, 41.9750 mm): Footprint H2
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(45.2000 mm, 144.2250 mm): Footprint H3
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(131.9500 mm, 144.2250 mm): Footprint H4
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(65.0006 mm, 46.9000 mm): Footprint H5
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(112.9590 mm, 46.9000 mm): Footprint H6
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(96.8300 mm, 38.2750 mm): Pad 15 [GND] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(95.5600 mm, 38.2750 mm): Pad 16 [GND] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(94.2900 mm, 38.2750 mm): Pad 17 [GND] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(93.0200 mm, 38.2750 mm): Pad 18 [nRESET] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(91.7500 mm, 38.2750 mm): Pad 19 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(90.4800 mm, 38.2750 mm): Pad 20 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(89.2100 mm, 38.2750 mm): Pad 21 [np_col0] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(87.9400 mm, 38.2750 mm): Pad 22 [np_col1] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(86.6700 mm, 38.2750 mm): Pad 23 [np_col2] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(85.4000 mm, 38.2750 mm): Pad 24 [np_col3] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(84.1300 mm, 38.2750 mm): Pad 25 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(82.8600 mm, 38.2750 mm): Pad 26 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(81.5900 mm, 38.2750 mm): Pad 27 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(79.6250 mm, 39.2250 mm): Segment of U1 on F.Silkscreen
+    @(80.3200 mm, 38.2750 mm): Pad 28 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(80.3200 mm, 47.6750 mm): Pad 1 [np_row4] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(81.5900 mm, 47.6750 mm): Pad 2 [np_row3] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(82.8600 mm, 47.6750 mm): Pad 3 [np_row2] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(84.1300 mm, 47.6750 mm): Pad 4 [np_row1] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(85.4000 mm, 47.6750 mm): Pad 5 [np_row0] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(86.6700 mm, 47.6750 mm): Pad 6 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(87.9400 mm, 47.6750 mm): Pad 7 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(89.2100 mm, 47.6750 mm): Pad 8 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(96.8300 mm, 47.6750 mm): Pad 14 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(90.4800 mm, 47.6750 mm): Pad 9 [VCC] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(91.7500 mm, 47.6750 mm): Pad 10 [GND] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(93.0200 mm, 47.6750 mm): Pad 11 [<no net>] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(94.2900 mm, 47.6750 mm): Pad 12 [SCL] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.5250 mm, 46.7250 mm): Segment of U1 on F.Silkscreen
+    @(95.5600 mm, 47.6750 mm): Pad 13 [SDA] of U1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(74.2500 mm, 57.1040 mm): Segment of SW2 on F.Silkscreen
+    @(75.2400 mm, 57.4600 mm): NPTH pad of SW2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(74.2500 mm, 57.1500 mm): Segment of SW2 on F.Silkscreen
+    @(75.2400 mm, 57.4600 mm): NPTH pad of SW2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(85.1500 mm, 59.1040 mm): Segment of SW2 on F.Silkscreen
+    @(84.1300 mm, 60.0000 mm): NPTH pad of SW2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(74.2500 mm, 76.1540 mm): Segment of SW6 on F.Silkscreen
+    @(75.2400 mm, 76.5100 mm): NPTH pad of SW6
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(74.2500 mm, 76.2000 mm): Segment of SW6 on F.Silkscreen
+    @(75.2400 mm, 76.5100 mm): NPTH pad of SW6
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(85.1500 mm, 78.1540 mm): Segment of SW6 on F.Silkscreen
+    @(84.1300 mm, 79.0500 mm): NPTH pad of SW6
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(66.1000 mm, 59.1040 mm): Segment of SW1 on F.Silkscreen
+    @(65.0800 mm, 60.0000 mm): NPTH pad of SW1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(55.2000 mm, 76.1540 mm): Segment of SW5 on F.Silkscreen
+    @(56.1900 mm, 76.5100 mm): NPTH pad of SW5
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(55.2000 mm, 76.2000 mm): Segment of SW5 on F.Silkscreen
+    @(56.1900 mm, 76.5100 mm): NPTH pad of SW5
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(66.1000 mm, 78.1540 mm): Segment of SW5 on F.Silkscreen
+    @(65.0800 mm, 79.0500 mm): NPTH pad of SW5
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(93.3000 mm, 57.1040 mm): Segment of SW3 on F.Silkscreen
+    @(94.2900 mm, 57.4600 mm): NPTH pad of SW3
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(93.3000 mm, 57.1500 mm): Segment of SW3 on F.Silkscreen
+    @(94.2900 mm, 57.4600 mm): NPTH pad of SW3
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(104.2000 mm, 59.1040 mm): Segment of SW3 on F.Silkscreen
+    @(103.1800 mm, 60.0000 mm): NPTH pad of SW3
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(93.3000 mm, 76.1540 mm): Segment of SW7 on F.Silkscreen
+    @(94.2900 mm, 76.5100 mm): NPTH pad of SW7
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(104.2000 mm, 78.1540 mm): Segment of SW7 on F.Silkscreen
+    @(103.1800 mm, 79.0500 mm): NPTH pad of SW7
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(93.3000 mm, 76.2000 mm): Segment of SW7 on F.Silkscreen
+    @(94.2900 mm, 76.5100 mm): NPTH pad of SW7
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(93.3000 mm, 95.2040 mm): Segment of SW11 on F.Silkscreen
+    @(94.2900 mm, 95.5600 mm): NPTH pad of SW11
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(93.3000 mm, 95.2500 mm): Segment of SW11 on F.Silkscreen
+    @(94.2900 mm, 95.5600 mm): NPTH pad of SW11
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(104.2000 mm, 97.2040 mm): Segment of SW11 on F.Silkscreen
+    @(103.1800 mm, 98.1000 mm): NPTH pad of SW11
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(55.2000 mm, 95.2040 mm): Segment of SW9 on F.Silkscreen
+    @(56.1900 mm, 95.5600 mm): NPTH pad of SW9
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(55.2000 mm, 95.2500 mm): Segment of SW9 on F.Silkscreen
+    @(56.1900 mm, 95.5600 mm): NPTH pad of SW9
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(66.1000 mm, 97.2040 mm): Segment of SW9 on F.Silkscreen
+    @(65.0800 mm, 98.1000 mm): NPTH pad of SW9
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(74.2500 mm, 95.2040 mm): Segment of SW10 on F.Silkscreen
+    @(75.2400 mm, 95.5600 mm): NPTH pad of SW10
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(74.2500 mm, 95.2500 mm): Segment of SW10 on F.Silkscreen
+    @(75.2400 mm, 95.5600 mm): NPTH pad of SW10
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(85.1500 mm, 97.2040 mm): Segment of SW10 on F.Silkscreen
+    @(84.1300 mm, 98.1000 mm): NPTH pad of SW10
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(55.2000 mm, 57.1040 mm): Segment of SW1 on F.Silkscreen
+    @(56.1900 mm, 57.4600 mm): NPTH pad of SW1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(55.2000 mm, 57.1500 mm): Segment of SW1 on F.Silkscreen
+    @(56.1900 mm, 57.4600 mm): NPTH pad of SW1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(93.3000 mm, 114.2540 mm): Segment of SW15 on F.Silkscreen
+    @(94.2900 mm, 114.6100 mm): NPTH pad of SW15
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(93.3000 mm, 114.3000 mm): Segment of SW15 on F.Silkscreen
+    @(94.2900 mm, 114.6100 mm): NPTH pad of SW15
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(104.2000 mm, 116.2540 mm): Segment of SW15 on F.Silkscreen
+    @(103.1800 mm, 117.1500 mm): NPTH pad of SW15
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(55.2000 mm, 114.2540 mm): Segment of SW13 on F.Silkscreen
+    @(56.1900 mm, 114.6100 mm): NPTH pad of SW13
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(55.2000 mm, 114.3000 mm): Segment of SW13 on F.Silkscreen
+    @(56.1900 mm, 114.6100 mm): NPTH pad of SW13
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(66.1000 mm, 116.2540 mm): Segment of SW13 on F.Silkscreen
+    @(65.0800 mm, 117.1500 mm): NPTH pad of SW13
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(112.3500 mm, 114.2540 mm): Segment of SW16 on F.Silkscreen
+    @(113.3400 mm, 114.6100 mm): NPTH pad of SW16
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(112.3500 mm, 114.3000 mm): Segment of SW16 on F.Silkscreen
+    @(113.3400 mm, 114.6100 mm): NPTH pad of SW16
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(123.2500 mm, 116.2540 mm): Segment of SW16 on F.Silkscreen
+    @(122.2300 mm, 117.1500 mm): NPTH pad of SW16
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(74.2500 mm, 114.2540 mm): Segment of SW14 on F.Silkscreen
+    @(75.2400 mm, 114.6100 mm): NPTH pad of SW14
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(74.2500 mm, 114.3000 mm): Segment of SW14 on F.Silkscreen
+    @(75.2400 mm, 114.6100 mm): NPTH pad of SW14
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(74.2500 mm, 133.3040 mm): Segment of SW18 on F.Silkscreen
+    @(75.2400 mm, 133.6600 mm): NPTH pad of SW18
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(74.2500 mm, 133.3500 mm): Segment of SW18 on F.Silkscreen
+    @(75.2400 mm, 133.6600 mm): NPTH pad of SW18
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(85.1500 mm, 116.2540 mm): Segment of SW14 on F.Silkscreen
+    @(84.1300 mm, 117.1500 mm): NPTH pad of SW14
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(85.1500 mm, 135.3040 mm): Segment of SW18 on F.Silkscreen
+    @(84.1300 mm, 136.2000 mm): NPTH pad of SW18
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(93.3000 mm, 133.3040 mm): Segment of SW19 on F.Silkscreen
+    @(94.2900 mm, 133.6600 mm): NPTH pad of SW19
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(93.3000 mm, 133.3500 mm): Segment of SW19 on F.Silkscreen
+    @(94.2900 mm, 133.6600 mm): NPTH pad of SW19
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(104.2000 mm, 135.3040 mm): Segment of SW19 on F.Silkscreen
+    @(103.1800 mm, 136.2000 mm): NPTH pad of SW19
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(112.3500 mm, 133.3040 mm): Segment of SW20 on F.Silkscreen
+    @(113.3400 mm, 133.6600 mm): NPTH pad of SW20
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(112.3500 mm, 133.3500 mm): Segment of SW20 on F.Silkscreen
+    @(113.3400 mm, 133.6600 mm): NPTH pad of SW20
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(123.2500 mm, 135.3040 mm): Segment of SW20 on F.Silkscreen
+    @(122.2300 mm, 136.2000 mm): NPTH pad of SW20
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(55.2000 mm, 133.3040 mm): Segment of SW17 on F.Silkscreen
+    @(56.1900 mm, 133.6600 mm): NPTH pad of SW17
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(55.2000 mm, 133.3500 mm): Segment of SW17 on F.Silkscreen
+    @(56.1900 mm, 133.6600 mm): NPTH pad of SW17
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(66.1000 mm, 135.3040 mm): Segment of SW17 on F.Silkscreen
+    @(65.0800 mm, 136.2000 mm): NPTH pad of SW17
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(112.3500 mm, 57.1040 mm): Segment of SW4 on F.Silkscreen
+    @(113.3400 mm, 57.4600 mm): NPTH pad of SW4
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(112.3500 mm, 57.1500 mm): Segment of SW4 on F.Silkscreen
+    @(113.3400 mm, 57.4600 mm): NPTH pad of SW4
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(123.2500 mm, 59.1040 mm): Segment of SW4 on F.Silkscreen
+    @(122.2300 mm, 60.0000 mm): NPTH pad of SW4
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(112.3500 mm, 76.1540 mm): Segment of SW8 on F.Silkscreen
+    @(113.3400 mm, 76.5100 mm): NPTH pad of SW8
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(112.3500 mm, 76.2000 mm): Segment of SW8 on F.Silkscreen
+    @(113.3400 mm, 76.5100 mm): NPTH pad of SW8
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(123.2500 mm, 78.1540 mm): Segment of SW8 on F.Silkscreen
+    @(122.2300 mm, 79.0500 mm): NPTH pad of SW8
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(112.3500 mm, 95.2040 mm): Segment of SW12 on F.Silkscreen
+    @(113.3400 mm, 95.5600 mm): NPTH pad of SW12
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(112.3500 mm, 95.2500 mm): Segment of SW12 on F.Silkscreen
+    @(113.3400 mm, 95.5600 mm): NPTH pad of SW12
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(123.2500 mm, 97.2040 mm): Segment of SW12 on F.Silkscreen
+    @(122.2300 mm, 98.1000 mm): NPTH pad of SW12
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.9500 mm, 59.1040 mm): Segment of SW2 on B.Silkscreen
+    @(73.9700 mm, 60.0000 mm): NPTH pad of SW2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.9500 mm, 55.1500 mm): Segment of SW2 on B.Silkscreen
+    @(72.1500 mm, 57.4600 mm): Pad 1 [np_col1] of SW2 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(83.8500 mm, 57.1040 mm): Segment of SW2 on B.Silkscreen
+    @(84.7500 mm, 54.9200 mm): Pad 2 [Net-(D2-Pad2)] of SW2 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(92.0000 mm, 59.1040 mm): Segment of SW3 on B.Silkscreen
+    @(93.0200 mm, 60.0000 mm): NPTH pad of SW3
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(92.0000 mm, 55.1500 mm): Segment of SW3 on B.Silkscreen
+    @(91.2000 mm, 57.4600 mm): Pad 1 [np_col2] of SW3 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(102.9000 mm, 57.1040 mm): Segment of SW3 on B.Silkscreen
+    @(103.8000 mm, 54.9200 mm): Pad 2 [Net-(D3-Pad2)] of SW3 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(92.0000 mm, 74.2000 mm): Segment of SW7 on B.Silkscreen
+    @(91.2000 mm, 76.5100 mm): Pad 1 [np_col2] of SW7 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(92.0000 mm, 78.1540 mm): Segment of SW7 on B.Silkscreen
+    @(93.0200 mm, 79.0500 mm): NPTH pad of SW7
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(102.9000 mm, 76.1540 mm): Segment of SW7 on B.Silkscreen
+    @(103.8000 mm, 73.9700 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(111.0500 mm, 74.2000 mm): Segment of SW8 on B.Silkscreen
+    @(110.2500 mm, 76.5100 mm): Pad 1 [np_col3] of SW8 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(121.9500 mm, 95.2040 mm): Segment of SW12 on B.Silkscreen
+    @(122.8500 mm, 93.0200 mm): Pad 2 [Net-(D12-Pad2)] of SW12 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(111.0500 mm, 59.1040 mm): Segment of SW4 on B.Silkscreen
+    @(112.0700 mm, 60.0000 mm): NPTH pad of SW4
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(111.0500 mm, 55.1500 mm): Segment of SW4 on B.Silkscreen
+    @(110.2500 mm, 57.4600 mm): Pad 1 [np_col3] of SW4 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(121.9500 mm, 57.1040 mm): Segment of SW4 on B.Silkscreen
+    @(122.8500 mm, 54.9200 mm): Pad 2 [Net-(D4-Pad2)] of SW4 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(111.0500 mm, 78.1540 mm): Segment of SW8 on B.Silkscreen
+    @(112.0700 mm, 79.0500 mm): NPTH pad of SW8
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(121.9500 mm, 76.1540 mm): Segment of SW8 on B.Silkscreen
+    @(122.8500 mm, 73.9700 mm): Pad 2 [Net-(D8-Pad2)] of SW8 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(53.9000 mm, 59.1040 mm): Segment of SW1 on B.Silkscreen
+    @(54.9200 mm, 60.0000 mm): NPTH pad of SW1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(53.9000 mm, 55.1500 mm): Segment of SW1 on B.Silkscreen
+    @(53.1000 mm, 57.4600 mm): Pad 1 [np_col0] of SW1 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(64.8000 mm, 57.1040 mm): Segment of SW1 on B.Silkscreen
+    @(65.7000 mm, 54.9200 mm): Pad 2 [Net-(D1-Pad2)] of SW1 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(53.9000 mm, 74.2000 mm): Segment of SW5 on B.Silkscreen
+    @(53.1000 mm, 76.5100 mm): Pad 1 [np_col0] of SW5 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(53.9000 mm, 78.1540 mm): Segment of SW5 on B.Silkscreen
+    @(54.9200 mm, 79.0500 mm): NPTH pad of SW5
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(64.8000 mm, 76.1540 mm): Segment of SW5 on B.Silkscreen
+    @(65.7000 mm, 73.9700 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.9500 mm, 74.2000 mm): Segment of SW6 on B.Silkscreen
+    @(72.1500 mm, 76.5100 mm): Pad 1 [np_col1] of SW6 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.9500 mm, 78.1540 mm): Segment of SW6 on B.Silkscreen
+    @(73.9700 mm, 79.0500 mm): NPTH pad of SW6
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(83.8500 mm, 76.1540 mm): Segment of SW6 on B.Silkscreen
+    @(84.7500 mm, 73.9700 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(53.9000 mm, 93.2500 mm): Segment of SW9 on B.Silkscreen
+    @(53.1000 mm, 95.5600 mm): Pad 1 [np_col0] of SW9 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(53.9000 mm, 97.2040 mm): Segment of SW9 on B.Silkscreen
+    @(54.9200 mm, 98.1000 mm): NPTH pad of SW9
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(64.8000 mm, 95.2040 mm): Segment of SW9 on B.Silkscreen
+    @(65.7000 mm, 93.0200 mm): Pad 2 [Net-(D9-Pad2)] of SW9 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.9500 mm, 93.2500 mm): Segment of SW10 on B.Silkscreen
+    @(72.1500 mm, 95.5600 mm): Pad 1 [np_col1] of SW10 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.9500 mm, 97.2040 mm): Segment of SW10 on B.Silkscreen
+    @(73.9700 mm, 98.1000 mm): NPTH pad of SW10
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(83.8500 mm, 95.2040 mm): Segment of SW10 on B.Silkscreen
+    @(84.7500 mm, 93.0200 mm): Pad 2 [Net-(D10-Pad2)] of SW10 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(92.0000 mm, 93.2500 mm): Segment of SW11 on B.Silkscreen
+    @(91.2000 mm, 95.5600 mm): Pad 1 [np_col2] of SW11 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(92.0000 mm, 97.2040 mm): Segment of SW11 on B.Silkscreen
+    @(93.0200 mm, 98.1000 mm): NPTH pad of SW11
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(102.9000 mm, 95.2040 mm): Segment of SW11 on B.Silkscreen
+    @(103.8000 mm, 93.0200 mm): Pad 2 [Net-(D11-Pad2)] of SW11 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(111.0500 mm, 93.2500 mm): Segment of SW12 on B.Silkscreen
+    @(110.2500 mm, 95.5600 mm): Pad 1 [np_col3] of SW12 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(111.0500 mm, 97.2040 mm): Segment of SW12 on B.Silkscreen
+    @(112.0700 mm, 98.1000 mm): NPTH pad of SW12
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(111.0500 mm, 116.2540 mm): Segment of SW16 on B.Silkscreen
+    @(112.0700 mm, 117.1500 mm): NPTH pad of SW16
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(121.9500 mm, 114.2540 mm): Segment of SW16 on B.Silkscreen
+    @(122.8500 mm, 112.0700 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(53.9000 mm, 112.3000 mm): Segment of SW13 on B.Silkscreen
+    @(53.1000 mm, 114.6100 mm): Pad 1 [np_col0] of SW13 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(53.9000 mm, 116.2540 mm): Segment of SW13 on B.Silkscreen
+    @(54.9200 mm, 117.1500 mm): NPTH pad of SW13
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(64.8000 mm, 114.2540 mm): Segment of SW13 on B.Silkscreen
+    @(65.7000 mm, 112.0700 mm): Pad 2 [Net-(D13-Pad2)] of SW13 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.9500 mm, 112.3000 mm): Segment of SW14 on B.Silkscreen
+    @(72.1500 mm, 114.6100 mm): Pad 1 [np_col1] of SW14 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.9500 mm, 116.2540 mm): Segment of SW14 on B.Silkscreen
+    @(73.9700 mm, 117.1500 mm): NPTH pad of SW14
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(83.8500 mm, 114.2540 mm): Segment of SW14 on B.Silkscreen
+    @(84.7500 mm, 112.0700 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(92.0000 mm, 112.3000 mm): Segment of SW15 on B.Silkscreen
+    @(91.2000 mm, 114.6100 mm): Pad 1 [np_col2] of SW15 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(92.0000 mm, 116.2540 mm): Segment of SW15 on B.Silkscreen
+    @(93.0200 mm, 117.1500 mm): NPTH pad of SW15
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(102.9000 mm, 114.2540 mm): Segment of SW15 on B.Silkscreen
+    @(103.8000 mm, 112.0700 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(111.0500 mm, 135.3040 mm): Segment of SW20 on B.Silkscreen
+    @(112.0700 mm, 136.2000 mm): NPTH pad of SW20
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(121.9500 mm, 133.3040 mm): Segment of SW20 on B.Silkscreen
+    @(122.8500 mm, 131.1200 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(111.0500 mm, 112.3000 mm): Segment of SW16 on B.Silkscreen
+    @(110.2500 mm, 114.6100 mm): Pad 1 [np_col3] of SW16 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(53.9000 mm, 131.3500 mm): Segment of SW17 on B.Silkscreen
+    @(53.1000 mm, 133.6600 mm): Pad 1 [np_col0] of SW17 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(53.9000 mm, 135.3040 mm): Segment of SW17 on B.Silkscreen
+    @(54.9200 mm, 136.2000 mm): NPTH pad of SW17
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(64.8000 mm, 133.3040 mm): Segment of SW17 on B.Silkscreen
+    @(65.7000 mm, 131.1200 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.9500 mm, 131.3500 mm): Segment of SW18 on B.Silkscreen
+    @(72.1500 mm, 133.6600 mm): Pad 1 [np_col1] of SW18 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(72.9500 mm, 135.3040 mm): Segment of SW18 on B.Silkscreen
+    @(73.9700 mm, 136.2000 mm): NPTH pad of SW18
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(83.8500 mm, 133.3040 mm): Segment of SW18 on B.Silkscreen
+    @(84.7500 mm, 131.1200 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(92.0000 mm, 131.3500 mm): Segment of SW19 on B.Silkscreen
+    @(91.2000 mm, 133.6600 mm): Pad 1 [np_col2] of SW19 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(92.0000 mm, 135.3040 mm): Segment of SW19 on B.Silkscreen
+    @(93.0200 mm, 136.2000 mm): NPTH pad of SW19
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(102.9000 mm, 133.3040 mm): Segment of SW19 on B.Silkscreen
+    @(103.8000 mm, 131.1200 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on B.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(111.0500 mm, 131.3500 mm): Segment of SW20 on B.Silkscreen
+    @(110.2500 mm, 133.6600 mm): Pad 1 [np_col3] of SW20 on B.Cu
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

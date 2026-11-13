@@ -77,7 +77,7 @@ Controle: 0 botsingen; knop tot kap 2,5 mm; huis tot plaatuitsparing 1,0 mm rond
 
 ## Nog te doen
 
-- **Print aanpassen voor de draaiknop** (vóór de bestelling): Lily58L-bestanden bekijken, footprint plaatsen, routeren, DRC, nieuwe Gerbers. De KiCad-map `Lily58-master` staat nog niet in deze repo (open punt 6 in eisen-en-wensen: kopiëren van de werkcomputer naar `pcb/`). Dat is de eerste stap.
+- **Print aanpassen voor de draaiknop** (vóór de bestelling): Lily58L-bestanden bekijken, footprint plaatsen, routeren, DRC, nieuwe Gerbers. De KiCad-bestanden staan sinds 13 nov in [`pcb/`](../pcb).
 
 - STEP/STL uit Fusion exporteren naar `behuizing/export/`.
 - Numpad in Fusion (bak en plaat).

@@ -99,4 +99,4 @@ Status: versie 7 (12 nov 2026). E = eis, W = wens. Uitwerking: numpad en print i
 3. Eén print voor beide helften of twee verschillende?
 4. ERC niet gedaan: het schema is KiCad 5-formaat (.sch) en nog niet omgezet.
 5. Hoogte Pro Micro en OLED opmeten bij het prototype (kaphoogte, USB-sleuf).
-6. KiCad-bestanden en Gerbers van de werkcomputer naar `pcb/` kopiëren.
+6. ~~KiCad-bestanden en Gerbers naar `pcb/`~~ gedaan (13 nov).

@@ -47,8 +47,8 @@ Per zip: F_Cu, B_Cu, F/B_Mask, F/B_Silkscreen, Edge_Cuts, PTH.drl, NPTH.drl (Pro
 | `mod_lily58.py` | Plaatst J_NP, J_BAT, SW_BAT; verwijdert 0,1 mm-gaatjes en stompjes. |
 | `route_lily58.py` | Verbreedt de rand, zoekt een plek voor J_NP en routeert VCC/SDA/SCL/BAT+/RAW. |
 
-## 8. Nog naar de repo (staat alleen op de werkcomputer)
-In `Documents\tijdelijk\3d prints\Lily58-master\`: `Pro/PCB/Lily58_Pro.kicad_pcb` (+ `.kicad_pro`), `Pro/PCB/Lily58_Pro_gerbers.zip`, de DRC-rapporten, `numpad/numpad.kicad_pcb` (+ `.kicad_pro`) en `numpad/numpad_gerbers.zip`. Kopiëren naar `pcb/` zodra die computer weer gekoppeld is.
+## 8. Bestanden
+KiCad-bestanden, DRC-rapporten en Gerber-zips staan sinds 13 nov in [`pcb/`](../pcb) (zie `pcb/README.md`).
 
 ## Volgende stappen
 1. Bestellen bij PCBWay: beide zips; 2 lagen, 1,6 mm, HASL loodvrij; 5 stuks per print.
