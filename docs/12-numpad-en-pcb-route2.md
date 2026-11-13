@@ -1,6 +1,6 @@
 # Numpad en aangepaste Lily58-print (route 2)
 
-Status: 12 november 2026. Beide printen zijn gerouteerd, door de DRC en als Gerbers geëxporteerd (op de werkcomputer, zie onderaan). Dit document is de repo-versie van het projectdocument `numpad-ontwerp.md` (versie 5).
+Status: 13 november 2026 (draaiknop toegevoegd, §4b). Beide printen zijn gerouteerd, door de DRC en als Gerbers geëxporteerd (op de werkcomputer, zie onderaan). Dit document is de repo-versie van het projectdocument `numpad-ontwerp.md` (versie 5).
 
 ## 1. Principe
 - Het numpad heeft 20 toetsen (4 × 5, alles 1u, 19,05 mm, MX-hotswap) en een I/O-expander **MCP23017** op de print. Het heeft geen eigen controller.
@@ -32,13 +32,28 @@ Opzet: per helft 5 (MCU) + 5 (expander) rijen → `MATRIX_ROWS 20`, `MATRIX_COLS
 6. **Via's**: 115 × 0,6 mm, 34 × 0,5 mm rond de Pro Micro (besloten).
 7. 58 gaatjes van 0,1 mm verwijderd; nulspoor en 3 stompjes opgeruimd. Logo's ongewijzigd.
 
+## 4b. Draaiknop (EC11) op SW25 — 13 nov 2026
+Besluit Harm: draaiknop op beide helften, **combinatie** met een toets (die plek is óf toets óf knop).
+- Een hotswap-voet en een encoder passen niet samen op één plek van deze omkeerbare print: de hotswap-pads liggen aan beide kanten van de toets precies waar de encoderpennen komen. Doorgerekend over alle vier draaistanden en tot 0,85 mm verschuiving: minimaal 1,2 mm overlap.
+- Daarom is SW25 (binnenste duimtoets, onder de Pro Micro) een **gesoldeerde MX-plek** geworden, omkeerbaar: 4 doorgemetalliseerde gaten ø1,5 mm (pad ø1,8). Hotswap-pads, Choc-gaten en de twee pootjesgaten voor 5-pins switches vervallen op die plek; middengat ø4 blijft. Een 5-pins switch past met afgeknipte pootjes.
+- **ENC1** (EC11 met drukknop, maten Alps EC11E / KiCad-bibliotheek) op hetzelfde middelpunt, dus geen verschuiving voor plaat of behuizing:
+  - A → F4 (Pro Micro pen 20), C → GND, B → F5 (pen 19);
+  - S1/S2 → zelfde netten als de toets (D25 en col5): de drukknop zit op de matrixplek van SW25;
+  - lipjes in sleuven zonder koper (2,6 × 1,5 mm); niet solderen, ze klemmen.
+  - Speling tot de soldeergaten van de switch: 0,09 mm boven het KiCad-minimum.
+- Omkeerbaar: bij de linkerhelft gaat de encoder aan de andere printzijde, 180° gedraaid. A en B wisselen dan; dat is één instelling in de firmware.
+- Gemaakt met `pcb/scripts/encoder_lily58.py` (bouwt SW25 om, plaatst ENC1, ruimt oude sporen en via's op, routeert col5, D25-net, F4 en F5 opnieuw en controleert dat elk net één geheel is).
+- **Solderen:** op elke helft óf een MX-switch óf een encoder in SW25, nooit beide.
+
 ## 5. DRC (KiCad 10, 12 nov 2026)
 - **Lily58:** 0 niet-verbonden pads, 0 kortsluitingen, 0 kruisende sporen; geen nieuwe meldingen t.o.v. het originele ontwerp. De 17 afstandsmeldingen komen uit het origineel (13× 0,15–0,16 mm rond de Pro Micro, maakbaar bij PCBWay ≥ 0,127 mm).
+- **Lily58 met encoder (13 nov):** 0 niet-verbonden pads, geen nieuwe koper-, gat- of afstandsfouten. Twee nieuwe meldingen "starved thermal": de GND-pen C van de encoder en GND van J_BAT sluiten op de bovenlaag met één spaak op het GND-vlak aan in plaats van twee (elektrisch in orde).
 - **Numpad:** 0 niet-verbonden pads, 0 fouten in koper, gaten of afstanden. Alleen cosmetische meldingen.
 
 ## 6. Gerbers
 Per zip: F_Cu, B_Cu, F/B_Mask, F/B_Silkscreen, Edge_Cuts, PTH.drl, NPTH.drl (Protel-extensies, mm).
-- Lily58: omtrek tot x = 231,46 mm. Numpad: 96,2 × 113,75 mm, 6 × M3.
+- Lily58: omtrek tot x = 231,46 mm. **Versie met encoder: 13 nov** (`pcb/lily58-pro/Lily58_Pro_gerbers.zip`). Gecontroleerd: 2 sleuven 2,6 × 1,5 (lipjes), 4 × ø1,5 (switch), 14 × ø1,0 (o.a. 5 encoderpennen); 2 pootjesgaten en 8 hotswap-gaten minder dan de versie van 12 nov.
+- Numpad: 96,2 × 113,75 mm, 6 × M3.
 
 ## 7. Scripts in deze repo (`pcb/scripts/`)
 | Script | Doet |
@@ -46,10 +61,12 @@ Per zip: F_Cu, B_Cu, F/B_Mask, F/B_Silkscreen, Edge_Cuts, PTH.drl, NPTH.drl (Pro
 | `gen_numpad.py` | Maakt `numpad.kicad_pcb` compleet (footprints, sporen, GND-vlakken). Gebruik: `python3 gen_numpad.py <Lily58_Pro.kicad_pcb> <uitvoer>` (de Lily58-print levert de switch- en diode-footprints). |
 | `mod_lily58.py` | Plaatst J_NP, J_BAT, SW_BAT; verwijdert 0,1 mm-gaatjes en stompjes. |
 | `route_lily58.py` | Verbreedt de rand, zoekt een plek voor J_NP en routeert VCC/SDA/SCL/BAT+/RAW. |
+| `encoder_lily58.py` | Draaiknop: SW25 als gesoldeerde MX-plek, ENC1 erbij, opnieuw routeren (gebruikt de router uit `route_lily58.py`). |
 
 ## 8. Bestanden
 KiCad-bestanden, DRC-rapporten en Gerber-zips staan sinds 13 nov in [`pcb/`](../pcb) (zie `pcb/README.md`).
 
 ## Volgende stappen
 1. Bestellen bij PCBWay: beide zips; 2 lagen, 1,6 mm, HASL loodvrij; 5 stuks per print.
+2. EC11-encoders bestellen (2 stuks, met drukknop, as 20 mm) en knoppen ø ≤ 19 mm.
 2. Firmware: QMK-keyboard met custom matrix voor de MCP23017.

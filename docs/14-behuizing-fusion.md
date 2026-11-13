@@ -68,7 +68,7 @@ De knop komt op de plek van de binnenste toets, direct onder de Pro Micro (maste
 
 Controle: 0 botsingen; knop tot kap 2,5 mm; huis tot plaatuitsparing 1,0 mm rondom; bovenkant knop 5 mm boven de kap. De plaat hoeft niet te veranderen (uitsparing 14 × 14 mm). Knop maximaal ø19 mm.
 
-**De print is hiervoor nog niet aangepast.** Nodig: EC11-footprint op die toetspositie, draaisignalen naar twee vrije pennen van de Pro Micro (F4 en F5 zijn vrij), drukfunctie op de matrixplek van die toets. Nog na te kijken in de KiCad-bestanden van de Lily58L: exacte footprint en pennen, en of de hotswap-voet op die plek kan blijven.
+**Print aangepast op 13 nov** (zie Nog te doen). Oorspronkelijke notitie: Nodig: EC11-footprint op die toetspositie, draaisignalen naar twee vrije pennen van de Pro Micro (F4 en F5 zijn vrij), drukfunctie op de matrixplek van die toets. Nog na te kijken in de KiCad-bestanden van de Lily58L: exacte footprint en pennen, en of de hotswap-voet op die plek kan blijven.
 
 ## Blijft staan
 
@@ -77,7 +77,7 @@ Controle: 0 botsingen; knop tot kap 2,5 mm; huis tot plaatuitsparing 1,0 mm rond
 
 ## Nog te doen
 
-- **Print aanpassen voor de draaiknop** (vóór de bestelling): Lily58L-bestanden bekijken, footprint plaatsen, routeren, DRC, nieuwe Gerbers. De KiCad-bestanden staan sinds 13 nov in [`pcb/`](../pcb).
+- ~~Print aanpassen voor de draaiknop~~ gedaan op 13 nov: zie [12-numpad-en-pcb-route2.md §4b](12-numpad-en-pcb-route2.md). De encoder staat precies op het hart van de toets (geen verschuiving); de referentie in Fusion klopt daarmee. Pennen: A/C/B op 7 mm links van het hart, S1/S2 op 7,5 mm rechts, lipjes op ±5,6 mm.
 
 - STEP/STL uit Fusion exporteren naar `behuizing/export/`.
 - Numpad in Fusion (bak en plaat).

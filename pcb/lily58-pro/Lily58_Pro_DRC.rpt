@@ -1,28 +1,8 @@
 ** Drc report for Lily58_Pro.kicad_pcb **
-** Created on 2026-11-12T12:33:46 **
+** Created on 2026-11-13T09:55:21 **
 ** Report includes: Errors, Warnings **
 
-** Found 843 DRC violations **
-[clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1500 mm)
-    Local override; error
-    @(103.2000 mm, 41.1636 mm): Track [col1] on B.Cu, length 19.0172 mm
-    @(102.6750 mm, 57.6657 mm): Via [col0] on F.Cu - B.Cu
-[clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1606 mm)
-    Local override; error
-    @(105.6300 mm, 66.6300 mm): Track [col4] on F.Cu, length 0.6081 mm
-    @(105.3278 mm, 67.0722 mm): Via [row4] on F.Cu - B.Cu
-[clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1500 mm)
-    Local override; error
-    @(103.9632 mm, 66.4500 mm): Track [col5] on F.Cu, length 2.7690 mm
-    @(105.3278 mm, 67.0722 mm): Via [row4] on F.Cu - B.Cu
-[clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1500 mm)
-    Local override; error
-    @(110.3000 mm, 64.1000 mm): Via [col5] on F.Cu - B.Cu
-    @(110.8250 mm, 70.3750 mm): Track [LED] on B.Cu, length 25.8431 mm
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2430 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(89.3690 mm, 47.7000 mm): Track [RESET] on B.Cu, length 3.3503 mm
-    @(87.9000 mm, 47.8000 mm): NPTH pad of J2
+** Found 836 DRC violations **
 [clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1500 mm)
     Local override; error
     @(96.0500 mm, 67.8058 mm): Via [SDA] on F.Cu - B.Cu
@@ -31,22 +11,50 @@
     Local override; error
     @(96.0500 mm, 67.8058 mm): Via [SDA] on F.Cu - B.Cu
     @(96.7000 mm, 67.8000 mm): Track [GND] on B.Cu, length 0.2828 mm
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2000 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(97.4707 mm, 122.1293 mm): Track [col4] on B.Cu, length 8.9414 mm
-    @(99.2957 mm, 124.5199 mm): NPTH pad of SW26
+[clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1513 mm)
+    Local override; error
+    @(104.2557 mm, 66.0000 mm): Track [row4] on F.Cu, length 1.2334 mm
+    @(105.0000 mm, 66.0000 mm): Via [col4] on F.Cu - B.Cu
 [clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1500 mm)
     Local override; error
-    @(104.3000 mm, 64.5750 mm): Via [col3] on F.Cu - B.Cu
-    @(95.5000 mm, 65.1000 mm): Track [row3] on F.Cu, length 10.0000 mm
+    @(103.9632 mm, 66.4500 mm): Track [col5] on F.Cu, length 2.7690 mm
+    @(105.3278 mm, 67.0722 mm): Via [row4] on F.Cu - B.Cu
 [clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1530 mm)
     Local override; error
     @(103.1750 mm, 60.2057 mm): Via [col1] on F.Cu - B.Cu
     @(103.7030 mm, 41.2970 mm): Track [col2] on B.Cu, length 21.4457 mm
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2430 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(89.3690 mm, 47.7000 mm): Track [RESET] on B.Cu, length 3.3503 mm
+    @(87.9000 mm, 47.8000 mm): NPTH pad of J2
 [clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1500 mm)
     Local override; error
-    @(96.7000 mm, 67.8000 mm): Via [GND] on F.Cu - B.Cu
-    @(96.0500 mm, 67.8058 mm): Via [SDA] on F.Cu - B.Cu
+    @(103.2000 mm, 41.1636 mm): Track [col1] on B.Cu, length 19.0172 mm
+    @(102.6750 mm, 57.6657 mm): Via [col0] on F.Cu - B.Cu
+[clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1500 mm)
+    Local override; error
+    @(104.3000 mm, 64.5750 mm): Via [col3] on F.Cu - B.Cu
+    @(95.5000 mm, 65.1000 mm): Track [row3] on F.Cu, length 10.0000 mm
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2000 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(97.4707 mm, 122.1293 mm): Track [col4] on B.Cu, length 8.9414 mm
+    @(99.2957 mm, 124.5199 mm): NPTH pad of SW26
+[clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1606 mm)
+    Local override; error
+    @(105.6300 mm, 66.6300 mm): Track [col4] on F.Cu, length 0.6081 mm
+    @(105.3278 mm, 67.0722 mm): Via [row4] on F.Cu - B.Cu
+[clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1500 mm)
+    Local override; error
+    @(110.3000 mm, 64.1000 mm): Via [col5] on F.Cu - B.Cu
+    @(110.8250 mm, 70.3750 mm): Track [LED] on B.Cu, length 25.8431 mm
+[clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1606 mm)
+    Local override; error
+    @(105.3278 mm, 67.0722 mm): Via [row4] on F.Cu - B.Cu
+    @(107.4200 mm, 66.6300 mm): Track [col4] on F.Cu, length 1.7900 mm
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2487 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(198.7498 mm, 97.0000 mm): Track [row2] on F.Cu, length 3.3588 mm
+    @(196.7000 mm, 96.4000 mm): NPTH pad of SW17
 [clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1500 mm)
     Local override; error
     @(96.7000 mm, 68.7996 mm): Track [GND] on B.Cu, length 0.9996 mm
@@ -55,90 +63,54 @@
     Local override; error
     @(96.7000 mm, 67.8000 mm): Via [GND] on F.Cu - B.Cu
     @(96.0500 mm, 67.8058 mm): Via [SDA] on F.Cu - B.Cu
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2487 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(198.7498 mm, 97.0000 mm): Track [row2] on F.Cu, length 3.3588 mm
-    @(196.7000 mm, 96.4000 mm): NPTH pad of SW17
-[clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1606 mm)
+[clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1500 mm)
     Local override; error
-    @(105.3278 mm, 67.0722 mm): Via [row4] on F.Cu - B.Cu
-    @(107.4200 mm, 66.6300 mm): Track [col4] on F.Cu, length 1.7900 mm
-[clearance]: Overschrijding van vrije afstand ( vrije afstand 0,2000 mm; werkelijk 0,1513 mm)
-    Local override; error
-    @(104.2557 mm, 66.0000 mm): Track [row4] on F.Cu, length 1.2334 mm
-    @(105.0000 mm, 66.0000 mm): Via [col4] on F.Cu - B.Cu
-[clearance]: Overschrijding van vrije afstand (pad vrije afstand 0,3000 mm; werkelijk 0,2118 mm)
-    Local override; error
-    @(129.6000 mm, 59.6000 mm): PTH pad [<no net>] of TH3
-    @(132.3000 mm, 61.6000 mm): Pad 1 [col4] of SW8 on F.Cu
-[clearance]: Overschrijding van vrije afstand (pad vrije afstand 0,1905 mm; werkelijk 0,0000 mm)
-    Local override; error
-    @(89.0000 mm, 60.7000 mm): Pad [<no net>] of W1 on F.Cu
-    @(89.0000 mm, 61.2004 mm): Pad 1 [DATA] of W1 on F.Cu
-[clearance]: Overschrijding van vrije afstand (pad vrije afstand 0,1905 mm; werkelijk 0,0000 mm)
-    Local override; error
-    @(89.0000 mm, 60.7000 mm): Pad [<no net>] of W1 on F.Cu
-    @(89.0000 mm, 60.1996 mm): Pad 2 [Net-(J2-Pad3)] of W1 on F.Cu
+    @(96.7000 mm, 67.8000 mm): Via [GND] on F.Cu - B.Cu
+    @(96.0500 mm, 67.8058 mm): Via [SDA] on F.Cu - B.Cu
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(124.3000 mm, 120.9200 mm): Pad 1 [col3] of SW27 on F.Cu
     @(126.1900 mm, 123.4600 mm): NPTH pad of SW27
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(154.7000 mm, 118.6700 mm): Pad 2 [Net-(D28-Pad2)] of SW28 on B.Cu
-    @(152.8100 mm, 121.2100 mm): NPTH pad of SW28
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
     @(162.4000 mm, 118.6700 mm): Pad 1 [col1] of SW29 on F.Cu
     @(164.2900 mm, 121.2100 mm): NPTH pad of SW29
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(135.7000 mm, 120.9200 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on B.Cu
+    @(133.8100 mm, 123.4600 mm): NPTH pad of SW27
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(135.7000 mm, 120.9200 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on B.Cu
+    @(133.8100 mm, 123.4600 mm): NPTH pad of SW27
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(171.9000 mm, 99.7200 mm): Pad 1 [col2] of SW22 on F.Cu
     @(173.7900 mm, 102.2600 mm): NPTH pad of SW22
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(135.7000 mm, 120.9200 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on B.Cu
-    @(133.8100 mm, 123.4600 mm): NPTH pad of SW27
+    @(173.8000 mm, 118.6700 mm): Pad 2 [Net-(D29-Pad2)] of SW29 on B.Cu
+    @(171.9100 mm, 121.2100 mm): NPTH pad of SW29
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(154.7000 mm, 118.6700 mm): Pad 2 [Net-(D28-Pad2)] of SW28 on B.Cu
+    @(152.8100 mm, 121.2100 mm): NPTH pad of SW28
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(112.2494 mm, 129.3963 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on B.Cu
     @(109.1047 mm, 129.0296 mm): NPTH pad of SW26
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(143.3000 mm, 118.6700 mm): Pad 1 [col2] of SW28 on F.Cu
-    @(145.1900 mm, 121.2100 mm): NPTH pad of SW28
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(135.7000 mm, 120.9200 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on B.Cu
-    @(133.8100 mm, 123.4600 mm): NPTH pad of SW27
+    @(170.9000 mm, 129.6500 mm): Pad 2 [Net-(D29-Pad2)] of SW29 on B.Cu
+    @(173.1000 mm, 127.4500 mm): NPTH pad of SW29
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(101.2905 mm, 132.3749 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on B.Cu
     @(104.2957 mm, 133.1801 mm): NPTH pad of SW26
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(164.3000 mm, 98.3200 mm): Pad 2 [Net-(D21-Pad2)] of SW21 on B.Cu
-    @(162.4100 mm, 100.8600 mm): NPTH pad of SW21
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(107.1000 mm, 92.4200 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on B.Cu
-    @(105.2100 mm, 94.9600 mm): NPTH pad of SW25
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
     @(221.4500 mm, 105.9200 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on B.Cu
     @(219.5600 mm, 108.4600 mm): NPTH pad of SW24
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(173.8000 mm, 118.6700 mm): Pad 2 [Net-(D29-Pad2)] of SW29 on B.Cu
-    @(171.9100 mm, 121.2100 mm): NPTH pad of SW29
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(151.8000 mm, 129.6500 mm): Pad 2 [Net-(D28-Pad2)] of SW28 on B.Cu
-    @(154.0000 mm, 127.4500 mm): NPTH pad of SW28
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(161.4000 mm, 109.3000 mm): Pad 2 [Net-(D21-Pad2)] of SW21 on B.Cu
-    @(163.6000 mm, 107.1000 mm): NPTH pad of SW21
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(180.4000 mm, 110.7000 mm): Pad 2 [Net-(D22-Pad2)] of SW22 on B.Cu
@@ -149,120 +121,172 @@
     @(219.5600 mm, 108.4600 mm): NPTH pad of SW24
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(154.7000 mm, 118.6700 mm): Pad 2 [Net-(D28-Pad2)] of SW28 on B.Cu
-    @(152.8100 mm, 121.2100 mm): NPTH pad of SW28
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(104.2000 mm, 103.4000 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on B.Cu
-    @(106.4000 mm, 101.2000 mm): NPTH pad of SW25
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(170.9000 mm, 129.6500 mm): Pad 2 [Net-(D29-Pad2)] of SW29 on B.Cu
-    @(173.1000 mm, 127.4500 mm): NPTH pad of SW29
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(191.0000 mm, 104.4200 mm): Pad 1 [col1] of SW23 on F.Cu
-    @(192.8900 mm, 106.9600 mm): NPTH pad of SW23
+    @(164.3000 mm, 98.3200 mm): Pad 2 [Net-(D21-Pad2)] of SW21 on B.Cu
+    @(162.4100 mm, 100.8600 mm): NPTH pad of SW21
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(132.8000 mm, 131.9000 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on B.Cu
     @(135.0000 mm, 129.7000 mm): NPTH pad of SW27
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(152.9000 mm, 98.3200 mm): Pad 1 [col3] of SW21 on F.Cu
-    @(154.7900 mm, 100.8600 mm): NPTH pad of SW21
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(106.5494 mm, 119.5237 mm): Pad 1 [col4] of SW26 on F.Cu
-    @(105.2947 mm, 122.4304 mm): NPTH pad of SW26
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(199.5000 mm, 115.4000 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
-    @(201.7000 mm, 113.2000 mm): NPTH pad of SW23
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(183.3000 mm, 99.7200 mm): Pad 2 [Net-(D22-Pad2)] of SW22 on B.Cu
-    @(181.4100 mm, 102.2600 mm): NPTH pad of SW22
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(183.3000 mm, 99.7200 mm): Pad 2 [Net-(D22-Pad2)] of SW22 on B.Cu
-    @(181.4100 mm, 102.2600 mm): NPTH pad of SW22
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(210.0500 mm, 105.9200 mm): Pad 1 [col0] of SW24 on F.Cu
-    @(211.9400 mm, 108.4600 mm): NPTH pad of SW24
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(95.7000 mm, 92.4200 mm): Pad 1 [col5] of SW25 on F.Cu
-    @(97.5900 mm, 94.9600 mm): NPTH pad of SW25
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(202.4000 mm, 104.4200 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
-    @(200.5100 mm, 106.9600 mm): NPTH pad of SW23
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(202.4000 mm, 104.4200 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
-    @(200.5100 mm, 106.9600 mm): NPTH pad of SW23
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(164.3000 mm, 98.3200 mm): Pad 2 [Net-(D21-Pad2)] of SW21 on B.Cu
-    @(162.4100 mm, 100.8600 mm): NPTH pad of SW21
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(218.5500 mm, 116.9000 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on B.Cu
-    @(220.7500 mm, 114.7000 mm): NPTH pad of SW24
+    @(191.0000 mm, 104.4200 mm): Pad 1 [col1] of SW23 on F.Cu
+    @(192.8900 mm, 106.9600 mm): NPTH pad of SW23
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(126.2000 mm, 102.0200 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on B.Cu
     @(124.3100 mm, 104.5600 mm): NPTH pad of SW19
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(161.4000 mm, 109.3000 mm): Pad 2 [Net-(D21-Pad2)] of SW21 on B.Cu
+    @(163.6000 mm, 107.1000 mm): NPTH pad of SW21
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(143.3000 mm, 118.6700 mm): Pad 1 [col2] of SW28 on F.Cu
+    @(145.1900 mm, 121.2100 mm): NPTH pad of SW28
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(173.8000 mm, 118.6700 mm): Pad 2 [Net-(D29-Pad2)] of SW29 on B.Cu
     @(171.9100 mm, 121.2100 mm): NPTH pad of SW29
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(107.1000 mm, 92.4200 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on B.Cu
-    @(105.2100 mm, 94.9600 mm): NPTH pad of SW25
+    @(106.5494 mm, 119.5237 mm): Pad 1 [col4] of SW26 on F.Cu
+    @(105.2947 mm, 122.4304 mm): NPTH pad of SW26
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(183.3000 mm, 99.7200 mm): Pad 2 [Net-(D22-Pad2)] of SW22 on B.Cu
+    @(181.4100 mm, 102.2600 mm): NPTH pad of SW22
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(183.3000 mm, 99.7200 mm): Pad 2 [Net-(D22-Pad2)] of SW22 on B.Cu
+    @(181.4100 mm, 102.2600 mm): NPTH pad of SW22
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(199.5000 mm, 115.4000 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
+    @(201.7000 mm, 113.2000 mm): NPTH pad of SW23
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(151.8000 mm, 129.6500 mm): Pad 2 [Net-(D28-Pad2)] of SW28 on B.Cu
+    @(154.0000 mm, 127.4500 mm): NPTH pad of SW28
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(202.4000 mm, 104.4200 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
+    @(200.5100 mm, 106.9600 mm): NPTH pad of SW23
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(202.4000 mm, 104.4200 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
+    @(200.5100 mm, 106.9600 mm): NPTH pad of SW23
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(210.0500 mm, 105.9200 mm): Pad 1 [col0] of SW24 on F.Cu
+    @(211.9400 mm, 108.4600 mm): NPTH pad of SW24
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(154.7000 mm, 118.6700 mm): Pad 2 [Net-(D28-Pad2)] of SW28 on B.Cu
+    @(152.8100 mm, 121.2100 mm): NPTH pad of SW28
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(218.5500 mm, 116.9000 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on B.Cu
+    @(220.7500 mm, 114.7000 mm): NPTH pad of SW24
 [clearance]: Overschrijding van vrije afstand (pad vrije afstand 0,3000 mm; werkelijk 0,2602 mm)
     Local override; error
     @(132.3000 mm, 99.7000 mm): Pad 1 [col4] of SW20 on F.Cu
     @(129.6000 mm, 97.6000 mm): PTH pad [<no net>] of TH5
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
+    @(114.8000 mm, 102.0200 mm): Pad 1 [col5] of SW19 on F.Cu
+    @(116.6900 mm, 104.5600 mm): NPTH pad of SW19
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
     @(152.9000 mm, 79.3200 mm): Pad 1 [col3] of SW15 on F.Cu
     @(154.7900 mm, 81.8600 mm): NPTH pad of SW15
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(112.2494 mm, 129.3963 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on B.Cu
-    @(109.1047 mm, 129.0296 mm): NPTH pad of SW26
+    @(202.4000 mm, 85.4200 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
+    @(200.5100 mm, 87.9600 mm): NPTH pad of SW17
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(183.3000 mm, 80.6200 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
+    @(181.4100 mm, 83.1600 mm): NPTH pad of SW16
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(183.3000 mm, 80.6200 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
+    @(181.4100 mm, 83.1600 mm): NPTH pad of SW16
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(152.9000 mm, 98.3200 mm): Pad 1 [col3] of SW21 on F.Cu
+    @(154.7900 mm, 100.8600 mm): NPTH pad of SW21
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(180.4000 mm, 91.6000 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
+    @(182.6000 mm, 89.4000 mm): NPTH pad of SW16
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(133.8000 mm, 99.7200 mm): Pad 1 [col4] of SW20 on F.Cu
     @(135.6900 mm, 102.2600 mm): NPTH pad of SW20
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(183.3000 mm, 80.6200 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
-    @(181.4100 mm, 83.1600 mm): NPTH pad of SW16
+    @(199.5000 mm, 96.4000 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
+    @(201.7000 mm, 94.2000 mm): NPTH pad of SW17
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(164.3000 mm, 79.3200 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
     @(162.4100 mm, 81.8600 mm): NPTH pad of SW15
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(123.3000 mm, 113.0000 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on B.Cu
+    @(125.5000 mm, 110.8000 mm): NPTH pad of SW19
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(183.3000 mm, 80.6200 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
-    @(181.4100 mm, 83.1600 mm): NPTH pad of SW16
+    @(133.8000 mm, 80.6200 mm): Pad 1 [col4] of SW14 on F.Cu
+    @(135.6900 mm, 83.1600 mm): NPTH pad of SW14
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(161.4000 mm, 90.3000 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
     @(163.6000 mm, 88.1000 mm): NPTH pad of SW15
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(221.4000 mm, 86.9200 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on B.Cu
-    @(219.5100 mm, 89.4600 mm): NPTH pad of SW18
+    @(171.9000 mm, 80.6200 mm): Pad 1 [col2] of SW16 on F.Cu
+    @(173.7900 mm, 83.1600 mm): NPTH pad of SW16
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(126.2000 mm, 102.0200 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on B.Cu
+    @(124.3100 mm, 104.5600 mm): NPTH pad of SW19
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(112.2494 mm, 129.3963 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on B.Cu
+    @(109.1047 mm, 129.0296 mm): NPTH pad of SW26
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(180.4000 mm, 91.6000 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
-    @(182.6000 mm, 89.4000 mm): NPTH pad of SW16
+    @(142.3000 mm, 110.7000 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on B.Cu
+    @(144.5000 mm, 108.5000 mm): NPTH pad of SW20
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(191.0000 mm, 85.4200 mm): Pad 1 [col1] of SW17 on F.Cu
+    @(192.8900 mm, 87.9600 mm): NPTH pad of SW17
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(145.2000 mm, 99.7200 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on B.Cu
+    @(143.3100 mm, 102.2600 mm): NPTH pad of SW20
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(164.3000 mm, 98.3200 mm): Pad 2 [Net-(D21-Pad2)] of SW21 on B.Cu
+    @(162.4100 mm, 100.8600 mm): NPTH pad of SW21
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(145.2000 mm, 99.7200 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on B.Cu
+    @(143.3100 mm, 102.2600 mm): NPTH pad of SW20
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(145.2000 mm, 80.6200 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on B.Cu
+    @(143.3100 mm, 83.1600 mm): NPTH pad of SW14
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(164.3000 mm, 79.3200 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
+    @(162.4100 mm, 81.8600 mm): NPTH pad of SW15
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(210.0000 mm, 67.7200 mm): Pad 1 [col0] of SW12 on F.Cu
+    @(211.8900 mm, 70.2600 mm): NPTH pad of SW12
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(114.8000 mm, 83.0200 mm): Pad 1 [col5] of SW13 on F.Cu
@@ -273,208 +297,152 @@
     @(200.5100 mm, 87.9600 mm): NPTH pad of SW17
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(133.8000 mm, 80.6200 mm): Pad 1 [col4] of SW14 on F.Cu
-    @(135.6900 mm, 83.1600 mm): NPTH pad of SW14
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(142.3000 mm, 110.7000 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on B.Cu
-    @(144.5000 mm, 108.5000 mm): NPTH pad of SW20
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(218.5000 mm, 97.9000 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on B.Cu
-    @(220.7000 mm, 95.7000 mm): NPTH pad of SW18
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(210.0000 mm, 67.7200 mm): Pad 1 [col0] of SW12 on F.Cu
-    @(211.8900 mm, 70.2600 mm): NPTH pad of SW12
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(145.2000 mm, 99.7200 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on B.Cu
-    @(143.3100 mm, 102.2600 mm): NPTH pad of SW20
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(171.9000 mm, 80.6200 mm): Pad 1 [col2] of SW16 on F.Cu
-    @(173.7900 mm, 83.1600 mm): NPTH pad of SW16
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(145.2000 mm, 99.7200 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on B.Cu
-    @(143.3100 mm, 102.2600 mm): NPTH pad of SW20
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(199.5000 mm, 96.4000 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
-    @(201.7000 mm, 94.2000 mm): NPTH pad of SW17
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(164.3000 mm, 79.3200 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
-    @(162.4100 mm, 81.8600 mm): NPTH pad of SW15
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
     @(171.9000 mm, 61.5200 mm): Pad 1 [col2] of SW10 on F.Cu
     @(173.7900 mm, 64.0600 mm): NPTH pad of SW10
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(145.2000 mm, 80.6200 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on B.Cu
-    @(143.3100 mm, 83.1600 mm): NPTH pad of SW14
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(221.4000 mm, 67.7200 mm): Pad 2 [Net-(D12-Pad2)] of SW12 on B.Cu
-    @(219.5100 mm, 70.2600 mm): NPTH pad of SW12
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(202.4000 mm, 66.2200 mm): Pad 2 [Net-(D11-Pad2)] of SW11 on B.Cu
-    @(200.5100 mm, 68.7600 mm): NPTH pad of SW11
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(221.4000 mm, 67.7200 mm): Pad 2 [Net-(D12-Pad2)] of SW12 on B.Cu
-    @(219.5100 mm, 70.2600 mm): NPTH pad of SW12
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(202.4000 mm, 66.2200 mm): Pad 2 [Net-(D11-Pad2)] of SW11 on B.Cu
-    @(200.5100 mm, 68.7600 mm): NPTH pad of SW11
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(152.9000 mm, 60.2200 mm): Pad 1 [col3] of SW9 on F.Cu
     @(154.7900 mm, 62.7600 mm): NPTH pad of SW9
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
+    @(221.4000 mm, 67.7200 mm): Pad 2 [Net-(D12-Pad2)] of SW12 on B.Cu
+    @(219.5100 mm, 70.2600 mm): NPTH pad of SW12
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(202.4000 mm, 66.2200 mm): Pad 2 [Net-(D11-Pad2)] of SW11 on B.Cu
+    @(200.5100 mm, 68.7600 mm): NPTH pad of SW11
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
     @(183.3000 mm, 61.5200 mm): Pad 2 [Net-(D10-Pad2)] of SW10 on B.Cu
     @(181.4100 mm, 64.0600 mm): NPTH pad of SW10
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(210.0000 mm, 86.9200 mm): Pad 1 [col0] of SW18 on F.Cu
-    @(211.8900 mm, 89.4600 mm): NPTH pad of SW18
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(191.0000 mm, 85.4200 mm): Pad 1 [col1] of SW17 on F.Cu
-    @(192.8900 mm, 87.9600 mm): NPTH pad of SW17
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(199.5000 mm, 77.2000 mm): Pad 2 [Net-(D11-Pad2)] of SW11 on B.Cu
-    @(201.7000 mm, 75.0000 mm): NPTH pad of SW11
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(218.5000 mm, 78.7000 mm): Pad 2 [Net-(D12-Pad2)] of SW12 on B.Cu
-    @(220.7000 mm, 76.5000 mm): NPTH pad of SW12
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(164.3000 mm, 60.2200 mm): Pad 2 [Net-(D9-Pad2)] of SW9 on B.Cu
-    @(162.4100 mm, 62.7600 mm): NPTH pad of SW9
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(202.4000 mm, 85.4200 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
-    @(200.5100 mm, 87.9600 mm): NPTH pad of SW17
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(145.2000 mm, 61.6200 mm): Pad 2 [Net-(D8-Pad2)] of SW8 on B.Cu
-    @(143.3100 mm, 64.1600 mm): NPTH pad of SW8
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(180.4000 mm, 72.5000 mm): Pad 2 [Net-(D10-Pad2)] of SW10 on B.Cu
-    @(182.6000 mm, 70.3000 mm): NPTH pad of SW10
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(221.4000 mm, 86.9200 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on B.Cu
-    @(219.5100 mm, 89.4600 mm): NPTH pad of SW18
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(191.0000 mm, 66.2200 mm): Pad 1 [col1] of SW11 on F.Cu
-    @(192.8900 mm, 68.7600 mm): NPTH pad of SW11
+    @(202.4000 mm, 66.2200 mm): Pad 2 [Net-(D11-Pad2)] of SW11 on B.Cu
+    @(200.5100 mm, 68.7600 mm): NPTH pad of SW11
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(142.3000 mm, 91.6000 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on B.Cu
     @(144.5000 mm, 89.4000 mm): NPTH pad of SW14
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(183.3000 mm, 61.5200 mm): Pad 2 [Net-(D10-Pad2)] of SW10 on B.Cu
-    @(181.4100 mm, 64.0600 mm): NPTH pad of SW10
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(145.2000 mm, 61.6200 mm): Pad 2 [Net-(D8-Pad2)] of SW8 on B.Cu
-    @(143.3100 mm, 64.1600 mm): NPTH pad of SW8
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(145.2000 mm, 80.6200 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on B.Cu
-    @(143.3100 mm, 83.1600 mm): NPTH pad of SW14
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(123.3000 mm, 94.0000 mm): Pad 2 [Net-(D13-Pad2)] of SW13 on B.Cu
-    @(125.5000 mm, 91.8000 mm): NPTH pad of SW13
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(161.4000 mm, 71.2000 mm): Pad 2 [Net-(D9-Pad2)] of SW9 on B.Cu
-    @(163.6000 mm, 69.0000 mm): NPTH pad of SW9
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(126.2000 mm, 83.0200 mm): Pad 2 [Net-(D13-Pad2)] of SW13 on B.Cu
-    @(124.3100 mm, 85.5600 mm): NPTH pad of SW13
+    @(221.4000 mm, 67.7200 mm): Pad 2 [Net-(D12-Pad2)] of SW12 on B.Cu
+    @(219.5100 mm, 70.2600 mm): NPTH pad of SW12
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(164.3000 mm, 60.2200 mm): Pad 2 [Net-(D9-Pad2)] of SW9 on B.Cu
     @(162.4100 mm, 62.7600 mm): NPTH pad of SW9
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(126.2000 mm, 83.0200 mm): Pad 2 [Net-(D13-Pad2)] of SW13 on B.Cu
-    @(124.3100 mm, 85.5600 mm): NPTH pad of SW13
+    @(145.2000 mm, 61.6200 mm): Pad 2 [Net-(D8-Pad2)] of SW8 on B.Cu
+    @(143.3100 mm, 64.1600 mm): NPTH pad of SW8
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(199.5000 mm, 77.2000 mm): Pad 2 [Net-(D11-Pad2)] of SW11 on B.Cu
+    @(201.7000 mm, 75.0000 mm): NPTH pad of SW11
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(114.8000 mm, 64.0200 mm): Pad 1 [col5] of SW7 on F.Cu
-    @(116.6900 mm, 66.5600 mm): NPTH pad of SW7
+    @(145.2000 mm, 80.6200 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on B.Cu
+    @(143.3100 mm, 83.1600 mm): NPTH pad of SW14
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(218.5000 mm, 78.7000 mm): Pad 2 [Net-(D12-Pad2)] of SW12 on B.Cu
+    @(220.7000 mm, 76.5000 mm): NPTH pad of SW12
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(145.2000 mm, 61.6200 mm): Pad 2 [Net-(D8-Pad2)] of SW8 on B.Cu
+    @(143.3100 mm, 64.1600 mm): NPTH pad of SW8
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(210.0000 mm, 48.8200 mm): Pad 1 [col0] of SW6 on F.Cu
     @(211.8900 mm, 51.3600 mm): NPTH pad of SW6
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(180.4000 mm, 72.5000 mm): Pad 2 [Net-(D10-Pad2)] of SW10 on B.Cu
+    @(182.6000 mm, 70.3000 mm): NPTH pad of SW10
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(171.9000 mm, 42.5200 mm): Pad 1 [col2] of SW4 on F.Cu
-    @(173.7900 mm, 45.0600 mm): NPTH pad of SW4
+    @(183.3000 mm, 61.5200 mm): Pad 2 [Net-(D10-Pad2)] of SW10 on B.Cu
+    @(181.4100 mm, 64.0600 mm): NPTH pad of SW10
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(191.0000 mm, 66.2200 mm): Pad 1 [col1] of SW11 on F.Cu
+    @(192.8900 mm, 68.7600 mm): NPTH pad of SW11
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(161.4000 mm, 71.2000 mm): Pad 2 [Net-(D9-Pad2)] of SW9 on B.Cu
+    @(163.6000 mm, 69.0000 mm): NPTH pad of SW9
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(164.3000 mm, 60.2200 mm): Pad 2 [Net-(D9-Pad2)] of SW9 on B.Cu
+    @(162.4100 mm, 62.7600 mm): NPTH pad of SW9
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(191.0000 mm, 47.3200 mm): Pad 1 [col1] of SW5 on F.Cu
     @(192.8900 mm, 49.8600 mm): NPTH pad of SW5
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(152.9000 mm, 41.1300 mm): Pad 1 [col3] of SW3 on F.Cu
-    @(154.7900 mm, 43.6700 mm): NPTH pad of SW3
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(126.2000 mm, 64.0200 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on B.Cu
-    @(124.3100 mm, 66.5600 mm): NPTH pad of SW7
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(126.2000 mm, 64.0200 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on B.Cu
-    @(124.3100 mm, 66.5600 mm): NPTH pad of SW7
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
     @(133.8000 mm, 61.6200 mm): Pad 1 [col4] of SW8 on F.Cu
     @(135.6900 mm, 64.1600 mm): NPTH pad of SW8
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(180.4000 mm, 53.5000 mm): Pad 2 [Net-(D4-Pad2)] of SW4 on B.Cu
-    @(182.6000 mm, 51.3000 mm): NPTH pad of SW4
+    @(142.3000 mm, 72.6000 mm): Pad 2 [Net-(D8-Pad2)] of SW8 on B.Cu
+    @(144.5000 mm, 70.4000 mm): NPTH pad of SW8
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(171.9000 mm, 42.5200 mm): Pad 1 [col2] of SW4 on F.Cu
+    @(173.7900 mm, 45.0600 mm): NPTH pad of SW4
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(161.4000 mm, 52.1100 mm): Pad 2 [Net-(D3-Pad2)] of SW3 on B.Cu
-    @(163.6000 mm, 49.9100 mm): NPTH pad of SW3
+    @(123.3000 mm, 94.0000 mm): Pad 2 [Net-(D13-Pad2)] of SW13 on B.Cu
+    @(125.5000 mm, 91.8000 mm): NPTH pad of SW13
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(152.9000 mm, 41.1300 mm): Pad 1 [col3] of SW3 on F.Cu
+    @(154.7900 mm, 43.6700 mm): NPTH pad of SW3
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(221.4000 mm, 48.8200 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
     @(219.5100 mm, 51.3600 mm): NPTH pad of SW6
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(126.2000 mm, 44.9200 mm): Pad 2 [Net-(D1-Pad2)] of SW1 on B.Cu
-    @(124.3100 mm, 47.4600 mm): NPTH pad of SW1
+    @(126.2000 mm, 83.0200 mm): Pad 2 [Net-(D13-Pad2)] of SW13 on B.Cu
+    @(124.3100 mm, 85.5600 mm): NPTH pad of SW13
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(126.2000 mm, 44.9200 mm): Pad 2 [Net-(D1-Pad2)] of SW1 on B.Cu
-    @(124.3100 mm, 47.4600 mm): NPTH pad of SW1
+    @(126.2000 mm, 83.0200 mm): Pad 2 [Net-(D13-Pad2)] of SW13 on B.Cu
+    @(124.3100 mm, 85.5600 mm): NPTH pad of SW13
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(221.4000 mm, 48.8200 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
     @(219.5100 mm, 51.3600 mm): NPTH pad of SW6
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(199.5000 mm, 58.3000 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
+    @(201.7000 mm, 56.1000 mm): NPTH pad of SW5
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(180.4000 mm, 53.5000 mm): Pad 2 [Net-(D4-Pad2)] of SW4 on B.Cu
+    @(182.6000 mm, 51.3000 mm): NPTH pad of SW4
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(126.2000 mm, 44.9200 mm): Pad 2 [Net-(D1-Pad2)] of SW1 on B.Cu
+    @(124.3100 mm, 47.4600 mm): NPTH pad of SW1
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(221.4000 mm, 86.9200 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on B.Cu
+    @(219.5100 mm, 89.4600 mm): NPTH pad of SW18
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(126.2000 mm, 44.9200 mm): Pad 2 [Net-(D1-Pad2)] of SW1 on B.Cu
+    @(124.3100 mm, 47.4600 mm): NPTH pad of SW1
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(123.3000 mm, 55.9000 mm): Pad 2 [Net-(D1-Pad2)] of SW1 on B.Cu
     @(125.5000 mm, 53.7000 mm): NPTH pad of SW1
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(218.5000 mm, 97.9000 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on B.Cu
+    @(220.7000 mm, 95.7000 mm): NPTH pad of SW18
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(133.8000 mm, 42.5200 mm): Pad 1 [col4] of SW2 on F.Cu
@@ -485,75 +453,91 @@
     @(181.4100 mm, 45.0600 mm): NPTH pad of SW4
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(183.3000 mm, 42.5200 mm): Pad 2 [Net-(D4-Pad2)] of SW4 on B.Cu
-    @(181.4100 mm, 45.0600 mm): NPTH pad of SW4
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(114.8000 mm, 102.0200 mm): Pad 1 [col5] of SW19 on F.Cu
-    @(116.6900 mm, 104.5600 mm): NPTH pad of SW19
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
     @(114.8000 mm, 44.9200 mm): Pad 1 [col5] of SW1 on F.Cu
     @(116.6900 mm, 47.4600 mm): NPTH pad of SW1
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(164.3000 mm, 41.1300 mm): Pad 2 [Net-(D3-Pad2)] of SW3 on B.Cu
-    @(162.4100 mm, 43.6700 mm): NPTH pad of SW3
+    @(183.3000 mm, 42.5200 mm): Pad 2 [Net-(D4-Pad2)] of SW4 on B.Cu
+    @(181.4100 mm, 45.0600 mm): NPTH pad of SW4
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(218.5000 mm, 59.8000 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
+    @(220.7000 mm, 57.6000 mm): NPTH pad of SW6
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(202.4000 mm, 47.3200 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
+    @(200.5100 mm, 49.8600 mm): NPTH pad of SW5
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(202.4000 mm, 47.3200 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
+    @(200.5100 mm, 49.8600 mm): NPTH pad of SW5
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(142.3000 mm, 53.5000 mm): Pad 2 [Net-(D2-Pad2)] of SW2 on B.Cu
     @(144.5000 mm, 51.3000 mm): NPTH pad of SW2
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
+    @(145.2000 mm, 42.5200 mm): Pad 2 [Net-(D2-Pad2)] of SW2 on B.Cu
+    @(143.3100 mm, 45.0600 mm): NPTH pad of SW2
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(145.2000 mm, 42.5200 mm): Pad 2 [Net-(D2-Pad2)] of SW2 on B.Cu
+    @(143.3100 mm, 45.0600 mm): NPTH pad of SW2
+[clearance]: Overschrijding van vrije afstand (pad vrije afstand 0,1905 mm; werkelijk 0,0000 mm)
+    Local override; error
+    @(89.0000 mm, 60.7000 mm): Pad [<no net>] of W1 on F.Cu
+    @(89.0000 mm, 61.2004 mm): Pad 1 [DATA] of W1 on F.Cu
+[clearance]: Overschrijding van vrije afstand (pad vrije afstand 0,1905 mm; werkelijk 0,0000 mm)
+    Local override; error
+    @(89.0000 mm, 60.7000 mm): Pad [<no net>] of W1 on F.Cu
+    @(89.0000 mm, 60.1996 mm): Pad 2 [Net-(J2-Pad3)] of W1 on F.Cu
+[clearance]: Overschrijding van vrije afstand (pad vrije afstand 0,3000 mm; werkelijk 0,2118 mm)
+    Local override; error
+    @(129.6000 mm, 59.6000 mm): PTH pad [<no net>] of TH3
+    @(132.3000 mm, 61.6000 mm): Pad 1 [col4] of SW8 on F.Cu
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(210.0000 mm, 86.9200 mm): Pad 1 [col0] of SW18 on F.Cu
+    @(211.8900 mm, 89.4600 mm): NPTH pad of SW18
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(161.4000 mm, 52.1100 mm): Pad 2 [Net-(D3-Pad2)] of SW3 on B.Cu
+    @(163.6000 mm, 49.9100 mm): NPTH pad of SW3
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(114.8000 mm, 64.0200 mm): Pad 1 [col5] of SW7 on F.Cu
+    @(116.6900 mm, 66.5600 mm): NPTH pad of SW7
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(221.4000 mm, 86.9200 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on B.Cu
+    @(219.5100 mm, 89.4600 mm): NPTH pad of SW18
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(126.2000 mm, 64.0200 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on B.Cu
+    @(124.3100 mm, 66.5600 mm): NPTH pad of SW7
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
+    @(126.2000 mm, 64.0200 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on B.Cu
+    @(124.3100 mm, 66.5600 mm): NPTH pad of SW7
+[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
+    Rule: beperkingen printplaatinstellingen voor gat; error
     @(164.3000 mm, 41.1300 mm): Pad 2 [Net-(D3-Pad2)] of SW3 on B.Cu
     @(162.4100 mm, 43.6700 mm): NPTH pad of SW3
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
-    @(145.2000 mm, 42.5200 mm): Pad 2 [Net-(D2-Pad2)] of SW2 on B.Cu
-    @(143.3100 mm, 45.0600 mm): NPTH pad of SW2
+    @(164.3000 mm, 41.1300 mm): Pad 2 [Net-(D3-Pad2)] of SW3 on B.Cu
+    @(162.4100 mm, 43.6700 mm): NPTH pad of SW3
 [hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
     Rule: beperkingen printplaatinstellingen voor gat; error
     @(123.3000 mm, 75.0000 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on B.Cu
     @(125.5000 mm, 72.8000 mm): NPTH pad of SW7
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(145.2000 mm, 42.5200 mm): Pad 2 [Net-(D2-Pad2)] of SW2 on B.Cu
-    @(143.3100 mm, 45.0600 mm): NPTH pad of SW2
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(199.5000 mm, 58.3000 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
-    @(201.7000 mm, 56.1000 mm): NPTH pad of SW5
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(142.3000 mm, 72.6000 mm): Pad 2 [Net-(D8-Pad2)] of SW8 on B.Cu
-    @(144.5000 mm, 70.4000 mm): NPTH pad of SW8
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(218.5000 mm, 59.8000 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
-    @(220.7000 mm, 57.6000 mm): NPTH pad of SW6
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,2328 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(123.3000 mm, 113.0000 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on B.Cu
-    @(125.5000 mm, 110.8000 mm): NPTH pad of SW19
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(126.2000 mm, 102.0200 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on B.Cu
-    @(124.3100 mm, 104.5600 mm): NPTH pad of SW19
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(202.4000 mm, 47.3200 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
-    @(200.5100 mm, 49.8600 mm): NPTH pad of SW5
-[hole_clearance]: Overschrijding van de vrije afstand om een gat (beperkingen printplaatinstellingen voor gat vrije afstand 0,2500 mm; werkelijk 0,0072 mm)
-    Rule: beperkingen printplaatinstellingen voor gat; error
-    @(202.4000 mm, 47.3200 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
-    @(200.5100 mm, 49.8600 mm): NPTH pad of SW5
-[starved_thermal]: Onvolledige verbinding van thermische ontlasting met zone (laag B.Cu; zone minimum aantal spaken 2; werkelijk 1)
-    Local override; error
-    @(83.0000 mm, 37.0000 mm): Zone [GND] on B.Cu, priority 0
-    @(90.0000 mm, 45.6000 mm): PTH pad 2 [GND] of J2
 [starved_thermal]: Onvolledige verbinding van thermische ontlasting met zone (laag F.Cu; zone minimum aantal spaken 2; werkelijk 1)
     Local override; error
     @(83.0000 mm, 37.0000 mm): Zone [GND] on F.Cu, priority 0
+    @(90.0000 mm, 45.6000 mm): PTH pad 2 [GND] of J2
+[starved_thermal]: Onvolledige verbinding van thermische ontlasting met zone (laag B.Cu; zone minimum aantal spaken 2; werkelijk 1)
+    Local override; error
+    @(83.0000 mm, 37.0000 mm): Zone [GND] on B.Cu, priority 0
     @(90.0000 mm, 45.6000 mm): PTH pad 2 [GND] of J2
 [starved_thermal]: Onvolledige verbinding van thermische ontlasting met zone (laag B.Cu; zone minimum aantal spaken 2; werkelijk 1)
     Local override; error
@@ -567,6 +551,66 @@
     Local override; error
     @(83.0000 mm, 37.0000 mm): Zone [GND] on B.Cu, priority 0
     @(108.7188 mm, 50.0457 mm): PTH pad 4 [GND] of U1
+[starved_thermal]: Onvolledige verbinding van thermische ontlasting met zone (laag F.Cu; zone minimum aantal spaken 2; werkelijk 1)
+    Local override; error
+    @(83.0000 mm, 37.0000 mm): Zone [GND] on F.Cu, priority 0
+    @(88.0000 mm, 78.5000 mm): PTH pad 2 [GND] of J_BAT
+[starved_thermal]: Onvolledige verbinding van thermische ontlasting met zone (laag F.Cu; zone minimum aantal spaken 2; werkelijk 1)
+    Local override; error
+    @(83.0000 mm, 37.0000 mm): Zone [GND] on F.Cu, priority 0
+    @(94.4000 mm, 97.5000 mm): PTH pad C [GND] of ENC1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(172.6000 mm, 51.3000 mm): NPTH pad of SW4
+    @(174.8000 mm, 53.5000 mm): Pad 2 [Net-(D4-Pad2)] of SW4 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(173.7900 mm, 45.0600 mm): NPTH pad of SW4
+    @(171.9000 mm, 42.5200 mm): Pad 1 [col2] of SW4 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(173.7900 mm, 45.0600 mm): NPTH pad of SW4
+    @(170.7000 mm, 45.0600 mm): Pad 1 [col2] of SW4 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(177.6000 mm, 53.5000 mm): NPTH pad of SW4
+    @(180.4000 mm, 53.5000 mm): Pad 2 [Net-(D4-Pad2)] of SW4 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(191.2000 mm, 109.5000 mm): NPTH pad of SW23
+    @(189.8000 mm, 106.9600 mm): Pad 1 [col1] of SW23 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(181.4100 mm, 45.0600 mm): NPTH pad of SW4
+    @(184.5000 mm, 45.0600 mm): Pad 2 [Net-(D4-Pad2)] of SW4 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(181.4100 mm, 45.0600 mm): NPTH pad of SW4
+    @(183.3000 mm, 42.5200 mm): Pad 2 [Net-(D4-Pad2)] of SW4 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(191.7000 mm, 113.2000 mm): NPTH pad of SW23
+    @(193.9000 mm, 115.4000 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(181.4100 mm, 45.0600 mm): NPTH pad of SW4
+    @(184.5000 mm, 45.0600 mm): Pad 2 [Net-(D4-Pad2)] of SW4 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(192.8900 mm, 106.9600 mm): NPTH pad of SW23
+    @(191.0000 mm, 104.4200 mm): Pad 1 [col1] of SW23 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(181.4100 mm, 45.0600 mm): NPTH pad of SW4
+    @(183.3000 mm, 42.5200 mm): Pad 2 [Net-(D4-Pad2)] of SW4 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(84.0500 mm, 49.6000 mm): PTH pad 1 [VCC] of J2
+    @(83.0000 mm, 37.0000 mm): Zone [GND] on F.Cu, priority 0
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(192.8900 mm, 106.9600 mm): NPTH pad of SW23
+    @(189.8000 mm, 106.9600 mm): Pad 1 [col1] of SW23 on B.Cu
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(182.6000 mm, 51.3000 mm): NPTH pad of SW4
@@ -577,16 +621,192 @@
     @(184.5000 mm, 45.0600 mm): Pad 2 [Net-(D4-Pad2)] of SW4 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(196.7000 mm, 115.4000 mm): NPTH pad of SW23
+    @(199.5000 mm, 115.4000 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(200.5100 mm, 106.9600 mm): NPTH pad of SW23
+    @(203.6000 mm, 106.9600 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(200.5100 mm, 106.9600 mm): NPTH pad of SW23
+    @(202.4000 mm, 104.4200 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(84.0500 mm, 49.6000 mm): PTH pad 1 [VCC] of J2
+    @(83.0000 mm, 37.0000 mm): Zone [GND] on B.Cu, priority 0
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(200.5100 mm, 106.9600 mm): NPTH pad of SW23
+    @(203.6000 mm, 106.9600 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(200.5100 mm, 106.9600 mm): NPTH pad of SW23
+    @(202.4000 mm, 104.4200 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(191.2000 mm, 52.4000 mm): NPTH pad of SW5
+    @(189.8000 mm, 49.8600 mm): Pad 1 [col1] of SW5 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(90.0000 mm, 49.6000 mm): PTH pad 1 [VCC] of J2
+    @(83.0000 mm, 37.0000 mm): Zone [GND] on F.Cu, priority 0
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(201.7000 mm, 113.2000 mm): NPTH pad of SW23
+    @(199.5000 mm, 115.4000 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(191.7000 mm, 56.1000 mm): NPTH pad of SW5
+    @(193.9000 mm, 58.3000 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(202.2000 mm, 109.5000 mm): NPTH pad of SW23
+    @(203.6000 mm, 106.9600 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(192.8900 mm, 49.8600 mm): NPTH pad of SW5
+    @(191.0000 mm, 47.3200 mm): Pad 1 [col1] of SW5 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(192.8900 mm, 49.8600 mm): NPTH pad of SW5
+    @(189.8000 mm, 49.8600 mm): Pad 1 [col1] of SW5 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(196.7000 mm, 58.3000 mm): NPTH pad of SW5
+    @(199.5000 mm, 58.3000 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(200.5100 mm, 49.8600 mm): NPTH pad of SW5
+    @(203.6000 mm, 49.8600 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(84.0500 mm, 42.6000 mm): PTH pad 3 [Net-(J2-Pad3)] of J2
+    @(83.0000 mm, 37.0000 mm): Zone [GND] on F.Cu, priority 0
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(200.5100 mm, 49.8600 mm): NPTH pad of SW5
+    @(202.4000 mm, 47.3200 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(210.2500 mm, 111.0000 mm): NPTH pad of SW24
+    @(208.8500 mm, 108.4600 mm): Pad 1 [col0] of SW24 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(200.5100 mm, 49.8600 mm): NPTH pad of SW5
+    @(203.6000 mm, 49.8600 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(210.7500 mm, 114.7000 mm): NPTH pad of SW24
+    @(212.9500 mm, 116.9000 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(200.5100 mm, 49.8600 mm): NPTH pad of SW5
+    @(202.4000 mm, 47.3200 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(211.9400 mm, 108.4600 mm): NPTH pad of SW24
+    @(210.0500 mm, 105.9200 mm): Pad 1 [col0] of SW24 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(201.7000 mm, 56.1000 mm): NPTH pad of SW5
+    @(199.5000 mm, 58.3000 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(211.9400 mm, 108.4600 mm): NPTH pad of SW24
+    @(208.8500 mm, 108.4600 mm): Pad 1 [col0] of SW24 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(202.2000 mm, 52.4000 mm): NPTH pad of SW5
+    @(203.6000 mm, 49.8600 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(84.0500 mm, 42.6000 mm): PTH pad 3 [Net-(J2-Pad3)] of J2
+    @(83.0000 mm, 37.0000 mm): Zone [GND] on B.Cu, priority 0
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(215.7500 mm, 116.9000 mm): NPTH pad of SW24
+    @(218.5500 mm, 116.9000 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(219.5600 mm, 108.4600 mm): NPTH pad of SW24
+    @(222.6500 mm, 108.4600 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(124.3100 mm, 85.5600 mm): NPTH pad of SW13
+    @(127.4000 mm, 85.5600 mm): Pad 2 [Net-(D13-Pad2)] of SW13 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(219.5600 mm, 108.4600 mm): NPTH pad of SW24
+    @(221.4500 mm, 105.9200 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(219.5600 mm, 108.4600 mm): NPTH pad of SW24
+    @(222.6500 mm, 108.4600 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(124.3100 mm, 85.5600 mm): NPTH pad of SW13
+    @(126.2000 mm, 83.0200 mm): Pad 2 [Net-(D13-Pad2)] of SW13 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(219.5600 mm, 108.4600 mm): NPTH pad of SW24
+    @(221.4500 mm, 105.9200 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(125.5000 mm, 91.8000 mm): NPTH pad of SW13
+    @(123.3000 mm, 94.0000 mm): Pad 2 [Net-(D13-Pad2)] of SW13 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(220.7500 mm, 114.7000 mm): NPTH pad of SW24
+    @(218.5500 mm, 116.9000 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(90.0000 mm, 42.6000 mm): PTH pad 3 [Net-(J2-Pad3)] of J2
+    @(83.0000 mm, 37.0000 mm): Zone [GND] on F.Cu, priority 0
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(126.0000 mm, 88.1000 mm): NPTH pad of SW13
+    @(127.4000 mm, 85.5600 mm): Pad 2 [Net-(D13-Pad2)] of SW13 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(221.2500 mm, 111.0000 mm): NPTH pad of SW24
+    @(222.6500 mm, 108.4600 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(90.0000 mm, 42.6000 mm): PTH pad 3 [Net-(J2-Pad3)] of J2
+    @(83.0000 mm, 37.0000 mm): Zone [GND] on B.Cu, priority 0
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(210.2000 mm, 53.9000 mm): NPTH pad of SW6
+    @(208.8000 mm, 51.3600 mm): Pad 1 [col0] of SW6 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(85.8000 mm, 51.1000 mm): PTH pad 4 [Net-(J2-Pad4)] of J2
+    @(83.0000 mm, 37.0000 mm): Zone [GND] on B.Cu, priority 0
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(134.0000 mm, 85.7000 mm): NPTH pad of SW14
     @(132.6000 mm, 83.1600 mm): Pad 1 [col4] of SW14 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(210.7000 mm, 57.6000 mm): NPTH pad of SW6
+    @(212.9000 mm, 59.8000 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(134.5000 mm, 89.4000 mm): NPTH pad of SW14
     @(136.7000 mm, 91.6000 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(129.6000 mm, 59.6000 mm): PTH pad [<no net>] of TH3
+    @(132.3000 mm, 61.6000 mm): Pad 1 [col4] of SW8 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(135.6900 mm, 83.1600 mm): NPTH pad of SW14
     @(133.8000 mm, 80.6200 mm): Pad 1 [col4] of SW14 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(211.8900 mm, 51.3600 mm): NPTH pad of SW6
+    @(210.0000 mm, 48.8200 mm): Pad 1 [col0] of SW6 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(135.6900 mm, 83.1600 mm): NPTH pad of SW14
@@ -595,6 +815,38 @@
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(139.5000 mm, 91.6000 mm): NPTH pad of SW14
     @(142.3000 mm, 91.6000 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(211.8900 mm, 51.3600 mm): NPTH pad of SW6
+    @(208.8000 mm, 51.3600 mm): Pad 1 [col0] of SW6 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(102.2500 mm, 122.2369 mm): NPTH pad of SW26
+    @(103.7497 mm, 119.7544 mm): Pad 1 [col4] of SW26 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(129.6000 mm, 97.6000 mm): PTH pad [<no net>] of TH5
+    @(132.3000 mm, 99.7000 mm): Pad 1 [col4] of SW20 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(143.3100 mm, 83.1600 mm): NPTH pad of SW14
+    @(146.4000 mm, 83.1600 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(99.2957 mm, 124.5199 mm): NPTH pad of SW26
+    @(98.4904 mm, 127.5251 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(105.2947 mm, 122.4304 mm): NPTH pad of SW26
+    @(106.5494 mm, 119.5237 mm): Pad 1 [col4] of SW26 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(143.3100 mm, 83.1600 mm): NPTH pad of SW14
+    @(145.2000 mm, 80.6200 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(105.2947 mm, 122.4304 mm): NPTH pad of SW26
+    @(103.7497 mm, 119.7544 mm): Pad 1 [col4] of SW26 on B.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(143.3100 mm, 83.1600 mm): NPTH pad of SW14
@@ -603,500 +855,132 @@
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(143.3100 mm, 83.1600 mm): NPTH pad of SW14
     @(145.2000 mm, 80.6200 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(143.3100 mm, 83.1600 mm): NPTH pad of SW14
-    @(146.4000 mm, 83.1600 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(143.3100 mm, 83.1600 mm): NPTH pad of SW14
-    @(145.2000 mm, 80.6200 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(144.5000 mm, 89.4000 mm): NPTH pad of SW14
-    @(142.3000 mm, 91.6000 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(145.0000 mm, 85.7000 mm): NPTH pad of SW14
-    @(146.4000 mm, 83.1600 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(191.2000 mm, 52.4000 mm): NPTH pad of SW5
-    @(189.8000 mm, 49.8600 mm): Pad 1 [col1] of SW5 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(191.7000 mm, 56.1000 mm): NPTH pad of SW5
-    @(193.9000 mm, 58.3000 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(153.1000 mm, 84.4000 mm): NPTH pad of SW15
-    @(151.7000 mm, 81.8600 mm): Pad 1 [col3] of SW15 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(192.8900 mm, 49.8600 mm): NPTH pad of SW5
-    @(191.0000 mm, 47.3200 mm): Pad 1 [col1] of SW5 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(153.6000 mm, 88.1000 mm): NPTH pad of SW15
-    @(155.8000 mm, 90.3000 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(192.8900 mm, 49.8600 mm): NPTH pad of SW5
-    @(189.8000 mm, 49.8600 mm): Pad 1 [col1] of SW5 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(154.7900 mm, 81.8600 mm): NPTH pad of SW15
-    @(152.9000 mm, 79.3200 mm): Pad 1 [col3] of SW15 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(154.7900 mm, 81.8600 mm): NPTH pad of SW15
-    @(151.7000 mm, 81.8600 mm): Pad 1 [col3] of SW15 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(158.6000 mm, 90.3000 mm): NPTH pad of SW15
-    @(161.4000 mm, 90.3000 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(196.7000 mm, 58.3000 mm): NPTH pad of SW5
-    @(199.5000 mm, 58.3000 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(162.4100 mm, 81.8600 mm): NPTH pad of SW15
-    @(165.5000 mm, 81.8600 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(162.4100 mm, 81.8600 mm): NPTH pad of SW15
-    @(164.3000 mm, 79.3200 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(162.4100 mm, 81.8600 mm): NPTH pad of SW15
-    @(165.5000 mm, 81.8600 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(162.4100 mm, 81.8600 mm): NPTH pad of SW15
-    @(164.3000 mm, 79.3200 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(200.5100 mm, 49.8600 mm): NPTH pad of SW5
-    @(203.6000 mm, 49.8600 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(163.6000 mm, 88.1000 mm): NPTH pad of SW15
-    @(161.4000 mm, 90.3000 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(164.1000 mm, 84.4000 mm): NPTH pad of SW15
-    @(165.5000 mm, 81.8600 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(200.5100 mm, 49.8600 mm): NPTH pad of SW5
-    @(202.4000 mm, 47.3200 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(200.5100 mm, 49.8600 mm): NPTH pad of SW5
-    @(203.6000 mm, 49.8600 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(84.0500 mm, 49.6000 mm): PTH pad 1 [VCC] of J2
-    @(83.0000 mm, 37.0000 mm): Zone [GND] on F.Cu, priority 0
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(172.1000 mm, 85.7000 mm): NPTH pad of SW16
-    @(170.7000 mm, 83.1600 mm): Pad 1 [col2] of SW16 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(200.5100 mm, 49.8600 mm): NPTH pad of SW5
-    @(202.4000 mm, 47.3200 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(172.6000 mm, 89.4000 mm): NPTH pad of SW16
-    @(174.8000 mm, 91.6000 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(173.7900 mm, 83.1600 mm): NPTH pad of SW16
-    @(171.9000 mm, 80.6200 mm): Pad 1 [col2] of SW16 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(201.7000 mm, 56.1000 mm): NPTH pad of SW5
-    @(199.5000 mm, 58.3000 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(173.7900 mm, 83.1600 mm): NPTH pad of SW16
-    @(170.7000 mm, 83.1600 mm): Pad 1 [col2] of SW16 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(191.7000 mm, 113.2000 mm): NPTH pad of SW23
-    @(193.9000 mm, 115.4000 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(192.8900 mm, 106.9600 mm): NPTH pad of SW23
-    @(191.0000 mm, 104.4200 mm): Pad 1 [col1] of SW23 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(177.6000 mm, 91.6000 mm): NPTH pad of SW16
-    @(180.4000 mm, 91.6000 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(192.8900 mm, 106.9600 mm): NPTH pad of SW23
-    @(189.8000 mm, 106.9600 mm): Pad 1 [col1] of SW23 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(202.2000 mm, 52.4000 mm): NPTH pad of SW5
-    @(203.6000 mm, 49.8600 mm): Pad 2 [Net-(D5-Pad2)] of SW5 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(181.4100 mm, 83.1600 mm): NPTH pad of SW16
-    @(184.5000 mm, 83.1600 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(181.4100 mm, 83.1600 mm): NPTH pad of SW16
-    @(183.3000 mm, 80.6200 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(196.7000 mm, 115.4000 mm): NPTH pad of SW23
-    @(199.5000 mm, 115.4000 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(181.4100 mm, 83.1600 mm): NPTH pad of SW16
-    @(184.5000 mm, 83.1600 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(181.4100 mm, 83.1600 mm): NPTH pad of SW16
-    @(183.3000 mm, 80.6200 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(200.5100 mm, 106.9600 mm): NPTH pad of SW23
-    @(203.6000 mm, 106.9600 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(84.0500 mm, 49.6000 mm): PTH pad 1 [VCC] of J2
-    @(83.0000 mm, 37.0000 mm): Zone [GND] on B.Cu, priority 0
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(182.6000 mm, 89.4000 mm): NPTH pad of SW16
-    @(180.4000 mm, 91.6000 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(200.5100 mm, 106.9600 mm): NPTH pad of SW23
-    @(202.4000 mm, 104.4200 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(90.0000 mm, 49.6000 mm): PTH pad 1 [VCC] of J2
-    @(83.0000 mm, 37.0000 mm): Zone [GND] on F.Cu, priority 0
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(183.1000 mm, 85.7000 mm): NPTH pad of SW16
-    @(184.5000 mm, 83.1600 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(200.5100 mm, 106.9600 mm): NPTH pad of SW23
-    @(203.6000 mm, 106.9600 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(200.5100 mm, 106.9600 mm): NPTH pad of SW23
-    @(202.4000 mm, 104.4200 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(191.2000 mm, 90.5000 mm): NPTH pad of SW17
-    @(189.8000 mm, 87.9600 mm): Pad 1 [col1] of SW17 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(191.7000 mm, 94.2000 mm): NPTH pad of SW17
-    @(193.9000 mm, 96.4000 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(84.0500 mm, 42.6000 mm): PTH pad 3 [Net-(J2-Pad3)] of J2
-    @(83.0000 mm, 37.0000 mm): Zone [GND] on F.Cu, priority 0
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(201.7000 mm, 113.2000 mm): NPTH pad of SW23
-    @(199.5000 mm, 115.4000 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(192.8900 mm, 87.9600 mm): NPTH pad of SW17
-    @(191.0000 mm, 85.4200 mm): Pad 1 [col1] of SW17 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(192.8900 mm, 87.9600 mm): NPTH pad of SW17
-    @(189.8000 mm, 87.9600 mm): Pad 1 [col1] of SW17 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(210.2000 mm, 53.9000 mm): NPTH pad of SW6
-    @(208.8000 mm, 51.3600 mm): Pad 1 [col0] of SW6 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(196.7000 mm, 96.4000 mm): NPTH pad of SW17
-    @(199.5000 mm, 96.4000 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(202.2000 mm, 109.5000 mm): NPTH pad of SW23
-    @(203.6000 mm, 106.9600 mm): Pad 2 [Net-(D23-Pad2)] of SW23 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(200.5100 mm, 87.9600 mm): NPTH pad of SW17
-    @(203.6000 mm, 87.9600 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(210.7000 mm, 57.6000 mm): NPTH pad of SW6
-    @(212.9000 mm, 59.8000 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(84.0500 mm, 42.6000 mm): PTH pad 3 [Net-(J2-Pad3)] of J2
-    @(83.0000 mm, 37.0000 mm): Zone [GND] on B.Cu, priority 0
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(200.5100 mm, 87.9600 mm): NPTH pad of SW17
-    @(202.4000 mm, 85.4200 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(200.5100 mm, 87.9600 mm): NPTH pad of SW17
-    @(203.6000 mm, 87.9600 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(200.5100 mm, 87.9600 mm): NPTH pad of SW17
-    @(202.4000 mm, 85.4200 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(211.8900 mm, 51.3600 mm): NPTH pad of SW6
-    @(210.0000 mm, 48.8200 mm): Pad 1 [col0] of SW6 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(201.7000 mm, 94.2000 mm): NPTH pad of SW17
-    @(199.5000 mm, 96.4000 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(202.2000 mm, 90.5000 mm): NPTH pad of SW17
-    @(203.6000 mm, 87.9600 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(211.8900 mm, 51.3600 mm): NPTH pad of SW6
-    @(208.8000 mm, 51.3600 mm): Pad 1 [col0] of SW6 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(90.0000 mm, 42.6000 mm): PTH pad 3 [Net-(J2-Pad3)] of J2
-    @(83.0000 mm, 37.0000 mm): Zone [GND] on F.Cu, priority 0
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(210.2000 mm, 92.0000 mm): NPTH pad of SW18
-    @(208.8000 mm, 89.4600 mm): Pad 1 [col0] of SW18 on B.Cu
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(215.7000 mm, 59.8000 mm): NPTH pad of SW6
     @(218.5000 mm, 59.8000 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(210.7000 mm, 95.7000 mm): NPTH pad of SW18
-    @(212.9000 mm, 97.9000 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(211.8900 mm, 89.4600 mm): NPTH pad of SW18
-    @(210.0000 mm, 86.9200 mm): Pad 1 [col0] of SW18 on F.Cu
+    @(99.8905 mm, 129.9500 mm): NPTH pad of SW26
+    @(98.4904 mm, 127.5251 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(211.8900 mm, 89.4600 mm): NPTH pad of SW18
-    @(208.8000 mm, 89.4600 mm): Pad 1 [col0] of SW18 on B.Cu
+    @(144.5000 mm, 89.4000 mm): NPTH pad of SW14
+    @(142.3000 mm, 91.6000 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(99.8905 mm, 129.9500 mm): NPTH pad of SW26
+    @(101.2905 mm, 132.3749 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(145.0000 mm, 85.7000 mm): NPTH pad of SW14
+    @(146.4000 mm, 83.1600 mm): Pad 2 [Net-(D14-Pad2)] of SW14 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(219.5100 mm, 51.3600 mm): NPTH pad of SW6
     @(222.6000 mm, 51.3600 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(215.7000 mm, 97.9000 mm): NPTH pad of SW18
-    @(218.5000 mm, 97.9000 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on B.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(219.5100 mm, 89.4600 mm): NPTH pad of SW18
-    @(222.6000 mm, 89.4600 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on F.Cu
+    @(109.1047 mm, 129.0296 mm): NPTH pad of SW26
+    @(110.6497 mm, 131.7056 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(219.5100 mm, 51.3600 mm): NPTH pad of SW6
     @(221.4000 mm, 48.8200 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(90.0000 mm, 42.6000 mm): PTH pad 3 [Net-(J2-Pad3)] of J2
-    @(83.0000 mm, 37.0000 mm): Zone [GND] on B.Cu, priority 0
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(219.5100 mm, 89.4600 mm): NPTH pad of SW18
-    @(221.4000 mm, 86.9200 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on B.Cu
+    @(109.1047 mm, 129.0296 mm): NPTH pad of SW26
+    @(112.2494 mm, 129.3963 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on B.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(219.5100 mm, 89.4600 mm): NPTH pad of SW18
-    @(222.6000 mm, 89.4600 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(210.2500 mm, 111.0000 mm): NPTH pad of SW24
-    @(208.8500 mm, 108.4600 mm): Pad 1 [col0] of SW24 on B.Cu
+    @(109.1047 mm, 129.0296 mm): NPTH pad of SW26
+    @(110.6497 mm, 131.7056 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(219.5100 mm, 51.3600 mm): NPTH pad of SW6
     @(222.6000 mm, 51.3600 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(219.5100 mm, 89.4600 mm): NPTH pad of SW18
-    @(221.4000 mm, 86.9200 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(210.7500 mm, 114.7000 mm): NPTH pad of SW24
-    @(212.9500 mm, 116.9000 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(220.7000 mm, 95.7000 mm): NPTH pad of SW18
-    @(218.5000 mm, 97.9000 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(85.8000 mm, 51.1000 mm): PTH pad 4 [Net-(J2-Pad4)] of J2
-    @(83.0000 mm, 37.0000 mm): Zone [GND] on B.Cu, priority 0
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(219.5100 mm, 51.3600 mm): NPTH pad of SW6
-    @(221.4000 mm, 48.8200 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(221.2000 mm, 92.0000 mm): NPTH pad of SW18
-    @(222.6000 mm, 89.4600 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(211.9400 mm, 108.4600 mm): NPTH pad of SW24
-    @(210.0500 mm, 105.9200 mm): Pad 1 [col0] of SW24 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(211.9400 mm, 108.4600 mm): NPTH pad of SW24
-    @(208.8500 mm, 108.4600 mm): Pad 1 [col0] of SW24 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(220.7000 mm, 57.6000 mm): NPTH pad of SW6
-    @(218.5000 mm, 59.8000 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(88.2500 mm, 51.1000 mm): PTH pad 4 [Net-(J2-Pad4)] of J2
-    @(83.0000 mm, 37.0000 mm): Zone [GND] on B.Cu, priority 0
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(215.7500 mm, 116.9000 mm): NPTH pad of SW24
-    @(218.5500 mm, 116.9000 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(221.2000 mm, 53.9000 mm): NPTH pad of SW6
-    @(222.6000 mm, 51.3600 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(129.6000 mm, 59.6000 mm): PTH pad [<no net>] of TH3
-    @(132.3000 mm, 61.6000 mm): Pad 1 [col4] of SW8 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(219.5600 mm, 108.4600 mm): NPTH pad of SW24
-    @(222.6500 mm, 108.4600 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(219.5600 mm, 108.4600 mm): NPTH pad of SW24
-    @(221.4500 mm, 105.9200 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(218.5000 mm, 97.9000 mm): Pad 2 [Net-(D18-Pad2)] of SW18 on B.Cu
-    @(220.1000 mm, 99.9000 mm): PTH pad 1 [row2] of D18
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(219.5600 mm, 108.4600 mm): NPTH pad of SW24
-    @(222.6500 mm, 108.4600 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(219.5600 mm, 108.4600 mm): NPTH pad of SW24
-    @(221.4500 mm, 105.9200 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(129.6000 mm, 97.6000 mm): PTH pad [<no net>] of TH5
-    @(132.3000 mm, 99.7000 mm): Pad 1 [col4] of SW20 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(115.0000 mm, 107.1000 mm): NPTH pad of SW19
-    @(113.6000 mm, 104.5600 mm): Pad 1 [col5] of SW19 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(220.7500 mm, 114.7000 mm): NPTH pad of SW24
-    @(218.5500 mm, 116.9000 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(115.5000 mm, 110.8000 mm): NPTH pad of SW19
-    @(117.7000 mm, 113.0000 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(221.2500 mm, 111.0000 mm): NPTH pad of SW24
-    @(222.6500 mm, 108.4600 mm): Pad 2 [Net-(D24-Pad2)] of SW24 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(116.6900 mm, 104.5600 mm): NPTH pad of SW19
-    @(114.8000 mm, 102.0200 mm): Pad 1 [col5] of SW19 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(116.6900 mm, 104.5600 mm): NPTH pad of SW19
-    @(113.6000 mm, 104.5600 mm): Pad 1 [col5] of SW19 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(120.5000 mm, 113.0000 mm): NPTH pad of SW19
-    @(123.3000 mm, 113.0000 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(124.3100 mm, 104.5600 mm): NPTH pad of SW19
-    @(127.4000 mm, 104.5600 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(124.3100 mm, 104.5600 mm): NPTH pad of SW19
-    @(126.2000 mm, 102.0200 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(124.3100 mm, 104.5600 mm): NPTH pad of SW19
-    @(127.4000 mm, 104.5600 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(124.3100 mm, 104.5600 mm): NPTH pad of SW19
-    @(126.2000 mm, 102.0200 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 41.2300 mm): PTH pad 1 [LED] of U1
-    @(93.4788 mm, 42.4257 mm): PTH pad 24 [Net-(U1-Pad24)] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(125.5000 mm, 110.8000 mm): NPTH pad of SW19
-    @(123.3000 mm, 113.0000 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 41.2300 mm): PTH pad 1 [LED] of U1
-    @(93.4788 mm, 42.4257 mm): PTH pad 24 [Net-(U1-Pad24)] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(218.5000 mm, 59.8000 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
-    @(220.1000 mm, 61.8000 mm): PTH pad 1 [row0] of D6
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(126.0000 mm, 107.1000 mm): NPTH pad of SW19
-    @(127.4000 mm, 104.5600 mm): Pad 2 [Net-(D19-Pad2)] of SW19 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(90.9000 mm, 43.4000 mm): Track [Net-(J2-Pad3)] on B.Cu, length 15.1000 mm
     @(90.0000 mm, 49.6000 mm): PTH pad 1 [VCC] of J2
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 42.4257 mm): PTH pad 1 [LED] of U1
-    @(107.4200 mm, 43.7700 mm): PTH pad 23 [GND] of U1
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 42.4257 mm): PTH pad 1 [LED] of U1
-    @(107.4200 mm, 41.2300 mm): PTH pad 24 [Net-(U1-Pad24)] of U1
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 42.4257 mm): PTH pad 1 [LED] of U1
-    @(107.4200 mm, 43.7700 mm): PTH pad 23 [GND] of U1
+    @(109.1047 mm, 129.0296 mm): NPTH pad of SW26
+    @(112.2494 mm, 129.3963 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(153.1000 mm, 84.4000 mm): NPTH pad of SW15
+    @(151.7000 mm, 81.8600 mm): Pad 1 [col3] of SW15 on B.Cu
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(90.9000 mm, 43.4000 mm): Track [Net-(J2-Pad3)] on B.Cu, length 15.1000 mm
     @(90.0000 mm, 45.6000 mm): PTH pad 2 [GND] of J2
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(219.5100 mm, 51.3600 mm): NPTH pad of SW6
+    @(221.4000 mm, 48.8200 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(153.6000 mm, 88.1000 mm): NPTH pad of SW15
+    @(155.8000 mm, 90.3000 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(104.2957 mm, 133.1801 mm): NPTH pad of SW26
+    @(101.2905 mm, 132.3749 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 41.2300 mm): PTH pad 1 [LED] of U1
+    @(93.4788 mm, 42.4257 mm): PTH pad 24 [Net-(U1-Pad24)] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(154.7900 mm, 81.8600 mm): NPTH pad of SW15
+    @(152.9000 mm, 79.3200 mm): Pad 1 [col3] of SW15 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(220.7000 mm, 57.6000 mm): NPTH pad of SW6
+    @(218.5000 mm, 59.8000 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(107.7500 mm, 131.7631 mm): NPTH pad of SW26
+    @(110.6497 mm, 131.7056 mm): Pad 2 [Net-(D26-Pad2)] of SW26 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 41.2300 mm): PTH pad 1 [LED] of U1
+    @(93.4788 mm, 42.4257 mm): PTH pad 24 [Net-(U1-Pad24)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(154.7900 mm, 81.8600 mm): NPTH pad of SW15
+    @(151.7000 mm, 81.8600 mm): Pad 1 [col3] of SW15 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 42.4257 mm): PTH pad 1 [LED] of U1
+    @(107.4200 mm, 43.7700 mm): PTH pad 23 [GND] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 42.4257 mm): PTH pad 1 [LED] of U1
+    @(107.4200 mm, 41.2300 mm): PTH pad 24 [Net-(U1-Pad24)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(158.6000 mm, 90.3000 mm): NPTH pad of SW15
+    @(161.4000 mm, 90.3000 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(221.2000 mm, 53.9000 mm): NPTH pad of SW6
+    @(222.6000 mm, 51.3600 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 42.4257 mm): PTH pad 1 [LED] of U1
+    @(107.4200 mm, 43.7700 mm): PTH pad 23 [GND] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(108.7188 mm, 42.4257 mm): PTH pad 1 [LED] of U1
     @(107.4200 mm, 41.2300 mm): PTH pad 24 [Net-(U1-Pad24)] of U1
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(162.4100 mm, 81.8600 mm): NPTH pad of SW15
+    @(165.5000 mm, 81.8600 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(92.1800 mm, 43.7700 mm): PTH pad 2 [DATA] of U1
     @(93.4788 mm, 44.9657 mm): PTH pad 23 [GND] of U1
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
@@ -1105,12 +989,20 @@
     @(93.4788 mm, 42.4257 mm): PTH pad 24 [Net-(U1-Pad24)] of U1
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(162.4100 mm, 81.8600 mm): NPTH pad of SW15
+    @(164.3000 mm, 79.3200 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(92.1800 mm, 43.7700 mm): PTH pad 2 [DATA] of U1
     @(93.4788 mm, 44.9657 mm): PTH pad 23 [GND] of U1
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(92.1800 mm, 43.7700 mm): PTH pad 2 [DATA] of U1
     @(93.4788 mm, 42.4257 mm): PTH pad 24 [Net-(U1-Pad24)] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(162.4100 mm, 81.8600 mm): NPTH pad of SW15
+    @(165.5000 mm, 81.8600 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(108.7188 mm, 44.9657 mm): PTH pad 2 [DATA] of U1
@@ -1121,248 +1013,348 @@
     @(107.4200 mm, 43.7700 mm): PTH pad 23 [GND] of U1
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(95.9000 mm, 97.5000 mm): NPTH pad of SW25
-    @(94.5000 mm, 94.9600 mm): Pad 1 [col5] of SW25 on B.Cu
+    @(162.4100 mm, 81.8600 mm): NPTH pad of SW15
+    @(164.3000 mm, 79.3200 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(108.7188 mm, 44.9657 mm): PTH pad 2 [DATA] of U1
     @(107.4200 mm, 46.3100 mm): PTH pad 22 [RESET] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 44.9657 mm): PTH pad 2 [DATA] of U1
+    @(107.4200 mm, 43.7700 mm): PTH pad 23 [GND] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(163.6000 mm, 88.1000 mm): NPTH pad of SW15
+    @(161.4000 mm, 90.3000 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 46.3100 mm): PTH pad 3 [GND] of U1
+    @(93.4788 mm, 47.5057 mm): PTH pad 22 [RESET] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 46.3100 mm): PTH pad 3 [GND] of U1
+    @(93.4788 mm, 47.5057 mm): PTH pad 22 [RESET] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 47.5057 mm): PTH pad 3 [GND] of U1
+    @(107.4200 mm, 46.3100 mm): PTH pad 22 [RESET] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(164.1000 mm, 84.4000 mm): NPTH pad of SW15
+    @(165.5000 mm, 81.8600 mm): Pad 2 [Net-(D15-Pad2)] of SW15 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 47.5057 mm): PTH pad 3 [GND] of U1
+    @(107.4200 mm, 48.8500 mm): PTH pad 21 [VCC] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 47.5057 mm): PTH pad 3 [GND] of U1
+    @(107.4200 mm, 46.3100 mm): PTH pad 22 [RESET] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 47.5057 mm): PTH pad 3 [GND] of U1
+    @(107.4200 mm, 48.8500 mm): PTH pad 21 [VCC] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 48.8500 mm): PTH pad 4 [GND] of U1
+    @(93.4788 mm, 50.0457 mm): PTH pad 21 [VCC] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 48.8500 mm): PTH pad 4 [GND] of U1
+    @(93.4788 mm, 47.5057 mm): PTH pad 22 [RESET] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 48.8500 mm): PTH pad 4 [GND] of U1
+    @(93.4788 mm, 50.0457 mm): PTH pad 21 [VCC] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 48.8500 mm): PTH pad 4 [GND] of U1
+    @(93.4788 mm, 47.5057 mm): PTH pad 22 [RESET] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(172.1000 mm, 85.7000 mm): NPTH pad of SW16
+    @(170.7000 mm, 83.1600 mm): Pad 1 [col2] of SW16 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 50.0457 mm): PTH pad 4 [GND] of U1
+    @(107.4200 mm, 51.3900 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 50.0457 mm): PTH pad 4 [GND] of U1
+    @(107.4200 mm, 48.8500 mm): PTH pad 21 [VCC] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(172.6000 mm, 89.4000 mm): NPTH pad of SW16
+    @(174.8000 mm, 91.6000 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 50.0457 mm): PTH pad 4 [GND] of U1
+    @(107.4200 mm, 51.3900 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 50.0457 mm): PTH pad 4 [GND] of U1
+    @(107.4200 mm, 48.8500 mm): PTH pad 21 [VCC] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(173.7900 mm, 83.1600 mm): NPTH pad of SW16
+    @(171.9000 mm, 80.6200 mm): Pad 1 [col2] of SW16 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 51.3900 mm): PTH pad 5 [SDA] of U1
+    @(93.4788 mm, 52.5857 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(173.7900 mm, 83.1600 mm): NPTH pad of SW16
+    @(170.7000 mm, 83.1600 mm): Pad 1 [col2] of SW16 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 51.3900 mm): PTH pad 5 [SDA] of U1
+    @(93.4788 mm, 50.0457 mm): PTH pad 21 [VCC] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 51.3900 mm): PTH pad 5 [SDA] of U1
+    @(93.4788 mm, 52.5857 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(177.6000 mm, 91.6000 mm): NPTH pad of SW16
+    @(180.4000 mm, 91.6000 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 51.3900 mm): PTH pad 5 [SDA] of U1
+    @(93.4788 mm, 50.0457 mm): PTH pad 21 [VCC] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 52.5857 mm): PTH pad 5 [SDA] of U1
+    @(107.4200 mm, 53.9300 mm): PTH pad 19 [Net-(U1-Pad19)] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(181.4100 mm, 83.1600 mm): NPTH pad of SW16
+    @(184.5000 mm, 83.1600 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 52.5857 mm): PTH pad 5 [SDA] of U1
+    @(107.4200 mm, 51.3900 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(218.5000 mm, 59.8000 mm): Pad 2 [Net-(D6-Pad2)] of SW6 on B.Cu
+    @(220.1000 mm, 61.8000 mm): PTH pad 1 [row0] of D6
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(181.4100 mm, 83.1600 mm): NPTH pad of SW16
+    @(183.3000 mm, 80.6200 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(124.5000 mm, 126.0000 mm): NPTH pad of SW27
+    @(123.1000 mm, 123.4600 mm): Pad 1 [col3] of SW27 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 52.5857 mm): PTH pad 5 [SDA] of U1
+    @(107.4200 mm, 53.9300 mm): PTH pad 19 [Net-(U1-Pad19)] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(181.4100 mm, 83.1600 mm): NPTH pad of SW16
+    @(184.5000 mm, 83.1600 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 52.5857 mm): PTH pad 5 [SDA] of U1
+    @(107.4200 mm, 51.3900 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(125.0000 mm, 129.7000 mm): NPTH pad of SW27
+    @(127.2000 mm, 131.9000 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(181.4100 mm, 83.1600 mm): NPTH pad of SW16
+    @(183.3000 mm, 80.6200 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(126.1900 mm, 123.4600 mm): NPTH pad of SW27
+    @(124.3000 mm, 120.9200 mm): Pad 1 [col3] of SW27 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 53.9300 mm): PTH pad 6 [SCL] of U1
+    @(93.4788 mm, 55.1257 mm): PTH pad 19 [Net-(U1-Pad19)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(182.6000 mm, 89.4000 mm): NPTH pad of SW16
+    @(180.4000 mm, 91.6000 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 53.9300 mm): PTH pad 6 [SCL] of U1
+    @(93.4788 mm, 52.5857 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(126.1900 mm, 123.4600 mm): NPTH pad of SW27
+    @(123.1000 mm, 123.4600 mm): Pad 1 [col3] of SW27 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(183.1000 mm, 85.7000 mm): NPTH pad of SW16
+    @(184.5000 mm, 83.1600 mm): Pad 2 [Net-(D16-Pad2)] of SW16 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 53.9300 mm): PTH pad 6 [SCL] of U1
+    @(93.4788 mm, 55.1257 mm): PTH pad 19 [Net-(U1-Pad19)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 53.9300 mm): PTH pad 6 [SCL] of U1
+    @(93.4788 mm, 52.5857 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(130.0000 mm, 131.9000 mm): NPTH pad of SW27
+    @(132.8000 mm, 131.9000 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 55.1257 mm): PTH pad 6 [SCL] of U1
+    @(107.4200 mm, 56.4700 mm): PTH pad 18 [col0] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(133.8100 mm, 123.4600 mm): NPTH pad of SW27
+    @(136.9000 mm, 123.4600 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 55.1257 mm): PTH pad 6 [SCL] of U1
+    @(107.4200 mm, 53.9300 mm): PTH pad 19 [Net-(U1-Pad19)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(191.2000 mm, 90.5000 mm): NPTH pad of SW17
+    @(189.8000 mm, 87.9600 mm): Pad 1 [col1] of SW17 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(133.8100 mm, 123.4600 mm): NPTH pad of SW27
+    @(135.7000 mm, 120.9200 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 55.1257 mm): PTH pad 6 [SCL] of U1
+    @(107.4200 mm, 56.4700 mm): PTH pad 18 [col0] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 55.1257 mm): PTH pad 6 [SCL] of U1
+    @(107.4200 mm, 53.9300 mm): PTH pad 19 [Net-(U1-Pad19)] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(133.8100 mm, 123.4600 mm): NPTH pad of SW27
+    @(136.9000 mm, 123.4600 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(191.7000 mm, 94.2000 mm): NPTH pad of SW17
+    @(193.9000 mm, 96.4000 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(133.8100 mm, 123.4600 mm): NPTH pad of SW27
+    @(135.7000 mm, 120.9200 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 56.4700 mm): PTH pad 7 [Net-(U1-Pad7)] of U1
+    @(93.4788 mm, 57.6657 mm): PTH pad 18 [col0] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(192.8900 mm, 87.9600 mm): NPTH pad of SW17
+    @(191.0000 mm, 85.4200 mm): Pad 1 [col1] of SW17 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 56.4700 mm): PTH pad 7 [Net-(U1-Pad7)] of U1
+    @(93.4788 mm, 55.1257 mm): PTH pad 19 [Net-(U1-Pad19)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(135.0000 mm, 129.7000 mm): NPTH pad of SW27
+    @(132.8000 mm, 131.9000 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(192.8900 mm, 87.9600 mm): NPTH pad of SW17
+    @(189.8000 mm, 87.9600 mm): Pad 1 [col1] of SW17 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 56.4700 mm): PTH pad 7 [Net-(U1-Pad7)] of U1
+    @(93.4788 mm, 57.6657 mm): PTH pad 18 [col0] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(135.5000 mm, 126.0000 mm): NPTH pad of SW27
+    @(136.9000 mm, 123.4600 mm): Pad 2 [Net-(D27-Pad2)] of SW27 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 56.4700 mm): PTH pad 7 [Net-(U1-Pad7)] of U1
+    @(93.4788 mm, 55.1257 mm): PTH pad 19 [Net-(U1-Pad19)] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(196.7000 mm, 96.4000 mm): NPTH pad of SW17
+    @(199.5000 mm, 96.4000 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 57.6657 mm): PTH pad 7 [Net-(U1-Pad7)] of U1
+    @(107.4200 mm, 59.0100 mm): PTH pad 17 [col1] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 57.6657 mm): PTH pad 7 [Net-(U1-Pad7)] of U1
+    @(107.4200 mm, 56.4700 mm): PTH pad 18 [col0] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(200.5100 mm, 87.9600 mm): NPTH pad of SW17
+    @(203.6000 mm, 87.9600 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(108.7188 mm, 57.6657 mm): PTH pad 7 [Net-(U1-Pad7)] of U1
+    @(107.4200 mm, 59.0100 mm): PTH pad 17 [col1] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(200.5100 mm, 87.9600 mm): NPTH pad of SW17
+    @(202.4000 mm, 85.4200 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(115.0000 mm, 69.1000 mm): NPTH pad of SW7
     @(113.6000 mm, 66.5600 mm): Pad 1 [col5] of SW7 on B.Cu
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 44.9657 mm): PTH pad 2 [DATA] of U1
-    @(107.4200 mm, 43.7700 mm): PTH pad 23 [GND] of U1
+    @(108.7188 mm, 57.6657 mm): PTH pad 7 [Net-(U1-Pad7)] of U1
+    @(107.4200 mm, 56.4700 mm): PTH pad 18 [col0] of U1
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(96.4000 mm, 101.2000 mm): NPTH pad of SW25
-    @(98.6000 mm, 103.4000 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on F.Cu
+    @(200.5100 mm, 87.9600 mm): NPTH pad of SW17
+    @(203.6000 mm, 87.9600 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on F.Cu
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 59.0100 mm): PTH pad 8 [row0] of U1
+    @(93.4788 mm, 60.2057 mm): PTH pad 17 [col1] of U1
 [solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(134.0000 mm, 104.8000 mm): NPTH pad of SW20
-    @(132.6000 mm, 102.2600 mm): Pad 1 [col4] of SW20 on B.Cu
+    @(200.5100 mm, 87.9600 mm): NPTH pad of SW17
+    @(202.4000 mm, 85.4200 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 46.3100 mm): PTH pad 3 [GND] of U1
-    @(93.4788 mm, 47.5057 mm): PTH pad 22 [RESET] of U1
+    @(92.1800 mm, 59.0100 mm): PTH pad 8 [row0] of U1
+    @(93.4788 mm, 57.6657 mm): PTH pad 18 [col0] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(201.7000 mm, 94.2000 mm): NPTH pad of SW17
+    @(199.5000 mm, 96.4000 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 59.0100 mm): PTH pad 8 [row0] of U1
+    @(93.4788 mm, 60.2057 mm): PTH pad 17 [col1] of U1
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(143.5000 mm, 123.7500 mm): NPTH pad of SW28
+    @(142.1000 mm, 121.2100 mm): Pad 1 [col2] of SW28 on B.Cu
+[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(92.1800 mm, 59.0100 mm): PTH pad 8 [row0] of U1
+    @(93.4788 mm, 57.6657 mm): PTH pad 18 [col0] of U1
+[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
+    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
+    @(202.2000 mm, 90.5000 mm): NPTH pad of SW17
+    @(203.6000 mm, 87.9600 mm): Pad 2 [Net-(D17-Pad2)] of SW17 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
     @(115.5000 mm, 72.8000 mm): NPTH pad of SW7
     @(117.7000 mm, 75.0000 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(97.5900 mm, 94.9600 mm): NPTH pad of SW25
-    @(95.7000 mm, 92.4200 mm): Pad 1 [col5] of SW25 on F.Cu
+    @(144.0000 mm, 127.4500 mm): NPTH pad of SW28
+    @(146.2000 mm, 129.6500 mm): Pad 2 [Net-(D28-Pad2)] of SW28 on F.Cu
 [solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
     Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(134.5000 mm, 108.5000 mm): NPTH pad of SW20
-    @(136.7000 mm, 110.7000 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 46.3100 mm): PTH pad 3 [GND] of U1
-    @(93.4788 mm, 47.5057 mm): PTH pad 22 [RESET] of U1
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 47.5057 mm): PTH pad 3 [GND] of U1
-    @(107.4200 mm, 46.3100 mm): PTH pad 22 [RESET] of U1
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(135.6900 mm, 102.2600 mm): NPTH pad of SW20
-    @(133.8000 mm, 99.7200 mm): Pad 1 [col4] of SW20 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(116.6900 mm, 66.5600 mm): NPTH pad of SW7
-    @(114.8000 mm, 64.0200 mm): Pad 1 [col5] of SW7 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(97.5900 mm, 94.9600 mm): NPTH pad of SW25
-    @(94.5000 mm, 94.9600 mm): Pad 1 [col5] of SW25 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 47.5057 mm): PTH pad 3 [GND] of U1
-    @(107.4200 mm, 48.8500 mm): PTH pad 21 [VCC] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(135.6900 mm, 102.2600 mm): NPTH pad of SW20
-    @(132.6000 mm, 102.2600 mm): Pad 1 [col4] of SW20 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 47.5057 mm): PTH pad 3 [GND] of U1
-    @(107.4200 mm, 46.3100 mm): PTH pad 22 [RESET] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 47.5057 mm): PTH pad 3 [GND] of U1
-    @(107.4200 mm, 48.8500 mm): PTH pad 21 [VCC] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(116.6900 mm, 66.5600 mm): NPTH pad of SW7
-    @(113.6000 mm, 66.5600 mm): Pad 1 [col5] of SW7 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 48.8500 mm): PTH pad 4 [GND] of U1
-    @(93.4788 mm, 50.0457 mm): PTH pad 21 [VCC] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(139.5000 mm, 110.7000 mm): NPTH pad of SW20
-    @(142.3000 mm, 110.7000 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 48.8500 mm): PTH pad 4 [GND] of U1
-    @(93.4788 mm, 47.5057 mm): PTH pad 22 [RESET] of U1
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(143.3100 mm, 102.2600 mm): NPTH pad of SW20
-    @(146.4000 mm, 102.2600 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(143.3100 mm, 102.2600 mm): NPTH pad of SW20
-    @(145.2000 mm, 99.7200 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 48.8500 mm): PTH pad 4 [GND] of U1
-    @(93.4788 mm, 50.0457 mm): PTH pad 21 [VCC] of U1
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(143.3100 mm, 102.2600 mm): NPTH pad of SW20
-    @(146.4000 mm, 102.2600 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(101.4000 mm, 103.4000 mm): NPTH pad of SW25
-    @(104.2000 mm, 103.4000 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 48.8500 mm): PTH pad 4 [GND] of U1
-    @(93.4788 mm, 47.5057 mm): PTH pad 22 [RESET] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(143.3100 mm, 102.2600 mm): NPTH pad of SW20
-    @(145.2000 mm, 99.7200 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(120.5000 mm, 75.0000 mm): NPTH pad of SW7
-    @(123.3000 mm, 75.0000 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(144.5000 mm, 108.5000 mm): NPTH pad of SW20
-    @(142.3000 mm, 110.7000 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 50.0457 mm): PTH pad 4 [GND] of U1
-    @(107.4200 mm, 51.3900 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(145.0000 mm, 104.8000 mm): NPTH pad of SW20
-    @(146.4000 mm, 102.2600 mm): Pad 2 [Net-(D20-Pad2)] of SW20 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 50.0457 mm): PTH pad 4 [GND] of U1
-    @(107.4200 mm, 48.8500 mm): PTH pad 21 [VCC] of U1
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(105.2100 mm, 94.9600 mm): NPTH pad of SW25
-    @(108.3000 mm, 94.9600 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(124.3100 mm, 66.5600 mm): NPTH pad of SW7
-    @(127.4000 mm, 66.5600 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 50.0457 mm): PTH pad 4 [GND] of U1
-    @(107.4200 mm, 51.3900 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 50.0457 mm): PTH pad 4 [GND] of U1
-    @(107.4200 mm, 48.8500 mm): PTH pad 21 [VCC] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(105.2100 mm, 94.9600 mm): NPTH pad of SW25
-    @(107.1000 mm, 92.4200 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(124.3100 mm, 66.5600 mm): NPTH pad of SW7
-    @(126.2000 mm, 64.0200 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 51.3900 mm): PTH pad 5 [SDA] of U1
-    @(93.4788 mm, 52.5857 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 51.3900 mm): PTH pad 5 [SDA] of U1
-    @(93.4788 mm, 50.0457 mm): PTH pad 21 [VCC] of U1
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(124.3100 mm, 66.5600 mm): NPTH pad of SW7
-    @(127.4000 mm, 66.5600 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(105.2100 mm, 94.9600 mm): NPTH pad of SW25
-    @(108.3000 mm, 94.9600 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 51.3900 mm): PTH pad 5 [SDA] of U1
-    @(93.4788 mm, 52.5857 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 51.3900 mm): PTH pad 5 [SDA] of U1
-    @(93.4788 mm, 50.0457 mm): PTH pad 21 [VCC] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(124.3100 mm, 66.5600 mm): NPTH pad of SW7
-    @(126.2000 mm, 64.0200 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 52.5857 mm): PTH pad 5 [SDA] of U1
-    @(107.4200 mm, 53.9300 mm): PTH pad 19 [Net-(U1-Pad19)] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(105.2100 mm, 94.9600 mm): NPTH pad of SW25
-    @(107.1000 mm, 92.4200 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 52.5857 mm): PTH pad 5 [SDA] of U1
-    @(107.4200 mm, 51.3900 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(125.5000 mm, 72.8000 mm): NPTH pad of SW7
-    @(123.3000 mm, 75.0000 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 52.5857 mm): PTH pad 5 [SDA] of U1
-    @(107.4200 mm, 53.9300 mm): PTH pad 19 [Net-(U1-Pad19)] of U1
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(106.4000 mm, 101.2000 mm): NPTH pad of SW25
-    @(104.2000 mm, 103.4000 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(108.7188 mm, 52.5857 mm): PTH pad 5 [SDA] of U1
-    @(107.4200 mm, 51.3900 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 53.9300 mm): PTH pad 6 [SCL] of U1
-    @(93.4788 mm, 55.1257 mm): PTH pad 19 [Net-(U1-Pad19)] of U1
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(126.0000 mm, 69.1000 mm): NPTH pad of SW7
-    @(127.4000 mm, 66.5600 mm): Pad 2 [Net-(D7-Pad2)] of SW7 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 53.9300 mm): PTH pad 6 [SCL] of U1
-    @(93.4788 mm, 52.5857 mm): PTH pad 20 [Net-(U1-Pad20)] of U1
-[solder_mask_bridge]: Opening soldeermasker voor overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(106.9000 mm, 97.5000 mm): NPTH pad of SW25
-    @(108.3000 mm, 94.9600 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on F.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(153.1000 mm, 103.4000 mm): NPTH pad of SW21
-    @(151.7000 mm, 100.8600 mm): Pad 1 [col3] of SW21 on B.Cu
-[solder_mask_bridge]: Opening soldeermasker achter overbrugt items met verschillende netten
-    Rule: printplaatinstellingen soldeermasker minimumbreedte; error
-    @(92.1800 mm, 53.9300 mm): PTH pad 6 [SCL] of U1
-    @(93.4788 mm, 55.1257 mm): PTH pad 19 [Net-(U1-Pad19)] of U1
+    @(108.7188 mm, 60.2057 mm): PTH pad 8 [row0] of U1
+    @(107.4200 mm, 61.5500 mm): PTH pad 16 [col2] of U1
 [hole_to_hole]: Boorgat te dicht bij een ander gat (beperkingen printplaatinstellingen min 0,2500 mm; werkelijk 0,0000 mm)
     Rule: beperkingen printplaatinstellingen; warning
     @(115.4200 mm, 50.0000 mm): NPTH pad of SW1
@@ -1805,12 +1797,12 @@
     @(116.6900 mm, 104.5600 mm): NPTH pad of SW19
 [hole_to_hole]: Boorgat te dicht bij een ander gat (beperkingen printplaatinstellingen min 0,2500 mm; werkelijk 0,0000 mm)
     Rule: beperkingen printplaatinstellingen; warning
-    @(124.3100 mm, 104.5600 mm): NPTH pad of SW19
     @(123.0400 mm, 102.0200 mm): NPTH pad of SW19
+    @(124.3100 mm, 104.5600 mm): NPTH pad of SW19
 [hole_to_hole]: Boorgat te dicht bij een ander gat (beperkingen printplaatinstellingen min 0,2500 mm; werkelijk 0,0000 mm)
     Rule: beperkingen printplaatinstellingen; warning
-    @(123.0400 mm, 102.0200 mm): NPTH pad of SW19
     @(124.3100 mm, 104.5600 mm): NPTH pad of SW19
+    @(123.0400 mm, 102.0200 mm): NPTH pad of SW19
 [holes_co_located]: Drilled holes co-located
     Local override; warning
     @(124.3100 mm, 104.5600 mm): NPTH pad of SW19
@@ -1829,12 +1821,12 @@
     @(135.6900 mm, 102.2600 mm): NPTH pad of SW20
 [hole_to_hole]: Boorgat te dicht bij een ander gat (beperkingen printplaatinstellingen min 0,2500 mm; werkelijk 0,0000 mm)
     Rule: beperkingen printplaatinstellingen; warning
-    @(143.3100 mm, 102.2600 mm): NPTH pad of SW20
     @(142.0400 mm, 99.7200 mm): NPTH pad of SW20
+    @(143.3100 mm, 102.2600 mm): NPTH pad of SW20
 [hole_to_hole]: Boorgat te dicht bij een ander gat (beperkingen printplaatinstellingen min 0,2500 mm; werkelijk 0,0000 mm)
     Rule: beperkingen printplaatinstellingen; warning
-    @(142.0400 mm, 99.7200 mm): NPTH pad of SW20
     @(143.3100 mm, 102.2600 mm): NPTH pad of SW20
+    @(142.0400 mm, 99.7200 mm): NPTH pad of SW20
 [holes_co_located]: Drilled holes co-located
     Local override; warning
     @(143.3100 mm, 102.2600 mm): NPTH pad of SW20
@@ -1939,30 +1931,6 @@
     Rule: beperkingen printplaatinstellingen; warning
     @(221.2500 mm, 111.0000 mm): NPTH pad of SW24
     @(220.8300 mm, 111.0000 mm): NPTH pad of SW24
-[hole_to_hole]: Boorgat te dicht bij een ander gat (beperkingen printplaatinstellingen min 0,2500 mm; werkelijk 0,0000 mm)
-    Rule: beperkingen printplaatinstellingen; warning
-    @(96.3200 mm, 97.5000 mm): NPTH pad of SW25
-    @(95.9000 mm, 97.5000 mm): NPTH pad of SW25
-[hole_to_hole]: Boorgat te dicht bij een ander gat (beperkingen printplaatinstellingen min 0,2500 mm; werkelijk 0,0000 mm)
-    Rule: beperkingen printplaatinstellingen; warning
-    @(98.8600 mm, 92.4200 mm): NPTH pad of SW25
-    @(97.5900 mm, 94.9600 mm): NPTH pad of SW25
-[hole_to_hole]: Boorgat te dicht bij een ander gat (beperkingen printplaatinstellingen min 0,2500 mm; werkelijk 0,0000 mm)
-    Rule: beperkingen printplaatinstellingen; warning
-    @(103.9400 mm, 92.4200 mm): NPTH pad of SW25
-    @(105.2100 mm, 94.9600 mm): NPTH pad of SW25
-[hole_to_hole]: Boorgat te dicht bij een ander gat (beperkingen printplaatinstellingen min 0,2500 mm; werkelijk 0,0000 mm)
-    Rule: beperkingen printplaatinstellingen; warning
-    @(103.9400 mm, 92.4200 mm): NPTH pad of SW25
-    @(105.2100 mm, 94.9600 mm): NPTH pad of SW25
-[holes_co_located]: Drilled holes co-located
-    Local override; warning
-    @(105.2100 mm, 94.9600 mm): NPTH pad of SW25
-    @(105.2100 mm, 94.9600 mm): NPTH pad of SW25
-[hole_to_hole]: Boorgat te dicht bij een ander gat (beperkingen printplaatinstellingen min 0,2500 mm; werkelijk 0,0000 mm)
-    Rule: beperkingen printplaatinstellingen; warning
-    @(106.9000 mm, 97.5000 mm): NPTH pad of SW25
-    @(106.4800 mm, 97.5000 mm): NPTH pad of SW25
 [hole_to_hole]: Boorgat te dicht bij een ander gat (beperkingen printplaatinstellingen min 0,2500 mm; werkelijk 0,0000 mm)
     Rule: beperkingen printplaatinstellingen; warning
     @(102.4600 mm, 122.6006 mm): NPTH pad of SW26
@@ -2302,6 +2270,15 @@
 [lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
     Local override; warning
     @(97.0000 mm, 81.5000 mm): Footprint G***
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(87.0000 mm, 93.0000 mm): Footprint SW_BAT
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(229.4000 mm, 81.7500 mm): Footprint J_NP
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+    Local override; warning
+    @(87.0000 mm, 78.5000 mm): Footprint J_BAT
 [lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
     Local override; warning
     @(101.7000 mm, 69.3000 mm): Footprint JP6
@@ -2320,15 +2297,9 @@
 [lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
     Local override; warning
     @(97.0000 mm, 81.5000 mm): Footprint G***
-[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
+[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Lily58-footprint'
     Local override; warning
-    @(229.4000 mm, 81.7500 mm): Footprint J_NP
-[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
-    Local override; warning
-    @(87.0000 mm, 78.5000 mm): Footprint J_BAT
-[lib_footprint_issues]: De huidige configuratie bevat geen footprintbibliotheek 'Numpad'
-    Local override; warning
-    @(87.0000 mm, 93.0000 mm): Footprint SW_BAT
+    @(101.4000 mm, 97.5000 mm): Footprint ENC1
 [silk_overlap]: Silkscreen clearance
     Rule: beperkingen printplaatinstellingen voor silkscreen; warning
     @(85.8000 mm, 51.1000 mm): PTH pad 4 [Net-(J2-Pad4)] of J2
@@ -2783,12 +2754,8 @@
     @(145.0000 mm, 85.7000 mm): NPTH pad of SW14
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(99.1000 mm, 101.1000 mm): Segment of SW25 on F.Silkscreen
-    @(98.6000 mm, 103.4000 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on F.Cu
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
     @(108.6750 mm, 98.9000 mm): Segment of SW25 on F.Silkscreen
-    @(109.5000 mm, 101.2000 mm): Pad 1 [col5] of SW25 on F.Cu
+    @(108.9000 mm, 100.0000 mm): PTH pad S2 [col5] of ENC1
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(105.0682 mm, 121.4181 mm): Segment of SW26 on F.Silkscreen
@@ -2859,28 +2826,8 @@
     @(116.6900 mm, 85.5600 mm): NPTH pad of SW13
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(107.5000 mm, 92.6500 mm): Segment of SW25 on F.Silkscreen
-    @(108.3000 mm, 94.9600 mm): Pad 2 [Net-(D25-Pad2)] of SW25 on F.Cu
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(107.5000 mm, 96.6040 mm): Segment of SW25 on F.Silkscreen
-    @(106.4800 mm, 97.5000 mm): NPTH pad of SW25
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(107.5000 mm, 96.6040 mm): Segment of SW25 on F.Silkscreen
-    @(106.9000 mm, 97.5000 mm): NPTH pad of SW25
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(96.6000 mm, 94.6040 mm): Segment of SW25 on F.Silkscreen
-    @(97.5900 mm, 94.9600 mm): NPTH pad of SW25
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(96.6000 mm, 94.6040 mm): Segment of SW25 on F.Silkscreen
-    @(95.7000 mm, 92.4200 mm): Pad 1 [col5] of SW25 on F.Cu
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
     @(96.6000 mm, 94.6500 mm): Segment of SW25 on F.Silkscreen
-    @(97.5900 mm, 94.9600 mm): NPTH pad of SW25
+    @(97.5900 mm, 94.9600 mm): PTH pad 1 [col5] of SW25
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(172.8000 mm, 44.7040 mm): Segment of SW4 on F.Silkscreen
@@ -3133,6 +3080,30 @@
     Local override; warning
     @(223.0250 mm, 112.4000 mm): Segment of SW24 on F.Silkscreen
     @(223.8500 mm, 114.7000 mm): Pad 1 [col0] of SW24 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(172.8000 mm, 101.9040 mm): Segment of SW22 on F.Silkscreen
+    @(173.7900 mm, 102.2600 mm): NPTH pad of SW22
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(172.8000 mm, 101.9040 mm): Segment of SW22 on F.Silkscreen
+    @(171.9000 mm, 99.7200 mm): Pad 1 [col2] of SW22 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(172.8000 mm, 101.9500 mm): Segment of SW22 on F.Silkscreen
+    @(173.7900 mm, 102.2600 mm): NPTH pad of SW22
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(183.7000 mm, 99.9500 mm): Segment of SW22 on F.Silkscreen
+    @(184.5000 mm, 102.2600 mm): Pad 2 [Net-(D22-Pad2)] of SW22 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(183.7000 mm, 103.9040 mm): Segment of SW22 on F.Silkscreen
+    @(182.6800 mm, 104.8000 mm): NPTH pad of SW22
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(183.7000 mm, 103.9040 mm): Segment of SW22 on F.Silkscreen
+    @(183.1000 mm, 104.8000 mm): NPTH pad of SW22
 [silk_overlap]: Silkscreen clearance
     Rule: beperkingen printplaatinstellingen voor silkscreen; warning
     @(93.4500 mm, 39.9600 mm): Segment of U1 on B.Silkscreen
