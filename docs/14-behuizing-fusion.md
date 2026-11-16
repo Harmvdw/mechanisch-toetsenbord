@@ -83,3 +83,11 @@ Controle: 0 botsingen; knop tot kap 2,5 mm; huis tot plaatuitsparing 1,0 mm rond
 - Numpad in Fusion (bak en plaat).
 - Stuklijst met schroeven, afstandsbussen en voetjes (E19).
 - Na levering van de connector: `conn_diepte` aanpassen.
+
+## Controle 16 nov: draaiknop in Fusion tegenover de print
+Uitgelezen uit "Opzet 1-0-0" versie 6 (alleen lezen, niets gewijzigd). Het document staat in hub **maz1** (Admin Project, map Toetsenbord); in hub testteam is het niet te vinden.
+- SW25/ENC1 op de print: KiCad (101,4; 97,5) = master (−57,2; −51,29).
+- Draaiknop rechts in Fusion: midden (−57,2; −51,29), onderkant op z = 9,1 (bovenkant print). **Gelijk.**
+- Draaiknop links: (−150,124; −51,29); spiegelvlak x = −103,662, hetzelfde vlak als bak en plaat links. **Gelijk.**
+- Plaat rechts heeft op die plek de uitsparing 14 × 14 mm.
+

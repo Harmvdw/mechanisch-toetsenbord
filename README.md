@@ -30,9 +30,8 @@ Deze repo bevat alle werk: referentie-informatie, de PCB-scripts, het behuizings
 | [tools/](tools) | Scripts waarmee de maten zijn gemeten (STL en drill-bestanden) |
 | [docs/bronnen.md](docs/bronnen.md) | Alle links, met per link wat is gelezen en wat niet |
 
-## Status (12 november 2026)
+## Status (16 november 2026)
 
-- PCB's (Lily58 route 2 en numpad) gerouteerd, DRC schoon, Gerbers gemaakt. De KiCad-bestanden en Gerber-zips staan nog alleen op de werkcomputer en moeten naar `pcb/`.
-- Behuizing prototype v0.1 voor de rechterhelft en het numpad: zie [docs/13-behuizing.md](docs/13-behuizing.md). Klaar om te 3D-printen.
-- Behuizing van beide helften staat parametrisch in Fusion: zie [docs/14-behuizing-fusion.md](docs/14-behuizing-fusion.md). Numpad in Fusion volgt. Draaiknop op beide helften staat als referentie in het model; de print moet daarvoor nog worden aangepast.
-- Connector (magnetisch) besteld/te bestellen; levering januari. Daarna `conn_diepte` opmeten.
+- **Printen klaar om te bestellen:** `pcb/lily58-pro/Lily58_Pro_gerbers.zip` (met draaiknop, 13 nov) en `pcb/numpad/numpad_gerbers_v0.4.zip` (met draaiknop, 16 nov). Beide door de DRC, zie [docs/12](docs/12-numpad-en-pcb-route2.md).
+- **Behuizing:** helften staan parametrisch in Fusion ("Opzet 1-0-0", hub maz1, Admin Project, map Toetsenbord), zie [docs/14](docs/14-behuizing-fusion.md). Numpad staat nog alleen als CadQuery-model in `behuizing/`.
+- Connector (magnetisch): levering januari; daarna `conn_diepte` opmeten.
