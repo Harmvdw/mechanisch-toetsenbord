@@ -33,5 +33,5 @@ Deze repo bevat alle werk: referentie-informatie, de PCB-scripts, het behuizings
 ## Status (16 november 2026)
 
 - **Printen klaar om te bestellen:** `pcb/lily58-pro/Lily58_Pro_gerbers.zip` (met draaiknop, 13 nov) en `pcb/numpad/numpad_gerbers_v0.4.zip` (met draaiknop, 16 nov). Beide door de DRC, zie [docs/12](docs/12-numpad-en-pcb-route2.md).
-- **Behuizing:** helften staan parametrisch in Fusion ("Opzet 1-0-0", hub maz1, Admin Project, map Toetsenbord), zie [docs/14](docs/14-behuizing-fusion.md). De numpad (bak, plaat, draaiknop) is op 16 nov in hetzelfde document opgebouwd met `behuizing/fusion/opbouw_numpad.py`; het document is nog niet opgeslagen.
+- **Behuizing:** helften staan parametrisch in Fusion ("Opzet 1-0-0", hub maz1, Admin Project, map Toetsenbord), zie [docs/14](docs/14-behuizing-fusion.md). De numpad (bak, plaat, draaiknop) is op 16 nov in hetzelfde document opgebouwd met `behuizing/fusion/opbouw_numpad.py`; opgeslagen als "Opzet 1-0-1".
 - Connector (magnetisch): levering januari; daarna `conn_diepte` opmeten.

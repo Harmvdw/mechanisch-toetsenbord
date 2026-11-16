@@ -94,7 +94,7 @@ Uitgelezen uit "Opzet 1-0-0" versie 6 (alleen lezen, niets gewijzigd). Het docum
 
 ## Numpad in Fusion (16 nov)
 
-Script: [`behuizing/fusion/opbouw_numpad.py`](../behuizing/fusion/opbouw_numpad.py) (stappen n0 t/m n5). Het bouwt verder op het document met de helften en verwijdert eerst alles waarvan de naam met "Numpad" begint. Opslaan vanuit de koppeling is op 16 nov twee keer geprobeerd en niet gelukt (versie blijft 6; de actieve hub is testteam, het document staat in maz1). Het document staat open met de numpad erin: zelf opslaan met Ctrl+S.
+Script: [`behuizing/fusion/opbouw_numpad.py`](../behuizing/fusion/opbouw_numpad.py) (stappen n0 t/m n5). Het bouwt verder op het document met de helften en verwijdert eerst alles waarvan de naam met "Numpad" begint. Opslaan vanuit de koppeling is op 16 nov twee keer geprobeerd en niet gelukt (versie blijft 6; de actieve hub is testteam, het document staat in maz1). Harm heeft het daarna zelf opgeslagen als **Opzet 1-0-1** (hub en map nog navragen). Opzet 1-0-0 versie 6 is de stand zonder numpad.
 
 ![Helften en numpad](../behuizing/afbeeldingen/fusion_met_numpad.png)
 ![Bovenaanzicht](../behuizing/afbeeldingen/fusion_met_numpad_boven.png)
