@@ -80,7 +80,7 @@ Controle: 0 botsingen; knop tot kap 2,5 mm; huis tot plaatuitsparing 1,0 mm rond
 - ~~Print aanpassen voor de draaiknop~~ gedaan op 13 nov: zie [12-numpad-en-pcb-route2.md §4b](12-numpad-en-pcb-route2.md). De encoder staat precies op het hart van de toets (geen verschuiving); de referentie in Fusion klopt daarmee. Pennen: A/C/B op 7 mm links van het hart, S1/S2 op 7,5 mm rechts, lipjes op ±5,6 mm.
 
 - STEP/STL uit Fusion exporteren naar `behuizing/export/`.
-- Numpad in Fusion (bak en plaat).
+- ~~Numpad in Fusion (bak en plaat)~~ gedaan op 16 nov, zie onderaan. Het document is nog **niet opgeslagen**.
 - Stuklijst met schroeven, afstandsbussen en voetjes (E19).
 - Na levering van de connector: `conn_diepte` aanpassen.
 
@@ -91,3 +91,50 @@ Uitgelezen uit "Opzet 1-0-0" versie 6 (alleen lezen, niets gewijzigd). Het docum
 - Draaiknop links: (−150,124; −51,29); spiegelvlak x = −103,662, hetzelfde vlak als bak en plaat links. **Gelijk.**
 - Plaat rechts heeft op die plek de uitsparing 14 × 14 mm.
 
+
+## Numpad in Fusion (16 nov)
+
+Script: [`behuizing/fusion/opbouw_numpad.py`](../behuizing/fusion/opbouw_numpad.py) (stappen n0 t/m n5). Het bouwt verder op het document met de helften en verwijdert eerst alles waarvan de naam met "Numpad" begint. **Het document is na het opbouwen niet opgeslagen**; eerst bekijken.
+
+![Helften en numpad](../behuizing/afbeeldingen/fusion_met_numpad.png)
+![Bovenaanzicht](../behuizing/afbeeldingen/fusion_met_numpad_boven.png)
+
+Onderdelen (componenten): Bak numpad, Plaat numpad, Print numpad (referentie), Draaiknop numpad (referentie).
+
+| Gegeven | Waarde |
+|---|---|
+| Buitenmaat | 104,75 × 148,75 × 14,1 mm |
+| Bak / plaat (alu 6061) | 220 g / 46 g, samen 266 g (gelijk aan `behuizing.py`) |
+| Zijwand | 3,275 mm (volgt uit `conn_diepte`) |
+| Plaats in het model | toets (0,0) op (`np_x`; `np_y`) = (143,6; 2,56) |
+
+Nieuwe parameters:
+
+| Naam | Waarde | Betekenis |
+|---|---|---|
+| `np_steek` | 19,05 mm | steek van de toetsen |
+| `numpad_afstand` | 40 mm | ruimte tussen rechterhelft en numpad, alleen weergave; 0 = aangekoppeld |
+| `np_x` | 70,8 mm + 2 · conn_diepte + numpad_afstand + 14,8 mm | afgeleid |
+| `np_y` | 2,56 mm | connector van de numpad op de hoogte van J_NP |
+| `np_bus_d` | 6 mm | steunbus onder de print (M3) |
+| `np_conn_b` | 25 mm | breedte uitsparing connector |
+| `np_m3_rand` | 12 mm | buitenste M3 tot de zijkant |
+| `np_m3_diepte` | 8 mm | diepte tapgat M3 in de wand |
+
+Bestaande parameters die de numpad ook gebruikt: `wand`, `spleet`, `bodem`, `vrij_onder`, `plaat_dikte`, `conn_diepte`, `uitsparing`, `r_buiten`, `r_binnen`, `m3_gat`, `m3_vrij`, `voet_d`, `voet_diepte`, `enc_*`, `knop_*`.
+
+Opbouw:
+- Schets "Numpad basis": oorsprong, printrand 96,2 × 132,75 mm, 6 steunbussen, 2 connectoren, draaiknop. Alle andere schetsen hangen hieraan; alle 11 schetsen zijn volledig bepaald.
+- Bak: buitencontour, holte (print + `spleet`), 6 steunbussen ø6 met M3, uitsparing connector in beide zijwanden, 8 × M3 in voor- en achterwand, 4 verdiepingen voor voetjes.
+- Plaat: 20 uitsparingen 14 × 14 mm (één uitsparing + patroon 4 × 5), uitsparing draaiknop, 8 × M3 doorgaand.
+
+Controle (waarden gewijzigd en weer teruggezet):
+- `numpad_afstand` = 0: numpad sluit aan op de rechterhelft (x = 79,8), 0 botsingen, tijdlijn gezond.
+- `conn_diepte` = 11: numpad volgt goed. **De helften niet:** "Afronding pinkkant Bak" en "Afronding pinkkant Plaat" geven dan een fout. Dat moet opgelost worden voordat `conn_diepte` na het opmeten wordt aangepast.
+- `np_steek` 19, `uitsparing` 13,9, `plaat_dikte` 2, `bodem` 3, `knop_d` 18: gezond.
+
+Les voor de scripts: een cirkel niet rechtstreeks op een geprojecteerd punt zetten. De schets volgt een verplaatsing dan wel, de extrusie niet. Oplossing: eigen punt met een samenvallend-voorwaarde (functie `circles`). In `opbouw_helften.py` zit dit nog op de oude manier; daar verschuiven de bronpunten niet, dus het geeft nu geen fout.
+
+Open punten numpad:
+- Uitsparing connector is 25 mm breed en loopt van 0,5 mm onder de bovenkant van de print tot de bovenkant van de wand (4 mm hoog). Aanpassen na het opmeten van de connector.
+- Geen kap en geen USB-opening: de numpad heeft geen eigen controller.
