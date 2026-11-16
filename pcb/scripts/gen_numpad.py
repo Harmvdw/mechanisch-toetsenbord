@@ -218,6 +218,7 @@ for i, (hx, hy) in enumerate(holes, 1):
 EX, EY = UX, T - 9.0                    # midden draaiknop (88.575; 27.475): A-C-B 2 mm boven de pennen van U1
 def ec11(ref, x, y, nets):
     s = fp_header('Numpad:RotaryEncoder_EC11E_Switch', ref, 'EC11 met drukknop', x, y, 'through_hole', ref_dy=-9.5)
+    s = s.replace('(at 0 -9.5 0)', '(at 9.5 0 0)', 1)   # referentietekst rechts naast de knop (boven viel hij over de printrand)
     s += fp_rect(-6, -6, 6, 6, 'F.SilkS', 0.15)
     s += fp_rect(-7.0, -9.0, 7.0, 8.5, 'F.CrtYd', 0.05)
     s += ('\t\t(fp_circle\n\t\t\t(center 0 0)\n\t\t\t(end 3 0)\n\t\t\t(stroke\n\t\t\t\t(width 0.1)\n\t\t\t\t(type solid)\n\t\t\t)\n\t\t\t(fill no)\n'

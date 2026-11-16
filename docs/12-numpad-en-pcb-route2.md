@@ -55,7 +55,7 @@ Besluit Harm: draaiknop in de bovenstrook; alle 20 toetsen blijven.
   - Sporen: A op F.Cu recht omhoog; B en de drukknop via een via 0,375 mm boven de pennenrij en dan op B.Cu.
 - **Firmware:** QMK leest de draaiknop niet zelf uit via de expander. Nodig: eigen code die bij elke matrixscan GPIOA leest (zit al in dezelfde I2C-leesactie als de kolommen) en de stand van A/B omzet in stappen. Bij heel snel draaien kunnen stappen wegvallen; dat hangt af van de scansnelheid.
 - **Controle zonder KiCad** (`pcb/scripts/afstand_controle.py`, eigen script): kleinste afstand nieuw koper tot ander koper 0,5 mm (de steek van de EC11-pennen zelf); tot de pennen van de MCP23017 0,62 mm (de steek van het IC); tot de rand > 1,4 mm. Alle drie netten zijn één geheel, zonder losse uiteinden.
-- **Nog te doen in KiCad:** bord openen, vlakken opnieuw vullen (B), DRC, Gerbers exporteren. De oude Gerbers heten nu `numpad_gerbers_v0.3_ZONDER_draaiknop.zip`; die niet bestellen.
+- **KiCad (16 nov):** vlakken gevuld, DRC gedraaid, Gerbers gemaakt: `pcb/numpad/numpad_gerbers_v0.4.zip`. DRC (`numpad_DRC.rpt`): 0 niet-verbonden pads, 0 fouten in koper, gaten of afstanden. Eén melding "starved thermal": de GND-pen C van de encoder raakt op de onderlaag een los stukje vlak; de pen is via de bovenlaag gewoon met GND verbonden. Rest cosmetisch (silkscreen). De tekst "ENC1" is naast de knop gezet (stond over de printrand). De oude Gerbers heten `numpad_gerbers_v0.3_ZONDER_draaiknop.zip`; die niet bestellen.
 - Behuizing (CadQuery, `behuizing.py`): mee verlengd, met een plaatuitsparing 14 × 14 voor de knop; buitenmaat 104,7 × 148,8 mm, 266 g aluminium.
 
 ![Bovenstrook numpad v0.4](../pcb/numpad/numpad_v04_bovenstrook.png)
@@ -68,7 +68,7 @@ Besluit Harm: draaiknop in de bovenstrook; alle 20 toetsen blijven.
 ## 6. Gerbers
 Per zip: F_Cu, B_Cu, F/B_Mask, F/B_Silkscreen, Edge_Cuts, PTH.drl, NPTH.drl (Protel-extensies, mm).
 - Lily58: omtrek tot x = 231,46 mm. **Versie met encoder: 13 nov** (`pcb/lily58-pro/Lily58_Pro_gerbers.zip`). Gecontroleerd: 2 sleuven 2,6 × 1,5 (lipjes), 4 × ø1,5 (switch), 14 × ø1,0 (o.a. 5 encoderpennen); 2 pootjesgaten en 8 hotswap-gaten minder dan de versie van 12 nov.
-- Numpad v0.3: 96,2 × 113,75 mm, 6 × M3 (`numpad_gerbers_v0.3_ZONDER_draaiknop.zip`, niet meer bestellen). **v0.4 (96,2 × 132,75 mm): Gerbers nog te maken.**
+- Numpad **v0.4** (96,2 × 132,75 mm, met draaiknop): `pcb/numpad/numpad_gerbers_v0.4.zip` (16 nov). Gecontroleerd: 13 × ø1,0 (J1/J2 + 5 encoderpennen), 15 via's, 2 sleuven (lipjes), 6 × M3. De zip van v0.3 (`..._ZONDER_draaiknop.zip`) niet meer bestellen.
 
 ## 7. Scripts in deze repo (`pcb/scripts/`)
 | Script | Doet |
