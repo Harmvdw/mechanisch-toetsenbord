@@ -94,7 +94,7 @@ Uitgelezen uit "Opzet 1-0-0" versie 6 (alleen lezen, niets gewijzigd). Het docum
 
 ## Numpad in Fusion (16 nov)
 
-Script: [`behuizing/fusion/opbouw_numpad.py`](../behuizing/fusion/opbouw_numpad.py) (stappen n0 t/m n5). Het bouwt verder op het document met de helften en verwijdert eerst alles waarvan de naam met "Numpad" begint. **Het document is na het opbouwen niet opgeslagen**; eerst bekijken.
+Script: [`behuizing/fusion/opbouw_numpad.py`](../behuizing/fusion/opbouw_numpad.py) (stappen n0 t/m n5). Het bouwt verder op het document met de helften en verwijdert eerst alles waarvan de naam met "Numpad" begint. Opslaan vanuit de koppeling is op 16 nov twee keer geprobeerd en niet gelukt (versie blijft 6; de actieve hub is testteam, het document staat in maz1). Het document staat open met de numpad erin: zelf opslaan met Ctrl+S.
 
 ![Helften en numpad](../behuizing/afbeeldingen/fusion_met_numpad.png)
 ![Bovenaanzicht](../behuizing/afbeeldingen/fusion_met_numpad_boven.png)
@@ -130,7 +130,8 @@ Opbouw:
 
 Controle (waarden gewijzigd en weer teruggezet):
 - `numpad_afstand` = 0: numpad sluit aan op de rechterhelft (x = 79,8), 0 botsingen, tijdlijn gezond.
-- `conn_diepte` = 11: numpad volgt goed. **De helften niet:** "Afronding pinkkant Bak" en "Afronding pinkkant Plaat" geven dan een fout. Dat moet opgelost worden voordat `conn_diepte` na het opmeten wordt aangepast.
+- `conn_diepte` 6 t/m 10,05 mm: alles gezond (helften en numpad). Bij 5 mm is de zijwand van de numpad nog 0,3 mm en gaat het fout.
+- `conn_diepte` boven 10,06 mm: "Afronding pinkkant Bak" en "Afronding pinkkant Plaat" geven een fout. Oorzaak: de buitencontour van de helft is printrand + `spleet` + `wand` (x = 80,86) en wordt aan de pinkkant afgesneden op het contactvlak (x = 70,8 + `conn_diepte`). Boven 10,06 mm (= `wand` + `spleet` + `jnp_rand`) ligt het contactvlak buiten de contour en valt er niets meer af te snijden. Het is dus een grens van de vorm, geen fout in de afronding. Als de connector dieper blijkt dan 10 mm moet de wand aan de pinkkant plaatselijk dikker worden; dat is een aanpassing van "Contour buiten" in `opbouw_helften.py`. Nog niet gedaan.
 - `np_steek` 19, `uitsparing` 13,9, `plaat_dikte` 2, `bodem` 3, `knop_d` 18: gezond.
 
 Les voor de scripts: een cirkel niet rechtstreeks op een geprojecteerd punt zetten. De schets volgt een verplaatsing dan wel, de extrusie niet. Oplossing: eigen punt met een samenvallend-voorwaarde (functie `circles`). In `opbouw_helften.py` zit dit nog op de oude manier; daar verschuiven de bronpunten niet, dus het geeft nu geen fout.
