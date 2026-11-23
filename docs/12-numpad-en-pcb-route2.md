@@ -79,6 +79,7 @@ Per zip: F_Cu, B_Cu, F/B_Mask, F/B_Silkscreen, Edge_Cuts, PTH.drl, NPTH.drl (Pro
 | `route_lily58.py` | Verbreedt de rand, zoekt een plek voor J_NP en routeert VCC/SDA/SCL/BAT+/RAW. |
 | `afstand_controle.py` | Snelle afstandscontrole van gekozen netten zonder KiCad (geen vervanging van de DRC). |
 | `encoder_lily58.py` | Draaiknop: SW25 als gesoldeerde MX-plek, ENC1 erbij, opnieuw routeren (gebruikt de router uit `route_lily58.py`). |
+| `gerber_naar_step.py` | STEP uit de Gerbers: printrand × 1,6 mm met alle gaten en sleuven; koper en opdruk optioneel. Resultaat Lily58: `pcb/lily58-pro/Lily58_Pro_uit_gerbers.step` (23 nov), past exact op de printrand van de behuizing, geen overlap met bak, plaat of kap. |
 
 ## 8. Bestanden
 KiCad-bestanden, DRC-rapporten en Gerber-zips staan sinds 13 nov in [`pcb/`](../pcb) (zie `pcb/README.md`).
