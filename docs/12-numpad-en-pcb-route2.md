@@ -1,6 +1,6 @@
 # Numpad en aangepaste Lily58-print (route 2)
 
-Status: 13 november 2026 (draaiknop op de helften §4b, draaiknop op het numpad §4c). Beide printen zijn gerouteerd, door de DRC en als Gerbers geëxporteerd (op de werkcomputer, zie onderaan). Dit document is de repo-versie van het projectdocument `numpad-ontwerp.md` (versie 5).
+Status: 16 november 2026 (draaiknop op de helften §4b, draaiknop op het numpad §4c). Beide printen zijn gerouteerd, door de DRC en als Gerbers geëxporteerd; de Gerbers staan in `pcb/` (zie §6 en §8). Dit document is de repo-versie van het projectdocument `numpad-ontwerp.md` (versie 6).
 
 ## 1. Principe
 - Het numpad heeft 20 toetsen (4 × 5, alles 1u, 19,05 mm, MX-hotswap) en een I/O-expander **MCP23017** op de print. Het heeft geen eigen controller.
@@ -63,7 +63,8 @@ Besluit Harm: draaiknop in de bovenstrook; alle 20 toetsen blijven.
 ## 5. DRC (KiCad 10, 12 nov 2026)
 - **Lily58:** 0 niet-verbonden pads, 0 kortsluitingen, 0 kruisende sporen; geen nieuwe meldingen t.o.v. het originele ontwerp. De 17 afstandsmeldingen komen uit het origineel (13× 0,15–0,16 mm rond de Pro Micro, maakbaar bij PCBWay ≥ 0,127 mm).
 - **Lily58 met encoder (13 nov):** 0 niet-verbonden pads, geen nieuwe koper-, gat- of afstandsfouten. Twee nieuwe meldingen "starved thermal": de GND-pen C van de encoder en GND van J_BAT sluiten op de bovenlaag met één spaak op het GND-vlak aan in plaats van twee (elektrisch in orde).
-- **Numpad v0.3 (zonder draaiknop):** 0 niet-verbonden pads, 0 fouten in koper, gaten of afstanden. Alleen cosmetische meldingen. **v0.4 (met draaiknop): DRC nog niet gedraaid.**
+- **Numpad v0.3 (zonder draaiknop):** 0 niet-verbonden pads, 0 fouten in koper, gaten of afstanden. Alleen cosmetische meldingen.
+- **Numpad v0.4 (met draaiknop, 16 nov):** 0 niet-verbonden pads, 0 fouten in koper, gaten of afstanden. Eén melding "starved thermal" (GND-pen C van de encoder, zie §4c), verder alleen cosmetische meldingen.
 
 ## 6. Gerbers
 Per zip: F_Cu, B_Cu, F/B_Mask, F/B_Silkscreen, Edge_Cuts, PTH.drl, NPTH.drl (Protel-extensies, mm).
@@ -83,7 +84,6 @@ Per zip: F_Cu, B_Cu, F/B_Mask, F/B_Silkscreen, Edge_Cuts, PTH.drl, NPTH.drl (Pro
 KiCad-bestanden, DRC-rapporten en Gerber-zips staan sinds 13 nov in [`pcb/`](../pcb) (zie `pcb/README.md`).
 
 ## Volgende stappen
-0. Numpad v0.4 in KiCad: vlakken vullen, DRC, Gerbers.
 1. Bestellen bij PCBWay: beide zips; 2 lagen, 1,6 mm, HASL loodvrij; 5 stuks per print.
 2. EC11-encoders bestellen (3 stuks: 2 helften + numpad; met drukknop, as 20 mm) en knoppen ø ≤ 19 mm.
-2. Firmware: QMK-keyboard met custom matrix voor de MCP23017.
+3. Firmware: QMK-keyboard met custom matrix voor de MCP23017.
