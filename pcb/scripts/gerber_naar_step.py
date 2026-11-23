@@ -211,15 +211,26 @@ def main():
         print('LET OP: gaten buiten de printrand:', buiten)
 
     z0, z1 = a.z0, a.z0 + a.dikte
-    print_body = cq.Workplane('XY').add(vlak_naar_solid(Polygon(rand.exterior.coords), a, z0, a.dikte))
-    knip = [cq.Solid.makeCylinder(d / 2, a.dikte + 2, cq.Vector(*T(x, y, a), z0 - 1)) for x, y, d, _ in rond]
+    # Gaten in 2D wegsnijden en dan pas extruderen. Dubbele gaten (zelfde plek en maat, komt voor bij
+    # deze omkeerbare print) eerst weghalen: die laten een 3D-booleaanse bewerking stil mislukken.
+    uniek = sorted({(round(x, 4), round(y, 4), round(d, 4)) for x, y, d, _ in rond})
+    print(f'unieke ronde gaten: {len(uniek)} (dubbel: {len(rond) - len(uniek)})')
+    vlak = cq.Face.makeFromWires(wire(Polygon(rand.exterior.coords).exterior.coords, a, z0))
+    knip = [cq.Face.makeFromWires(cq.Wire.makeCircle(d / 2, cq.Vector(*T(x, y, a), z0), cq.Vector(0, 0, 1))) for x, y, d in uniek]
     for x1, y1, x2, y2, d, _ in sleuf:
         L = math.dist((x1, y1), (x2, y2)); hoek = math.degrees(math.atan2(y2 - y1, x2 - x1))
         cx, cy = T((x1 + x2) / 2, (y1 + y2) / 2, a)
-        knip.append(cq.Workplane('XY', origin=(cx, cy, z0 - 1)).slot2D(L + d, d, hoek).extrude(a.dikte + 2).val())
-    print_body = print_body.cut(cq.Workplane('XY').add(cq.Compound.makeCompound(knip)))
-    plaat = print_body.val()
-    print('print geldig solid:', plaat.isValid(), '| aantal vlakken:', len(plaat.Faces()))
+        knip.append(cq.Face.makeFromWires(cq.Workplane('XY', origin=(cx, cy, z0)).slot2D(L + d, d, hoek).wires().val()))
+    vlak = vlak.cut(*knip).clean()
+    plaat = cq.Solid.extrudeLinear(vlak.Faces()[0], cq.Vector(0, 0, a.dikte)) if len(vlak.Faces()) == 1 else \
+        cq.Compound.makeCompound([cq.Solid.extrudeLinear(f, cq.Vector(0, 0, a.dikte)) for f in vlak.Faces()])
+    verwacht = (rand.area - Polygon(rand.exterior.coords).difference(
+        shapely.union_all([Point(x, y).buffer(d / 2, quad_segs=64) for x, y, d in uniek] +
+                          [LineString([(p, q), (r, s)]).buffer(d / 2, quad_segs=64) for p, q, r, s, d, _ in sleuf])).area) * a.dikte
+    weg = rand.area * a.dikte - plaat.Volume()
+    print(f'print geldig: {plaat.isValid()} | vlakken: {len(plaat.Faces())} | weggesneden {weg:.1f} mm3, verwacht {verwacht:.1f} mm3')
+    if abs(weg - verwacht) > 0.005 * verwacht:
+        raise SystemExit('FOUT: niet alle gaten zijn weggesneden')
 
     ass = cq.Assembly(name='print_uit_gerbers')
     ass.add(plaat, name='print', color=cq.Color(0.10, 0.40, 0.18))
