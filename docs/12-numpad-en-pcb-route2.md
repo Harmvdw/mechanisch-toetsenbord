@@ -69,6 +69,7 @@ Besluit Harm: draaiknop in de bovenstrook; alle 20 toetsen blijven.
 ## 6. Gerbers
 Per zip: F_Cu, B_Cu, F/B_Mask, F/B_Silkscreen, Edge_Cuts, PTH.drl, NPTH.drl (Protel-extensies, mm).
 - Lily58: omtrek tot x = 231,46 mm. **Versie met encoder: 13 nov** (`pcb/lily58-pro/Lily58_Pro_gerbers.zip`). Gecontroleerd: 2 sleuven 2,6 × 1,5 (lipjes), 4 × ø1,5 (switch), 14 × ø1,0 (o.a. 5 encoderpennen); 2 pootjesgaten en 8 hotswap-gaten minder dan de versie van 12 nov.
+- **Passingsproef Lily58 (24 nov):** `pcb/lily58-pro/Lily58_Pro_uit_gerbers.step` (gemaakt uit de Gerbers) 3D-geprint; een MX-switch past. Nog niet getest: EC11 op SW25 (pennen en sleuven) en de magnetische connector J_NP (gaten ø1,0 mm, connector komt in januari).
 - Numpad **v0.4** (96,2 × 132,75 mm, met draaiknop): `pcb/numpad/numpad_gerbers_v0.4.zip` (16 nov). Gecontroleerd: 13 × ø1,0 (J1/J2 + 5 encoderpennen), 15 via's, 2 sleuven (lipjes), 6 × M3. De zip van v0.3 (`..._ZONDER_draaiknop.zip`) niet meer bestellen.
 
 ## 7. Scripts in deze repo (`pcb/scripts/`)
